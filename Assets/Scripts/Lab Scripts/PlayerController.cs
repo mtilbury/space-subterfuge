@@ -14,9 +14,12 @@ public class PlayerController : MonoBehaviour
     Vector3 movement;
     private bool grounded = true;
 
+    private Camera viewCamera;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        viewCamera = Camera.main;
     }
 
     private void Update()
@@ -30,6 +33,10 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
 
         movement = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
+
+        Vector3 mousePos = viewCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,
+            viewCamera.transform.position.y));
+        transform.LookAt(mousePos + Vector3.up * transform.position.y);
     }
 
 
@@ -42,6 +49,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z);
             //rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
         }
+
     }
 
 
