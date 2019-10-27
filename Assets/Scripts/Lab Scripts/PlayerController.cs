@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.AddForce(movement * speed);
+        rb.velocity = (movement * speed);
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
