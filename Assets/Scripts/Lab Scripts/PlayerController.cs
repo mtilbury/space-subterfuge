@@ -34,15 +34,20 @@ public class PlayerController : MonoBehaviour
 
         movement = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
 
+        /*
         Vector3 mousePos = viewCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,
             viewCamera.transform.position.y));
         transform.LookAt(mousePos + Vector3.up * transform.position.y);
+        */
+        
     }
 
 
     private void FixedUpdate()
     {
         rb.velocity = (movement * speed);
+        if(movement != Vector3.zero)
+            transform.rotation = Quaternion.LookRotation(movement);
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
