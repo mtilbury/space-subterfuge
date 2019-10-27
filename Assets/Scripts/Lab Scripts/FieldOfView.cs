@@ -18,6 +18,8 @@ public class FieldOfView : MonoBehaviour
     public int edgeResolveIterations;
     public float edgeDistanceThreshold;
 
+    public float maskCutawayDistance = .2f;
+
     public MeshFilter viewMeshFilter;
     private Mesh viewMesh;
 
@@ -109,7 +111,7 @@ public class FieldOfView : MonoBehaviour
 
         for (int i = 0; i < vertexCount - 1; i++)
         {
-            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
+            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]) + Vector3.forward * maskCutawayDistance;
 
 
             if (i < vertexCount - 2)
