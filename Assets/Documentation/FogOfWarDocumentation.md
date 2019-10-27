@@ -5,6 +5,7 @@ By downloading the project, the custom rendering pipeline should already be in u
 
 Using it in your scene:
 - Make sure the camera is rendering a solid black background.
+- Players and other objects all players can see should be put on the "AllSee" layer
 - By default, all objects will be hidden unless revealed by objects on the "Reveal" or "Player<#>Light" layers.
 - The objects that you want to hide should be on the "Target" (possibly temporary name) layer.
 - It may be helpful to create a large cube on the "reveal" layer and put it below all of your objects.
