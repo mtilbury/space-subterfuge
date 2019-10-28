@@ -11,8 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
     Vector3 movementInput;
-    private bool jumpPressed = false;
-    private bool grounded = true;
+    //private bool jumpPressed = false;
+    //private bool grounded = true;
     //private Camera viewCamera;
 
     // Start is called before the first frame update
@@ -76,8 +76,9 @@ public class PlayerMovement : MonoBehaviour
     }
     */
 
-    private void OnMove()
+    private void OnMove(InputValue value)
     {
         Debug.Log("moving");
+        movementInput = value.Get<Vector3>();
     }
 }
