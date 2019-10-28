@@ -1,0 +1,2 @@
+Our gold spike feature is implementing a fog-of-war system where players can only see their immediate surroundings.
+Also, they must not be able to see the other players' effect on their screen.
