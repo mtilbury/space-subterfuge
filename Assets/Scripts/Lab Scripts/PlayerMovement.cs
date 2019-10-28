@@ -75,4 +75,9 @@ public class PlayerMovement : MonoBehaviour
         grounded = false;
     }
     */
+
+    private void OnMove()
+    {
+        Debug.Log("moving");
+    }
 }
