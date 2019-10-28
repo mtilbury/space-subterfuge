@@ -29,8 +29,18 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = 0.0f;
+        float moveVertical = 0.0f;
+
+        if (Input.GetKey(KeyCode.W))
+            moveVertical = 1.0f;
+        else if (Input.GetKey(KeyCode.S))
+            moveVertical = -1.0f;
+
+        if (Input.GetKey(KeyCode.A))
+            moveHorizontal = -1.0f;
+        else if (Input.GetKey(KeyCode.D))
+            moveHorizontal = 1.0f;
 
         movement = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
 
