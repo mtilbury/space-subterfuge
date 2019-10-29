@@ -1,5 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3562637328313920051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: ReverseStencil
+  m_EditorClassIdentifier: 
+  settings:
+    passTag: ReverseStencil
+    Event: 250
+    filterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 2097152
+      PassNames: []
+    overrideMaterial: {fileID: 0}
+    overrideMaterialPassIndex: 0
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+    stencilSettings:
+      overrideStencilState: 1
+      stencilReference: 2
+      stencilCompareFunction: 5
+      passOperation: 2
+      failOperation: 1
+      zFailOperation: 0
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
 --- !u!114 &-3005127204119109870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,7 +70,7 @@ MonoBehaviour:
       stencilCompareFunction: 8
       passOperation: 2
       failOperation: 0
-      zFailOperation: 0
+      zFailOperation: 2
     cameraSettings:
       overrideCamera: 0
       restoreCamera: 1
@@ -62,11 +100,11 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideDepthState: 0
-    depthCompareFunction: 4
+    depthCompareFunction: 8
     enableWrite: 1
     stencilSettings:
       overrideStencilState: 1
-      stencilReference: 1
+      stencilReference: 15
       stencilCompareFunction: 8
       passOperation: 2
       failOperation: 2
@@ -90,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RendererFeatures:
   - {fileID: -127574648420279355}
+  - {fileID: -3562637328313920051}
   - {fileID: -3005127204119109870}
   - {fileID: 629631667897386364}
   - {fileID: 929276102636940031}
@@ -108,7 +147,7 @@ MonoBehaviour:
   m_DefaultStencilState:
     overrideStencilState: 1
     stencilReference: 0
-    stencilCompareFunction: 1
+    stencilCompareFunction: 3
     passOperation: 0
     failOperation: 0
     zFailOperation: 2
@@ -136,15 +175,15 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideDepthState: 0
-    depthCompareFunction: 5
+    depthCompareFunction: 2
     enableWrite: 1
     stencilSettings:
       overrideStencilState: 1
       stencilReference: 1
-      stencilCompareFunction: 3
+      stencilCompareFunction: 7
       passOperation: 2
       failOperation: 1
-      zFailOperation: 1
+      zFailOperation: 0
     cameraSettings:
       overrideCamera: 0
       restoreCamera: 1
@@ -179,7 +218,7 @@ MonoBehaviour:
     stencilSettings:
       overrideStencilState: 1
       stencilReference: 0
-      stencilCompareFunction: 3
+      stencilCompareFunction: 5
       passOperation: 2
       failOperation: 0
       zFailOperation: 0

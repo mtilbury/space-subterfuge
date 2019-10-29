@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3468781245936899334}
   - component: {fileID: 3468781245936899336}
   - component: {fileID: 3468781245936899335}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: View Visualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3468781246024154345}
   - component: {fileID: 3468781246024154344}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,8 +119,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 0
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 114.2
+  m_Color: {r: 1, g: 0.033018887, b: 0.033018887, a: 1}
+  m_Intensity: 10
   m_Range: 30
   m_SpotAngle: 110
   m_InnerSpotAngle: 1
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 3468781246121713226}
   - component: {fileID: 3468781246121713225}
   - component: {fileID: 882621174816818582}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,16 +299,15 @@ MonoBehaviour:
   view_angle: 90
   targetMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 768
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 272
-  visibleTargets:
-  - {fileID: 0}
+    m_Bits: 784
+  visibleTargets: []
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
-  maskCutawayDistance: 0.1
+  maskCutawayDistance: 1
   viewMeshFilter: {fileID: 3468781245936899336}
 --- !u!114 &882621174816818582
 MonoBehaviour:
@@ -335,7 +334,7 @@ GameObject:
   - component: {fileID: 3468781246218969506}
   - component: {fileID: 3468781246218969535}
   - component: {fileID: 3468781246218969504}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: AreaHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 3468781246218969507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 3, y: 0.1, z: 3}
+  m_LocalScale: {x: 5, y: 0.1, z: 5}
   m_Children: []
   m_Father: {fileID: 3468781246121713228}
   m_RootOrder: 1
