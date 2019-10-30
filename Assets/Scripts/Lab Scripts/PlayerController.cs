@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jumpPower;
 
-
     private Rigidbody rb;
     Vector3 movement;
     private bool grounded = true;
@@ -52,7 +51,6 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
     private void FixedUpdate()
     {
         rb.velocity = (movement * speed);
@@ -66,7 +64,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
 
     private void OnCollisionStay(Collision collision)
     {

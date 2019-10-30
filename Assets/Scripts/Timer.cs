@@ -8,11 +8,13 @@ public class Timer : MonoBehaviour
 {
     public float timer_seconds = 60;
     private Text timer_text;
+    private GameObject timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        timer_text = GetComponent<Text>();
+        timer = GameObject.Find("Timer");
+        timer_text = timer.GetComponent<Text>();
     }
 
     // Update is called once per frame
