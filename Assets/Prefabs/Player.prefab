@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   view_radius: 20
-  view_angle: 90
+  view_angle: 361
   targetMask:
     serializedVersion: 2
     m_Bits: 768
@@ -307,7 +307,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
-  maskCutawayDistance: 2
+  maskCutawayDistance: 0
   viewMeshFilter: {fileID: 3468781245936899336}
 --- !u!114 &882621174816818582
 MonoBehaviour:
