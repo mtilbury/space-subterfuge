@@ -3,6 +3,18 @@ By downloading the project, the custom rendering pipeline should already be in u
 1. Download the Lightweight Render Pipeline from the Package Manager
 2. In Project Settings > Graphics, put the LightweightRenderPipelineAsset into the Scriptable Render Pipeline Settings box.
 
+Layers:
+Reveal - Will be revealed by the mask.
+Player<#> - Currently unused, meant for things only that specific player can see.
+Player<#>Light - The object that acts as the mask, only visible to the respective player.
+Attackers - Objects only visible to attackers.
+Defenders - Objects only visible to defenders.
+Replace - The object that covers the map in fog.
+ReverseReveal - Visible in the fog, but disappear in the mask.  Usually paired with a Reveal object.
+Window - Physically blocks players, but can be seen through.
+RevealNoBlock - Revealed by the mask, but does not collide with it.  The players are on this layer
+so that they can be revealed, but they won't block the area behind them.
+
 Using it in your scene:
 - Make sure the camera is rendering a solid black background.
 - Players and other objects all players can see should be put on the "AllSee" layer

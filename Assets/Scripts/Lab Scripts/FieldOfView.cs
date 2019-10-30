@@ -6,7 +6,7 @@ public class FieldOfView : MonoBehaviour
 {
 
     public float view_radius;
-    [Range(0,360)]
+    [Range(0,361)]
     public float view_angle;
 
     public LayerMask targetMask;
