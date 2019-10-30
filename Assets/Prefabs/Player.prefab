@@ -307,7 +307,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
-  maskCutawayDistance: 1
+  maskCutawayDistance: 2
   viewMeshFilter: {fileID: 3468781245936899336}
 --- !u!114 &882621174816818582
 MonoBehaviour:

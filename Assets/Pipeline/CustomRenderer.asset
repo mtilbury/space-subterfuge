@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: ReverseStencil
+  m_Name: ReverseReveal
   m_EditorClassIdentifier: 
   settings:
-    passTag: ReverseStencil
+    passTag: ReverseReveal
     Event: 250
     filterSettings:
       RenderQueueType: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 256
+        m_Bits: 288
       PassNames: []
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
@@ -161,16 +161,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: StencilObject
+  m_Name: Reveal
   m_EditorClassIdentifier: 
   settings:
-    passTag: StencilObject
+    passTag: Reveal
     Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 174647
+        m_Bits: 4368919
       PassNames: []
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
