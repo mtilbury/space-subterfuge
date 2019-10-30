@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed = 0;
     public float jumpPower = 0;
+    public bool test = true;
+    public Gamepad controller;
 
     private Rigidbody rb;
     Vector3 movementInput;
@@ -25,26 +27,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var gamepad = Gamepad.current;
-
         if (transform.position.y < -10f)
         {
             SceneManager.LoadScene(0);
         }
 
         // If no gamepad is connected
-        if (gamepad == null)
-            return;
-        /*
-        // Get jumpPressed input
-        if (gamepad.aButton.wasPressedThisFrame && grounded)
+        if (controller == null)
         {
-            jumpPressed = true;
+            //Debug.Log("player is offline");
+            return;
         }
-        */
 
         // Get movementInput
-        Vector3 movementInput = new Vector3(gamepad.leftStick.x.ReadValue(), 0, gamepad.leftStick.y.ReadValue());
+        Vector3 movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
 
         // Update Player velocity
         rb.velocity = movementInput * playerSpeed;
@@ -54,27 +50,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(movementInput);
         }
-
-        /*
-        if (jumpPressed && grounded)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.x);
-            jumpPressed = false;
-        }
-        */
     }
-
-    /*
-    private void OnCollisionStay(Collision collision)
-    {
-        grounded = true;
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        grounded = false;
-    }
-    */
 
     private void OnMove(InputValue value)
     {
