@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 3468781246121713231}
   - component: {fileID: 3468781246121713226}
   - component: {fileID: 3468781246121713225}
-  - component: {fileID: 882621174816818582}
+  - component: {fileID: 1427161202541192830}
   m_Layer: 23
   m_Name: Player
   m_TagString: Untagged
@@ -233,7 +233,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe97343f55daa437ea134d4d345bbb28, type: 2}
+  - {fileID: 2100000, guid: 5a8aeaf88191f43528f2cb48d2479e90, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
