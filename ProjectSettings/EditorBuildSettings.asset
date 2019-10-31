@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/mtilbury_LAB.unity
+    guid: 5e2062e48e5d9604ea6aacc7395b9428
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 89d44e97cc9226e46836264119c12e9e,
       type: 2}
