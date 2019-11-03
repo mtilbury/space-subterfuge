@@ -8,17 +8,11 @@ public class GamepadManager : MonoBehaviour
     public GameObject Player1;
     public GameObject Player2;
     public HashSet<Gamepad> UsedGamepads;
-    //List<Gamepad> game_pads;
-
-    //Gamepad Player1Controller;
-    //Gamepad Player2Controller;
 
     // Start is called before the first frame update
     void Start()
     {
         UsedGamepads = new HashSet<Gamepad>();
-        //Player1Controller = Player1.GetComponent<PlayerMovement>().controller;
-        //Player2Controller = Player2.GetComponent<PlayerMovement>().controller;
     }
 
     // Update is called once per frame
