@@ -5,8 +5,11 @@ using UnityEngine.InputSystem;
 
 public class GamepadManager : MonoBehaviour
 {
-    public GameObject Player1;
-    public GameObject Player2;
+    public GameObject Defender;
+    public GameObject Attacker1;
+    public GameObject Attacker2;
+    public GameObject Attacker3;
+
     public HashSet<Gamepad> UsedGamepads;
 
     // Start is called before the first frame update
@@ -25,17 +28,29 @@ public class GamepadManager : MonoBehaviour
 
             bool a_pressed_this_frame = gamepad.aButton.wasPressedThisFrame;
 
-            if (Player1.GetComponent<PlayerMovement>().controller == null && a_pressed_this_frame)
+            if (Defender.GetComponent<PlayerMovement>().controller == null && a_pressed_this_frame)
             {
-                Player1.GetComponent<PlayerMovement>().controller = gamepad;
+                Defender.GetComponent<PlayerMovement>().controller = gamepad;
                 UsedGamepads.Add(gamepad);
-                Debug.Log("player1 is online");
+                Debug.Log("Defender is online");
             }
-            else if (Player2.GetComponent<PlayerMovement>().controller == null && a_pressed_this_frame)
+            else if (Attacker1.GetComponent<PlayerMovement>().controller == null && a_pressed_this_frame)
             {
-                Player2.GetComponent<PlayerMovement>().controller = gamepad;
+                Attacker1.GetComponent<PlayerMovement>().controller = gamepad;
                 UsedGamepads.Add(gamepad);
-                Debug.Log("player2 is online");
+                Debug.Log("Attacker 1 is online");
+            }
+            else if (Attacker2.GetComponent<PlayerMovement>().controller == null && a_pressed_this_frame)
+            {
+                Attacker2.GetComponent<PlayerMovement>().controller = gamepad;
+                UsedGamepads.Add(gamepad);
+                Debug.Log("Attacker 2 is online");
+            }
+            else if (Attacker3.GetComponent<PlayerMovement>().controller == null && a_pressed_this_frame)
+            {
+                Attacker3.GetComponent<PlayerMovement>().controller = gamepad;
+                UsedGamepads.Add(gamepad);
+                Debug.Log("Attacker 3 is online");
             }
         }
 

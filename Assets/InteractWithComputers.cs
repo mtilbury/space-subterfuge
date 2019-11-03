@@ -36,7 +36,7 @@ public class InteractWithComputers : MonoBehaviour
                 // Spawn ping here
                 GameObject spawned_ping = GameObject.Instantiate(ping);
                 spawned_ping.transform.position = transform.position;
-                spawned_ping.transform.position = new Vector3(transform.position.x, -2, transform.position.z);
+                spawned_ping.transform.position = new Vector3(transform.position.x, 5, transform.position.z);
 
                 // Disable instruction text
                 instruction.enabled = false;
