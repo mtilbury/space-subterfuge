@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed = 0;
     public float jumpPower = 0;
-    public bool test = true;
+    public bool canMove = true;
     public Gamepad controller;
 
     private Rigidbody rb;
@@ -42,8 +42,11 @@ public class PlayerMovement : MonoBehaviour
         // Get movementInput
         Vector3 movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
 
-        // Update Player velocity
-        rb.velocity = movementInput * playerSpeed;
+        if (canMove)
+        {
+            // Update Player velocity
+            rb.velocity = movementInput * playerSpeed;
+        }
 
         // Rotate Player
         if (movementInput != Vector3.zero)
