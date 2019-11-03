@@ -184,8 +184,9 @@ GameObject:
   - component: {fileID: 3468781246121713226}
   - component: {fileID: 3468781246121713225}
   - component: {fileID: 1427161202541192830}
+  - component: {fileID: 979186108046376551}
   m_Layer: 23
-  m_Name: Player
+  m_Name: Attacker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198fa391ededa439f802c9dbb1a27997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  view_radius: 20
+  view_radius: 10
   view_angle: 361
   targetMask:
     serializedVersion: 2
@@ -304,7 +305,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 784
   visibleTargets: []
-  meshResolution: 1
+  meshResolution: 5
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
   maskCutawayDistance: 0
@@ -324,6 +325,18 @@ MonoBehaviour:
   playerSpeed: 10
   jumpPower: 0
   test: 1
+--- !u!114 &979186108046376551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468781246121713200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb033bda87d32d64dbaddb818f115c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3468781246218969507
 GameObject:
   m_ObjectHideFlags: 0
