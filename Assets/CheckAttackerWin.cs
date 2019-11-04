@@ -8,6 +8,8 @@ public class CheckAttackerWin : MonoBehaviour
 {
     public Text numPointsText;
     public int numPointsToWin = 5;
+    public Text AttackersWinText;
+    public Text DefenderLoseText;
 
     private int numPoints = 0;
 
@@ -17,7 +19,7 @@ public class CheckAttackerWin : MonoBehaviour
         if(numPoints >= numPointsToWin)
         {
             // Attackers win
-            SceneManager.LoadScene(0);
+            StartCoroutine(AttackerWinScreen());
         }
     }
 
@@ -25,5 +27,13 @@ public class CheckAttackerWin : MonoBehaviour
     {
         numPoints++;
         numPointsText.text = "Points: " + numPoints;
+    }
+
+    private IEnumerator AttackerWinScreen()
+    {
+        AttackersWinText.enabled = true;
+        DefenderLoseText.enabled = true;
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene(0); // Go to menu
     }
 }

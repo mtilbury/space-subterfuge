@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CheckDefenderWin : MonoBehaviour
 {
     public GameObject Attacker1;
     public GameObject Attacker2;
     public GameObject Attacker3;
+    public Text DefenderWinText;
+    public Text AttackersLoseText;
 
     private PlayerMovement Attacker1_mov;
     private PlayerMovement Attacker2_mov;
@@ -27,7 +30,15 @@ public class CheckDefenderWin : MonoBehaviour
         // If all players can't move, the defender wins
         if(!Attacker1_mov.canMove && !Attacker2_mov.canMove && !Attacker3_mov.canMove)
         {
-            SceneManager.LoadScene(0); // Go to menu
+            StartCoroutine(DefenderWinScreen());
         }
+    }
+
+    private IEnumerator DefenderWinScreen()
+    {
+        DefenderWinText.enabled = true;
+        AttackersLoseText.enabled = true;
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene(0); // Go to menu
     }
 }
