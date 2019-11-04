@@ -9,6 +9,7 @@ public class InteractWithComputers : MonoBehaviour
 
     public GameObject ping;
     public Text instruction;
+    public CheckAttackerWin point_collector;
 
     private void Start()
     {
@@ -42,6 +43,10 @@ public class InteractWithComputers : MonoBehaviour
                 instruction.enabled = false;
 
                 // TODO: disable trigger
+                other.gameObject.SetActive(false);
+
+                // Add point
+                point_collector.AddPoint();
             }
         }
     }
