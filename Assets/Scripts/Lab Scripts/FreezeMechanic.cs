@@ -11,22 +11,9 @@ public class FreezeMechanic : MonoBehaviour
 
     public Text freezeInstruction;
 
-    void Start()
+    private void Start()
     {
         playerMove = defender.GetComponent<PlayerMovement>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (playerMove.controller != null)
-        {
-            if (playerMove.controller.yButton.wasPressedThisFrame)
-            {
-                Debug.Log("Controller reference works");
-            }
-        }
-        
     }
 
     private void OnTriggerEnter(Collider other)

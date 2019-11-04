@@ -18,13 +18,13 @@ public class UnfreezeMechanic : MonoBehaviour
 
     void Update()
     {
-        if (playerMove.controller != null)
-        {
-            if (playerMove.controller.yButton.wasPressedThisFrame)
-            {
-                Debug.Log("Controller reference works");
-            }
-        }
+        //if (playerMove.controller != null)
+        //{
+        //    if (playerMove.controller.yButton.wasPressedThisFrame)
+        //    {
+        //        Debug.Log("Controller reference works");
+        //    }
+        //}
     }
 
     private void OnTriggerEnter(Collider other)

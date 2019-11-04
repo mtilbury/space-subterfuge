@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 1427161202541192830}
   m_Layer: 23
   m_Name: Defender
-  m_TagString: Untagged
+  m_TagString: Defender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 10
   jumpPower: 0
-  test: 1
+  canMove: 1
 --- !u!1 &3468781246218969507
 GameObject:
   m_ObjectHideFlags: 0
