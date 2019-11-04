@@ -14,7 +14,7 @@ public class CheckAttackerWin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(numPoints > numPointsToWin)
+        if(numPoints >= numPointsToWin)
         {
             // Attackers win
             SceneManager.LoadScene(0);
