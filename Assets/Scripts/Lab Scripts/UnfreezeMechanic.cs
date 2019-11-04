@@ -8,6 +8,7 @@ public class UnfreezeMechanic : MonoBehaviour
     public GameObject attacker;
 
     private PlayerMovement playerMove;
+    private bool controllerAttached = false;
 
     public Text unfreezeInstruction;
 
@@ -18,13 +19,18 @@ public class UnfreezeMechanic : MonoBehaviour
 
     void Update()
     {
-        //if (playerMove.controller != null)
-        //{
-        //    if (playerMove.controller.yButton.wasPressedThisFrame)
-        //    {
-        //        Debug.Log("Controller reference works");
-        //    }
-        //}
+        if (playerMove.controller != null)
+        {
+            if (playerMove.controller.yButton.wasPressedThisFrame)
+            {
+                Debug.Log("Controller reference works");
+            }
+            controllerAttached = true;
+        }
+        else
+        {
+            controllerAttached = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,7 +44,7 @@ public class UnfreezeMechanic : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Attacker"))
+        if (other.CompareTag("Attacker") && controllerAttached)
         {
             //Debug.Log("Can free attacker");
             // Check if X was pressed
