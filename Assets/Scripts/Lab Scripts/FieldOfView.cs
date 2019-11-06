@@ -17,6 +17,7 @@ public class FieldOfView : MonoBehaviour
     public float meshResolution;
     public int edgeResolveIterations;
     public float edgeDistanceThreshold;
+    public float maskHeight = 1.0f;
 
     public float maskCutawayDistance = .2f;
 
@@ -100,6 +101,7 @@ public class FieldOfView : MonoBehaviour
             }
 
             viewPoints.Add(newViewCast.point);
+            viewPoints.Add(newViewCast.point + Vector3.up * maskHeight);
             oldViewCast = newViewCast;
         }
 
