@@ -40,7 +40,7 @@ public class MultiplayerManager : MonoBehaviour
         {
             // Try to get defender gamepad
             Gamepad defender_gp = GamepadManager.getPlayerController(1);
-            if (defender_gp != null)
+            if (defender_gp != null && defender_mov.controller == null)
             {
                 numControllers++;
                 defender_mov.controller = defender_gp;
@@ -48,7 +48,7 @@ public class MultiplayerManager : MonoBehaviour
 
             // Try to get attacker1 gamepad
             Gamepad attacker1_gp = GamepadManager.getPlayerController(2);
-            if(attacker1_gp != null)
+            if(attacker1_gp != null && attacker1_mov.controller == null)
             {
                 numControllers++;
                 attacker1_mov.controller = attacker1_gp;
@@ -56,7 +56,7 @@ public class MultiplayerManager : MonoBehaviour
 
             // Try to get attacker1 gamepad
             Gamepad attacker2_gp = GamepadManager.getPlayerController(3);
-            if (attacker1_gp != null)
+            if (attacker2_gp != null && attacker2_mov.controller == null)
             {
                 numControllers++;
                 attacker2_mov.controller = attacker2_gp;
@@ -64,7 +64,7 @@ public class MultiplayerManager : MonoBehaviour
 
             // Try to get attacker1 gamepad
             Gamepad attacker3_gp = GamepadManager.getPlayerController(4);
-            if (attacker1_gp != null)
+            if (attacker3_gp != null && attacker3_mov.controller == null)
             {
                 numControllers++;
                 attacker3_mov.controller = attacker3_gp;

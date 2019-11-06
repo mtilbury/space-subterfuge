@@ -22,6 +22,7 @@ public class GamepadManager : MonoBehaviour
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
+            Debug.Log("An instance of GamepadManager already exists.");
             return;
         }
         else
@@ -66,19 +67,19 @@ public class GamepadManager : MonoBehaviour
                 {
                     ControllerMap[2] = gamepad;
                     UsedGamepads.Add(gamepad);
-                    Debug.Log("Attacker 2 is online");
+                    Debug.Log("Attacker 1 is online");
                 }
                 else if (ControllerMap[3] == null && a_pressed_this_frame)
                 {
                     ControllerMap[3] = gamepad;
                     UsedGamepads.Add(gamepad);
-                    Debug.Log("Attacker 3 is online");
+                    Debug.Log("Attacker 2 is online");
                 }
                 else if (ControllerMap[4] == null && a_pressed_this_frame)
                 {
                     ControllerMap[4] = gamepad;
                     UsedGamepads.Add(gamepad);
-                    Debug.Log("Attacker 4 is online");
+                    Debug.Log("Attacker 3 is online");
                     allGamepadsPopulated = true;
                 }
             }
