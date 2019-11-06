@@ -31,7 +31,7 @@ public class FreezeMechanic : MonoBehaviour
         {
             Debug.Log("Can freeze attacker");
             // Check if X was pressed
-            if (playerMove.controller.xButton.wasPressedThisFrame)
+            if (playerMove.controller != null && playerMove.controller.xButton.wasPressedThisFrame)
             {
                 other.GetComponent<PlayerMovement>().canMove = false;
                 Debug.Log("Player frozen");
