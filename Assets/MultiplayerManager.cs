@@ -14,10 +14,10 @@ public class MultiplayerManager : MonoBehaviour
     public GameObject attacker3;
 
     // Direct access to players' movement components
-    private PlayerMovement defender_mov;
-    private PlayerMovement attacker1_mov;
-    private PlayerMovement attacker2_mov;
-    private PlayerMovement attacker3_mov;
+    private HasController defender_mov;
+    private HasController attacker1_mov;
+    private HasController attacker2_mov;
+    private HasController attacker3_mov;
 
     private int numControllers = 0;
 
@@ -27,10 +27,10 @@ public class MultiplayerManager : MonoBehaviour
         // Instantiate a GamepadManager
         Instantiate(GamepadManagerPrefab);
 
-        defender_mov = defender.GetComponent<PlayerMovement>();
-        attacker1_mov = attacker1.GetComponent<PlayerMovement>();
-        attacker2_mov = attacker2.GetComponent<PlayerMovement>();
-        attacker3_mov = attacker3.GetComponent<PlayerMovement>();
+        defender_mov = defender.GetComponent<HasController>();
+        attacker1_mov = attacker1.GetComponent<HasController>();
+        attacker2_mov = attacker2.GetComponent<HasController>();
+        attacker3_mov = attacker3.GetComponent<HasController>();
     }
 
     // Update is called once per frame
