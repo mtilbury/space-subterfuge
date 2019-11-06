@@ -1043,7 +1043,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 'Start
+
+'
 --- !u!222 &1467120693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1359,3 +1361,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938932726}
   m_CullTransparentMesh: 0
+--- !u!1001 &6557220935679523954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6557220936946882438, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_Name
+      value: ControllerMapManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.498354
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -85.14844
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5530242
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557220936946882436, guid: 485f2894fe7e80c4599ff1de303d4fd2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 485f2894fe7e80c4599ff1de303d4fd2, type: 3}
