@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class UnfreezeMechanic : MonoBehaviour
 {
@@ -17,22 +18,6 @@ public class UnfreezeMechanic : MonoBehaviour
         playerMove = attacker.GetComponent<PlayerMovement>();
     }
 
-    void Update()
-    {
-        if (playerMove.controller != null)
-        {
-            if (playerMove.controller.yButton.wasPressedThisFrame)
-            {
-                Debug.Log("Controller reference works");
-            }
-            controllerAttached = true;
-        }
-        else
-        {
-            controllerAttached = false;
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Attacker") && !other.GetComponent<PlayerMovement>().canMove)
@@ -46,9 +31,8 @@ public class UnfreezeMechanic : MonoBehaviour
     {
         if (other.CompareTag("Attacker") && controllerAttached)
         {
-            //Debug.Log("Can free attacker");
             // Check if X was pressed
-            if (playerMove.controller.xButton.wasPressedThisFrame)
+            if (playerMove.controller != null && playerMove.controller.xButton.wasPressedThisFrame)
             {
                 other.GetComponent<PlayerMovement>().canMove = true;
                 Debug.Log("Player freed");

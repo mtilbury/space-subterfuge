@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, HasController
 {
     public float playerSpeed = 0;
     public float jumpPower = 0;
     public bool canMove = true;
-    public Gamepad controller;
+    public Gamepad controller { get; set; }
 
     private Rigidbody rb;
     Vector3 movementInput;
@@ -60,4 +60,5 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("moving");
         movementInput = value.Get<Vector3>();
     }
+
 }
