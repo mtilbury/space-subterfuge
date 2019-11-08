@@ -15,6 +15,7 @@ public class ActivateDualScreens : MonoBehaviour
             // Activate second display
             Display.displays[1].Activate();
         }
-            
+
+        Screen.SetResolution(1920, 1080, true);
     }
 }

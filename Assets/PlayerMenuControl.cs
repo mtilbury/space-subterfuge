@@ -15,7 +15,7 @@ public class PlayerMenuControl : MonoBehaviour, HasController
     public Color defaultTextColor = Color.white;
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if(controller != null)
         {
