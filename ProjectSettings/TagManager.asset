@@ -7,6 +7,8 @@ TagManager:
   - Computer
   - Attacker
   - Defender
+  - Interact
+  - Jail Gate
   layers:
   - Default
   - TransparentFX
@@ -18,21 +20,21 @@ TagManager:
   - 
   - AlwaysVisible
   - Reveal
-  - Player1
-  - Player1Light
-  - Player2
-  - Player2Light
-  - Player3
-  - Player3Light
-  - Player4
-  - Player4Light
-  - Attackers
-  - Defenders
-  - Replace
-  - ReverseReveal
-  - Window
-  - RevealNoBlock
+  - RevealThroughWalls
+  - Fog
+  - AttackerMiniMap
+  - DefenderMiniMap
   - MiniMapOnly
+  - 
+  - Walls
+  - AttackerMask
+  - DefenderMask
+  - ReverseReveal
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

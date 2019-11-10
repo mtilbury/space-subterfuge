@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2532426197627373971}
   - component: {fileID: 2532426197627373981}
   - component: {fileID: 2532426197627373980}
-  m_Layer: 19
+  m_Layer: 14
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2532426197833380027}
   - component: {fileID: 2532426197833380164}
-  m_Layer: 19
+  m_Layer: 14
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 2532426198944667747}
   - component: {fileID: 2532426198944667746}
   - component: {fileID: 2532426198944667745}
-  m_Layer: 19
+  m_Layer: 14
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2532426199243100769}
   - component: {fileID: 2532426199243100770}
-  m_Layer: 19
+  m_Layer: 14
   m_Name: LocationMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 6680695631795011930}
   - component: {fileID: 4645967162963004472}
   - component: {fileID: 1882143970899430000}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

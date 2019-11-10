@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4954851107221615729}
   - component: {fileID: 7301170474653697204}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8040259091706034484}
   - component: {fileID: 8459197450544275834}
   - component: {fileID: 8679753309020394692}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Monitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 8975364119203030542}
   - component: {fileID: 2994005455652574138}
   - component: {fileID: 637020589998097998}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 1371876177926012534}
   - component: {fileID: 6704869855654847254}
   - component: {fileID: 5440066370069955665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4856005323799740762}
   - component: {fileID: 8223564342976662017}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Computer
   m_TagString: Computer
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3721666130408012460}
   - component: {fileID: 5900663282128982943}
-  m_Layer: 23
+  m_Layer: 9
   m_Name: ComputerTrigger
   m_TagString: Computer
   m_Icon: {fileID: 0}
