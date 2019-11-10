@@ -7,6 +7,8 @@ public class UnjailMechanic : MonoBehaviour
 {
     public GameObject jailManagement;
     public GameObject jailExit;
+    public bool canUnjail = true;
+    public float unjailCooldown = 5.0f;
 
     private PlayerMovement playerMove;
     private JailManagement jail;
@@ -44,10 +46,12 @@ public class UnjailMechanic : MonoBehaviour
             {
                 if (playerMove.controller.xButton.wasPressedThisFrame)
                 {
-                    if (jail.jailedAttackers.Count > 0)
+                    if (jail.jailedAttackers.Count > 0 && canUnjail)
                     {
+                        canUnjail = false;
                         GameObject temp = jail.jailedAttackers.Dequeue();
                         temp.transform.position = jailExit.transform.position;
+                        StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
                     }
                 }
@@ -62,5 +66,11 @@ public class UnjailMechanic : MonoBehaviour
         {
             unjailInstruction.enabled = false;
         }
+    }
+
+    private IEnumerator UnjailCooldown()
+    {
+        yield return new WaitForSeconds(unjailCooldown);
+        canUnjail = true;
     }
 }

@@ -34,7 +34,7 @@ public class InteractWithComputers : MonoBehaviour
         if (other.CompareTag("Computer"))
         {
             // Check if A was pressed
-            if (player_mov.controller.aButton.wasPressedThisFrame)
+            if (player_mov.controller.bButton.wasPressedThisFrame)
             {
                 // TODO: Add one to player score
 
@@ -58,6 +58,12 @@ public class InteractWithComputers : MonoBehaviour
                 {
                     TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.computer, id);
                 }
+
+                // Disabled Computer Models for Player Guidance 
+                GameObject parent = other.gameObject.transform.parent.gameObject;
+                parent.transform.GetChild(0).gameObject.SetActive(false);
+                parent.transform.GetChild(1).gameObject.SetActive(false);
+                parent.transform.GetChild(3).gameObject.SetActive(false);
             }
         }
     }
