@@ -41,12 +41,12 @@ public class PlayerMovement : MonoBehaviour, HasController
         }
 
         // Get movementInput
-        if (!dashing)
-        {
+        //if (!dashing)
+        //{
             Vector3 movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
-        }
+       // }
 
-        if (canMove && !dashing)
+        if (canMove)
         {
             // Update Player velocity
             rb.velocity = movementInput * playerSpeed;
