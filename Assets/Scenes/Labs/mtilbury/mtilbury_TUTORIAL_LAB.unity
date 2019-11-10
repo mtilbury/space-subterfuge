@@ -3069,7 +3069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
   instruction: {fileID: 153370083}
-  point_collector: {fileID: 726462513}
+  point_collector: {fileID: 0}
 --- !u!1001 &402821256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5461,18 +5461,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 587233545}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &726462513 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1371002395}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12cb791f60f74334ba114f608994965a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &729150474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8704,7 +8692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
   instruction: {fileID: 988315197}
-  point_collector: {fileID: 726462513}
+  point_collector: {fileID: 0}
 --- !u!4 &1104787264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4305550855402056811, guid: 2216c9cffdf65204fb0a30593686efe1,
@@ -9601,7 +9589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
   instruction: {fileID: 150420628}
-  point_collector: {fileID: 726462513}
+  point_collector: {fileID: 0}
 --- !u!1 &1275075106
 GameObject:
   m_ObjectHideFlags: 0
@@ -10354,120 +10342,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2532426199243100770, guid: c3ac82911a84c4d0299431462d9faa6c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c3ac82911a84c4d0299431462d9faa6c, type: 3}
---- !u!1001 &1371002395
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2163586114198291034, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_Name
-      value: CheckWinCondition
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: numPointsToWin
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: numPointsText
-      value: 
-      objectReference: {fileID: 1519299389}
-    - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: AttackersWinText
-      value: 
-      objectReference: {fileID: 319845688}
-    - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: DefenderLoseText
-      value: 
-      objectReference: {fileID: 2095666087}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.729074
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -82.61199
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.979569
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: Attacker1
-      value: 
-      objectReference: {fileID: 399826214}
-    - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: Attacker2
-      value: 
-      objectReference: {fileID: 1103030155}
-    - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: Attacker3
-      value: 
-      objectReference: {fileID: 1263141932}
-    - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: DefenderWinText
-      value: 
-      objectReference: {fileID: 308370785}
-    - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
-        type: 3}
-      propertyPath: AttackersLoseText
-      value: 
-      objectReference: {fileID: 417120051}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d, type: 3}
 --- !u!1001 &1404814882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11117,7 +10991,7 @@ RectTransform:
   m_Children:
   - {fileID: 2039758095}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13585,7 +13459,7 @@ Transform:
   - {fileID: 775538122}
   - {fileID: 1018275617}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1850954278 stripped
 Transform:

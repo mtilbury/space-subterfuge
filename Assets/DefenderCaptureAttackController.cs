@@ -16,7 +16,7 @@ public class DefenderCaptureAttackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (defender_mov.controller.xButton.wasPressedThisFrame)
+        if (defender_mov.controller != null && defender_mov.controller.xButton.wasPressedThisFrame)
         {
             defenderCaptureAttack.SetActive(true);
         }
