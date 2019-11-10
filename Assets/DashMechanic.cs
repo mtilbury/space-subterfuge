@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DashMechanic : MonoBehaviour
 {
-    public float dashDistance = 5;
+    public float dashTime = .5f;
+    public float dashSpeed = 20.0f;
     public float dashFraction = 0.1f;
 
     private PlayerMovement playerMove;
@@ -23,7 +24,7 @@ public class DashMechanic : MonoBehaviour
         {
             if (playerMove.controller.aButton.wasPressedThisFrame)
             {
-                transform.position = Vector3.Lerp(transform.position, transform.forward * dashDistance, dashFraction);
+                playerMove.dashing = true;
             }
         }
     }
