@@ -48,6 +48,12 @@ public class InteractWithComputers : MonoBehaviour
 
                 // Add point
                 point_collector.AddPoint();
+
+                // Disabled Computer Models for Player Guidance 
+                GameObject parent = other.gameObject.transform.parent.gameObject;
+                parent.transform.GetChild(0).gameObject.SetActive(false);
+                parent.transform.GetChild(1).gameObject.SetActive(false);
+                parent.transform.GetChild(3).gameObject.SetActive(false);
             }
         }
     }
