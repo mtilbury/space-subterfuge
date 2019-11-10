@@ -8,6 +8,7 @@ TagManager:
   - Attacker
   - Defender
   - Interact
+  - Jail Gate
   layers:
   - Default
   - TransparentFX
