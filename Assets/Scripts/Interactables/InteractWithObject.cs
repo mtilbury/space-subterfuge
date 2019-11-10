@@ -11,7 +11,7 @@ public class InteractWithObject : MonoBehaviour
     public GameObject interactPrompt;
 
     public float pingHeight = 8.0f;
-    public float pingScale = 5.0f;
+    public float pingScale = 3.0f;
 
     public float coolDown = 1.0f;
     float coolDownTimer;

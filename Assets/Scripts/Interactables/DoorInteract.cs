@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class DoorInteract : Interactable
 {
-    public Animator doorAnimControl;
-
-    bool open = false;
-    float animationSpeed = -1.0f;
+    public Door door;
 
     public void Awake()
     {
@@ -18,17 +15,17 @@ public class DoorInteract : Interactable
     {
         Debug.Log("Opening Door.");
         //doorAnimControl.speed *= -1.0f;
-        doorAnimControl.SetFloat("Direction", animationSpeed);
-        if (open)
+        door.doorAnimControl.SetFloat("Direction", door.animationSpeed);
+        if (door.open)
         {
-            doorAnimControl.Play("Door", 0, 0.0f);
-            open = false;
+            door.doorAnimControl.Play("Door", 0, 0.0f);
+            door.open = false;
         }
-        else if (!open)
+        else if (!door.open)
         {
-            doorAnimControl.Play("Door", 0, 1.0f);
-            open = true;
+            door.doorAnimControl.Play("Door", 0, 1.0f);
+            door.open = true;
         }
-        animationSpeed *= -1.0f;
+        door.animationSpeed *= -1.0f;
     }
 }
