@@ -7994,7 +7994,7 @@ PrefabInstance:
     - target: {fileID: 4679178999682959188, guid: 2f2dea1a1eb868249bc08258fecf94b4,
         type: 3}
       propertyPath: m_Text
-      value: Press 'X' to free player!
+      value: Press 'X' to jail player!
       objectReference: {fileID: 0}
     - target: {fileID: 4679178999682959209, guid: 2f2dea1a1eb868249bc08258fecf94b4,
         type: 3}
