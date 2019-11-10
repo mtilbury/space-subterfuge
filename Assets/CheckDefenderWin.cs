@@ -14,6 +14,7 @@ public class CheckDefenderWin : MonoBehaviour
     public GameObject jailManagement;
     public Text DefenderWinText;
     public Text AttackersLoseText;
+    public int jailCount;
 
     /*
     private PlayerMovement Attacker1_mov;
@@ -29,6 +30,7 @@ public class CheckDefenderWin : MonoBehaviour
         Attacker2_mov = Attacker2.GetComponent<PlayerMovement>();
         Attacker3_mov = Attacker3.GetComponent<PlayerMovement>();
         */
+        jailCount = jailManagement.GetComponent<JailManagement>().jailedAttackers.Count;
     }
 
     // Update is called once per frame
@@ -41,9 +43,9 @@ public class CheckDefenderWin : MonoBehaviour
             StartCoroutine(DefenderWinScreen());
         }
         */
-        if (jailManagement.GetComponent<JailManagement>().jailedAttackers.Count >= 3) { }
+        if (jailCount == 3)
         {
-            Debug.Log(jailManagement.GetComponent<JailManagement>().jailedAttackers.Count);
+            Debug.Log(jailCount);
             StartCoroutine(DefenderWinScreen());
         }
     }
