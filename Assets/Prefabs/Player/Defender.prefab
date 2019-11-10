@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3468781245936899334}
   - component: {fileID: 3468781245936899336}
   - component: {fileID: 3468781245936899335}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: View Visualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3468781246024154345}
   - component: {fileID: 3468781246024154344}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,10 +184,9 @@ GameObject:
   - component: {fileID: 3468781246121713226}
   - component: {fileID: 3468781246121713225}
   - component: {fileID: 1427161202541192830}
-  - component: {fileID: 979186108046376551}
-  m_Layer: 23
-  m_Name: Attacker
-  m_TagString: Attacker
+  m_Layer: 10
+  m_Name: Defender
+  m_TagString: Defender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,20 +295,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198fa391ededa439f802c9dbb1a27997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  view_radius: 10
+  view_radius: 20
   view_angle: 361
   targetMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 0
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 784
+    m_Bits: 65536
   visibleTargets: []
   meshResolution: 5
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
-  maskHeight: 1
-  maskCutawayDistance: 5
+  maskHeight: 5
+  maskCutawayDistance: 0
   viewMeshFilter: {fileID: 3468781245936899336}
 --- !u!114 &1427161202541192830
 MonoBehaviour:
@@ -326,21 +325,6 @@ MonoBehaviour:
   playerSpeed: 10
   jumpPower: 0
   canMove: 1
---- !u!114 &979186108046376551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468781246121713200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb033bda87d32d64dbaddb818f115c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ping: {fileID: 0}
-  instruction: {fileID: 0}
-  point_collector: {fileID: 0}
 --- !u!1 &3468781246218969507
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +336,7 @@ GameObject:
   - component: {fileID: 3468781246218969506}
   - component: {fileID: 3468781246218969535}
   - component: {fileID: 3468781246218969504}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: AreaHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
