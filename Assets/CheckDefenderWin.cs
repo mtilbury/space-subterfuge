@@ -41,8 +41,9 @@ public class CheckDefenderWin : MonoBehaviour
             StartCoroutine(DefenderWinScreen());
         }
         */
-        if (jailManagement.GetComponent<JailManagement>().jailedAttackers.Count == 3) { }
+        if (jailManagement.GetComponent<JailManagement>().jailedAttackers.Count >= 3) { }
         {
+            Debug.Log(jailManagement.GetComponent<JailManagement>().jailedAttackers.Count);
             StartCoroutine(DefenderWinScreen());
         }
     }
