@@ -2876,7 +2876,7 @@ PrefabInstance:
     - target: {fileID: 2163586114198291034, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
@@ -9421,7 +9421,6 @@ MonoBehaviour:
   playerSpeed: 15
   jumpPower: 0
   canMove: 1
-  dashing: 0
 --- !u!114 &1442590647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12006,8 +12005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe66585f0ae3dcd4bbf0586ce7fbe7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashTime: 0.5
-  dashSpeed: 20
+  dashTime: 0.2
+  dashSpeed: 40
   dashFraction: 0.1
 --- !u!1 &1760132727
 GameObject:

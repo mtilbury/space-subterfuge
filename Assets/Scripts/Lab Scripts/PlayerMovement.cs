@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour, HasController
     public float jumpPower = 0;
     public bool canMove = true;
     public Gamepad controller { get; set; }
-    public bool dashing = false;
+    //public bool dashing = false;
 
     private Rigidbody rb;
     Vector3 movementInput;
@@ -41,10 +41,7 @@ public class PlayerMovement : MonoBehaviour, HasController
         }
 
         // Get movementInput
-        //if (!dashing)
-        //{
-            Vector3 movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
-       // }
+        Vector3 movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
 
         if (canMove)
         {

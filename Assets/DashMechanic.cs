@@ -5,8 +5,11 @@ using UnityEngine;
 public class DashMechanic : MonoBehaviour
 {
     public float dashTime = .5f;
-    public float dashSpeed = 20.0f;
+    public float dashCooldown = 10.0f;
+    public float dashSpeed = 60.0f;
     public float dashFraction = 0.1f;
+
+    public bool canDash = true;
 
     private PlayerMovement playerMove;
 
@@ -22,10 +25,29 @@ public class DashMechanic : MonoBehaviour
     {
         if (playerMove.controller != null)
         {
-            if (playerMove.controller.aButton.wasPressedThisFrame)
+            if (playerMove.controller.aButton.wasPressedThisFrame && canDash)
             {
-                playerMove.dashing = true;
+                canDash = false;
+                StartCoroutine(Dash());
             }
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        float originalSpeed = playerMove.playerSpeed;
+        playerMove.playerSpeed = dashSpeed;
+        StartCoroutine(DashCooldown());
+
+        yield return new WaitForSeconds(dashTime);
+
+        playerMove.playerSpeed = originalSpeed;
+    }
+
+    private IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
+        Debug.Log("Attacker can dash");
     }
 }
