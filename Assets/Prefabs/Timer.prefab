@@ -107,3 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer_seconds: 60
+  attacker_timer: {fileID: 0}
+  defender_timer: {fileID: 0}
