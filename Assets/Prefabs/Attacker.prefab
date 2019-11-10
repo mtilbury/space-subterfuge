@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3468781245936899334}
   - component: {fileID: 3468781245936899336}
   - component: {fileID: 3468781245936899335}
-  m_Layer: 11
+  m_Layer: 17
   m_Name: View Visualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3468781246024154345}
   - component: {fileID: 3468781246024154344}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 3468781246121713225}
   - component: {fileID: 1427161202541192830}
   - component: {fileID: 979186108046376551}
-  m_Layer: 23
+  m_Layer: 10
   m_Name: Attacker
   m_TagString: Attacker
   m_Icon: {fileID: 0}
@@ -300,16 +300,16 @@ MonoBehaviour:
   view_angle: 361
   targetMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 0
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 784
+    m_Bits: 65536
   visibleTargets: []
   meshResolution: 5
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
-  maskHeight: 1
-  maskCutawayDistance: 5
+  maskHeight: 2.5
+  maskCutawayDistance: 0
   viewMeshFilter: {fileID: 3468781245936899336}
 --- !u!114 &1427161202541192830
 MonoBehaviour:
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 3468781246218969506}
   - component: {fileID: 3468781246218969535}
   - component: {fileID: 3468781246218969504}
-  m_Layer: 11
+  m_Layer: 17
   m_Name: AreaHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
