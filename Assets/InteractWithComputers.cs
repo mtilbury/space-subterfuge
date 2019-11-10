@@ -10,6 +10,10 @@ public class InteractWithComputers : MonoBehaviour
     public GameObject ping;
     public Text instruction;
     public CheckAttackerWin point_collector;
+    public float ping_scale = 1.0f;
+
+    public bool inTutorial = false;
+    public int id = 1;
 
     private void Start()
     {
@@ -38,7 +42,7 @@ public class InteractWithComputers : MonoBehaviour
                 GameObject spawned_ping = GameObject.Instantiate(ping);
                 spawned_ping.transform.position = transform.position;
                 spawned_ping.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
-                spawned_ping.transform.localScale = new Vector3(5, 5, 5);
+                spawned_ping.transform.localScale = Vector3.one * ping_scale;
 
                 // Disable instruction text
                 instruction.enabled = false;
@@ -48,6 +52,12 @@ public class InteractWithComputers : MonoBehaviour
 
                 // Add point
                 point_collector.AddPoint();
+
+                // If in tutorial, let manager know
+                if (inTutorial)
+                {
+                    TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.computer, id);
+                }
             }
         }
     }
