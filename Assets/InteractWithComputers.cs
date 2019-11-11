@@ -34,7 +34,7 @@ public class InteractWithComputers : MonoBehaviour
         if (other.CompareTag("Computer"))
         {
             // Check if A was pressed
-            if (player_mov.controller.aButton.wasPressedThisFrame)
+            if (player_mov.controller.bButton.wasPressedThisFrame)
             {
                 // TODO: Add one to player score
 

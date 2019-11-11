@@ -352,13 +352,13 @@ GameObject:
   - component: {fileID: 3468781246218969506}
   - component: {fileID: 3468781246218969535}
   - component: {fileID: 3468781246218969504}
-  m_Layer: 17
+  m_Layer: 9
   m_Name: AreaHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3468781246218969506
 Transform:
   m_ObjectHideFlags: 0
@@ -367,8 +367,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3468781246218969507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 5, y: 0.1, z: 5}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 3468781246121713228}
   m_RootOrder: 1
@@ -398,7 +398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 54a6f321641e745d6b74dc79c52d553e, type: 2}
+  - {fileID: 2100000, guid: 78a35ed038d784ed28bf0a261012642d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
