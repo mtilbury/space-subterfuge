@@ -25,7 +25,7 @@ public class DashMechanic : MonoBehaviour
     {
         if (playerMove.controller != null)
         {
-            if (playerMove.controller.aButton.wasPressedThisFrame && canDash)
+            if (playerMove.controller.bButton.wasPressedThisFrame && canDash)
             {
                 canDash = false;
                 StartCoroutine(Dash());
