@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour, HasController
     public float jumpPower = 0;
     public bool canMove = true;
     public Gamepad controller { get; set; }
+    //public bool dashing = false;
 
     private Rigidbody rb;
     Vector3 movementInput;
