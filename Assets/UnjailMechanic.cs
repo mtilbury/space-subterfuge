@@ -71,7 +71,7 @@ public class UnjailMechanic : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Remove instruction
-        if (other.CompareTag("Attacker"))
+        if (other.CompareTag("Jail Gate"))
         {
             unjailInstruction.enabled = false;
         }

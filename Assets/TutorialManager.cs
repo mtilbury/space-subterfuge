@@ -9,17 +9,19 @@ public class TutorialManager : MonoBehaviour
     {
         public int computer;
         public int jail;
+        public int door;
         public int dash;
 
-        public Tasks(int c, int j, int d)
+        public Tasks(int c, int j, int b, int d)
         {
             computer = c;
             jail = j;
+            door = b;
             dash = d;
         }
     }
 
-    public Tasks tasks = new Tasks(0, 1, 2);
+    public Tasks tasks = new Tasks(0, 1, 2, 3);
 
     [System.Serializable]
     public class Task
@@ -31,6 +33,7 @@ public class TutorialManager : MonoBehaviour
 
     public Task computer_task;
     public Task jail_task;
+    public Task door_task;
     public Task dash_task;
 
     public static TutorialManager instance;
@@ -61,6 +64,7 @@ public class TutorialManager : MonoBehaviour
         {
             computer_task,
             jail_task,
+            door_task,
             dash_task
         };
 
@@ -70,7 +74,7 @@ public class TutorialManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playersWhoSucceededCurrentTask.Count == 2)
+        if(playersWhoSucceededCurrentTask.Count == 3)
         {
             // Delete walls
             task_walls[current_task].attacker1_wall.SetActive(false);
@@ -86,6 +90,11 @@ public class TutorialManager : MonoBehaviour
                 UIAlertManager.instance.AddToQueue("If you get caught, you'll be sent to jail. Press X to free other attackers.");
             }
 
+            if(current_task == tasks.door)
+            {
+                UIAlertManager.instance.AddToQueue("Hit a button to open a door with 'A'");
+            }
+
             if(current_task == tasks.dash)
             {
                 UIAlertManager.instance.AddToQueue("Press B to do a dash!");
@@ -94,7 +103,7 @@ public class TutorialManager : MonoBehaviour
 
         }
 
-        if(current_task > 2)
+        if(current_task > tasks.dash)
         {
             // Done
             SceneManager.LoadScene(1);
