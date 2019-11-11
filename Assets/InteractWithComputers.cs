@@ -57,12 +57,14 @@ public class InteractWithComputers : MonoBehaviour
     private IEnumerator Stealing(Collider other)
     {
         _currentTime = 0.0f;
+        player_mov.canMove = false;
         while (_currentTime < stealTime)
         {
             _currentTime += Time.deltaTime;
             if (!player_mov.controller.aButton.isPressed)
             {
                 _currentTime = 0.0f;
+                player_mov.canMove = true;
                 StopCoroutine(_stealing);
             }
             yield return null;
@@ -102,5 +104,8 @@ public class InteractWithComputers : MonoBehaviour
 
         // Reset timer
         _currentTime = 0.0f;
+
+        // Let the player move again
+        player_mov.canMove = true;
     }
 }
