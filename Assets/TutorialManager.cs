@@ -70,7 +70,7 @@ public class TutorialManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playersWhoSucceededCurrentTask.Count == 3)
+        if(playersWhoSucceededCurrentTask.Count == 2)
         {
             // Delete walls
             task_walls[current_task].attacker1_wall.SetActive(false);

@@ -15,6 +15,9 @@ public class UnjailMechanic : MonoBehaviour
 
     public Text unjailInstruction;
 
+    public bool inTutorial = false;
+    public int id = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +56,12 @@ public class UnjailMechanic : MonoBehaviour
                         temp.transform.position = jailExit.transform.position;
                         StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
+
+                        // If in tutorial, let manager know
+                        if (inTutorial)
+                        {
+                            TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.jail, id);
+                        }
                     }
                 }
             }
