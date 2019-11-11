@@ -64,7 +64,7 @@ public class TutorialManager : MonoBehaviour
             dash_task
         };
 
-        UIAlertManager.instance.AddToQueue("Your goal is to hack computers and avoid gettin caught.");
+        UIAlertManager.instance.AddToQueue("Your goal is to hack computers and avoid getting caught.");
     }
 
     // Update is called once per frame
@@ -79,6 +79,18 @@ public class TutorialManager : MonoBehaviour
 
             current_task++;
             playersWhoSucceededCurrentTask.Clear();
+
+            if(current_task == tasks.jail)
+            {
+                // Display jail text
+                UIAlertManager.instance.AddToQueue("If you get caught, you'll be sent to jail. Press X to free other attackers.");
+            }
+
+            if(current_task == tasks.dash)
+            {
+                UIAlertManager.instance.AddToQueue("Press B to do a dash!");
+                UIAlertManager.instance.AddToQueue("Press B to do a dash!");
+            }
 
         }
 

@@ -2531,7 +2531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_alert: {fileID: 1928345687}
-  alert_time: 3
+  alert_time: 8
 --- !u!1001 &482134927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2790,6 +2790,23 @@ MonoBehaviour:
   unjailInstruction: {fileID: 321733153}
   inTutorial: 1
   id: 2
+--- !u!114 &498115694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498115691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe66585f0ae3dcd4bbf0586ce7fbe7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashTime: 0.5
+  dashCooldown: 10
+  dashSpeed: 60
+  dashFraction: 0.1
+  canDash: 1
 --- !u!1001 &515291097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5906,7 +5923,7 @@ PrefabInstance:
     - target: {fileID: 3468781246121713225, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1427161202541192830, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
@@ -6226,7 +6243,7 @@ PrefabInstance:
     - target: {fileID: 3468781246121713225, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1427161202541192830, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
@@ -6638,6 +6655,23 @@ MonoBehaviour:
   unjailInstruction: {fileID: 1562079787}
   inTutorial: 1
   id: 3
+--- !u!114 &1381664727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381664724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe66585f0ae3dcd4bbf0586ce7fbe7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashTime: 0.5
+  dashCooldown: 10
+  dashSpeed: 60
+  dashFraction: 0.1
+  canDash: 1
 --- !u!1 &1437567977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4901199678554495907, guid: 2216c9cffdf65204fb0a30593686efe1,
@@ -8588,6 +8622,23 @@ MonoBehaviour:
   unjailInstruction: {fileID: 1339829255}
   inTutorial: 1
   id: 1
+--- !u!114 &1783727484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783727481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe66585f0ae3dcd4bbf0586ce7fbe7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashTime: 0.5
+  dashCooldown: 10
+  dashSpeed: 60
+  dashFraction: 0.1
+  canDash: 1
 --- !u!1001 &1786185222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9425,7 +9476,7 @@ PrefabInstance:
     - target: {fileID: 3468781246121713225, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1427161202541192830, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
@@ -9617,7 +9668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 1, y: -1}
+  m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
 --- !u!114 &1928345687
 MonoBehaviour:
