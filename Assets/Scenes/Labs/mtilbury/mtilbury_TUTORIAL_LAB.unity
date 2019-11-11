@@ -864,6 +864,7 @@ MonoBehaviour:
     attacker1_wall: {fileID: 660168625}
     attacker2_wall: {fileID: 717924865}
     attacker3_wall: {fileID: 1961172522}
+  attackersNeeded: 3
 --- !u!1001 &76352296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4417,6 +4418,7 @@ MonoBehaviour:
   captureDoor: {fileID: 640734842}
   doorDoor: {fileID: 1306599483}
   teleportDoor: {fileID: 1306599483}
+  tutorialFinished: 0
 --- !u!1001 &482134927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9840,12 +9842,12 @@ PrefabInstance:
         type: 3}
       propertyPath: attacker1
       value: 
-      objectReference: {fileID: 498115691}
+      objectReference: {fileID: 1783727481}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker2
       value: 
-      objectReference: {fileID: 1381664724}
+      objectReference: {fileID: 498115691}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker3

@@ -42,6 +42,8 @@ public class TutorialManager : MonoBehaviour
     private int current_task;
     private List<Task> task_walls;
 
+    public int attackersNeeded = 3;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -74,7 +76,7 @@ public class TutorialManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playersWhoSucceededCurrentTask.Count == 3)
+        if(playersWhoSucceededCurrentTask.Count == attackersNeeded)
         {
             // Delete walls
             task_walls[current_task].attacker1_wall.SetActive(false);
