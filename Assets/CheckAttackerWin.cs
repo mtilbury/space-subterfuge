@@ -34,6 +34,6 @@ public class CheckAttackerWin : MonoBehaviour
         AttackersWinText.enabled = true;
         DefenderLoseText.enabled = true;
         yield return new WaitForSeconds(5.0f);
-        SceneManager.LoadScene(0); // Go to menu
+        SceneManager.LoadScene(2); // Go to menu
     }
 }

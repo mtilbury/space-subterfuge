@@ -15216,6 +15216,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5900663282128982943, guid: e3c230eefd752be44ac940a39eecb42e,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.73
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c230eefd752be44ac940a39eecb42e, type: 3}
 --- !u!4 &1684933590 stripped
@@ -16190,7 +16195,8 @@ PrefabInstance:
       propertyPath: freezeInstruction
       value: 
       objectReference: {fileID: 389457050}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6632079366649608925, guid: 5ba11a1d72a1109488e0948eb65bff44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5ba11a1d72a1109488e0948eb65bff44, type: 3}
 --- !u!4 &1786185223 stripped
 Transform:
