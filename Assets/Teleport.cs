@@ -8,6 +8,8 @@ public class Teleport : MonoBehaviour
     public GameObject end;
     public bool canTeleport = true;
 
+    public bool inTutorialDefender = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,10 @@ public class Teleport : MonoBehaviour
             {
                 canTeleport = false;
                 other.transform.position = end.transform.position;
+                if (inTutorialDefender)
+                {
+                    TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.teleport);
+                }
             }
         }
     }

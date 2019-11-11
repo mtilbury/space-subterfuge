@@ -13,6 +13,9 @@ public class DashMechanic : MonoBehaviour
 
     private PlayerMovement playerMove;
 
+    public bool inTutorial = false;
+    public int id = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,10 @@ public class DashMechanic : MonoBehaviour
             {
                 canDash = false;
                 StartCoroutine(Dash());
+                if (inTutorial)
+                {
+                    TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.dash, id);
+                }
             }
         }
     }

@@ -13,6 +13,8 @@ public class JailMechanic : MonoBehaviour
 
     private PlayerMovement playerMove;
 
+    public bool inTutorialDefender = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +56,11 @@ public class JailMechanic : MonoBehaviour
                     jail.jailedAttackers.Enqueue(other.gameObject);
                     Debug.Log("Player was jailed");
                     Debug.Log(jail.jailedAttackers.Count);
+
+                    if (inTutorialDefender)
+                    {
+                        TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
+                    }
                 }
             }
         }
