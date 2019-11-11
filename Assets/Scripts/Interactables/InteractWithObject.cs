@@ -19,6 +19,7 @@ public class InteractWithObject : MonoBehaviour
     bool onCoolDown;
 
     public bool inTutorial = false;
+    public bool inTutorialDefender = false;
     public int id = 1;
 
     private void Start()
@@ -79,6 +80,10 @@ public class InteractWithObject : MonoBehaviour
                     if (inTutorial)
                     {
                         TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.door, id);
+                    }
+                    if (inTutorialDefender)
+                    {
+                        TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.door);
                     }
                 }
             }

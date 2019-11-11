@@ -105,8 +105,11 @@ public class TutorialManager : MonoBehaviour
 
         if(current_task > tasks.dash)
         {
-            // Done
-            SceneManager.LoadScene(1);
+            if (TutorialManagerDefender.instance.tutorialFinished)
+            {
+                // Done
+                SceneManager.LoadScene(2);
+            }
         }
     }
 
