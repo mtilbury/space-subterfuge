@@ -864,7 +864,7 @@ MonoBehaviour:
     attacker1_wall: {fileID: 660168625}
     attacker2_wall: {fileID: 717924865}
     attacker3_wall: {fileID: 1961172522}
-  attackersNeeded: 3
+  attackersNeeded: 1
 --- !u!1001 &76352296
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -43,6 +43,7 @@ public class CheckDefenderWin : MonoBehaviour
             StartCoroutine(DefenderWinScreen());
         }
         */
+        jailCount = jailManagement.GetComponent<JailManagement>().jailedAttackers.Count;
         if (jailCount == 3)
         {
             Debug.Log(jailCount);
@@ -55,6 +56,6 @@ public class CheckDefenderWin : MonoBehaviour
         DefenderWinText.enabled = true;
         AttackersLoseText.enabled = true;
         yield return new WaitForSeconds(5.0f);
-        SceneManager.LoadScene(0); // Go to menu
+        SceneManager.LoadScene(2); // Go to menu
     }
 }
