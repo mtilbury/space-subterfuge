@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 19356897}
   - component: {fileID: 19356899}
   - component: {fileID: 19356898}
-  m_Layer: 5
+  m_Layer: 21
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,6 +406,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
+    - target: {fileID: 1790668003032725403, guid: 5bb016b1d34641a40ba877f1f342d5db,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1902161626}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bb016b1d34641a40ba877f1f342d5db, type: 3}
 --- !u!4 &50659781 stripped
@@ -673,7 +678,7 @@ GameObject:
   - component: {fileID: 84946494}
   - component: {fileID: 84946496}
   - component: {fileID: 84946495}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,6 +1639,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 969334313}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &182689657 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+    type: 3}
+  m_PrefabInstance: {fileID: 1572359696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &210575306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1719,7 +1730,7 @@ PrefabInstance:
     - target: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 724769
+      value: 1773345
       objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -1844,7 +1855,7 @@ PrefabInstance:
     - target: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 724769
+      value: 1773345
       objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -2460,6 +2471,11 @@ PrefabInstance:
       propertyPath: targetMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: maskHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: m_IsActive
@@ -2470,11 +2486,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713229, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+    - target: {fileID: 4625803906486067832, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
-      propertyPath: m_Mesh
+      propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 182689657}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
 --- !u!4 &296773071 stripped
@@ -3196,6 +3212,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
+    - target: {fileID: 1790668003032725403, guid: 5bb016b1d34641a40ba877f1f342d5db,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 948387640}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bb016b1d34641a40ba877f1f342d5db, type: 3}
 --- !u!4 &371154826 stripped
@@ -3757,7 +3778,7 @@ GameObject:
   - component: {fileID: 511574603}
   - component: {fileID: 511574605}
   - component: {fileID: 511574604}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4390,7 +4411,7 @@ GameObject:
   - component: {fileID: 568060391}
   - component: {fileID: 568060390}
   - component: {fileID: 568060389}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: ButtonPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5913,7 +5934,7 @@ GameObject:
   - component: {fileID: 718277846}
   - component: {fileID: 718277845}
   - component: {fileID: 718277844}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: ButtonPrompt (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6457,7 +6478,7 @@ GameObject:
   - component: {fileID: 780217719}
   - component: {fileID: 780217721}
   - component: {fileID: 780217720}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7023,7 +7044,7 @@ GameObject:
   - component: {fileID: 828182051}
   - component: {fileID: 828182053}
   - component: {fileID: 828182052}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7258,7 +7279,7 @@ GameObject:
   - component: {fileID: 860115272}
   - component: {fileID: 860115271}
   - component: {fileID: 860115270}
-  m_Layer: 5
+  m_Layer: 21
   m_Name: ButtonPrompt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7893,6 +7914,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2216c9cffdf65204fb0a30593686efe1, type: 3}
+--- !u!20 &948387640 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  m_PrefabInstance: {fileID: 222631007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &968364262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8896,6 +8923,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4305550855402056811, guid: 2216c9cffdf65204fb0a30593686efe1,
     type: 3}
   m_PrefabInstance: {fileID: 1078211957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1050032623 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545817178}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1059814966
 PrefabInstance:
@@ -10216,7 +10249,7 @@ GameObject:
   - component: {fileID: 1229208825}
   - component: {fileID: 1229208824}
   - component: {fileID: 1229208823}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: ButtonPrompt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10740,7 +10773,7 @@ MonoBehaviour:
   ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
   interactPrompt: {fileID: 860115269}
   pingHeight: 8
-  pingScale: 5
+  pingScale: 3
   coolDown: 1
 --- !u!4 &1291333484 stripped
 Transform:
@@ -11162,7 +11195,7 @@ GameObject:
   - component: {fileID: 1307595616}
   - component: {fileID: 1307595618}
   - component: {fileID: 1307595617}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11418,7 +11451,7 @@ GameObject:
   - component: {fileID: 1358011398}
   - component: {fileID: 1358011400}
   - component: {fileID: 1358011399}
-  m_Layer: 5
+  m_Layer: 21
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11924,6 +11957,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1790668003032725403, guid: 5bb016b1d34641a40ba877f1f342d5db,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1050032623}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bb016b1d34641a40ba877f1f342d5db, type: 3}
 --- !u!4 &1391391586 stripped
@@ -12594,16 +12632,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1558817475894252959, guid: 8b469b18ceb444f2cb7ba987b5506761,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7e8e30dde8cf948a8a826dd8c69682ae, type: 2}
     - target: {fileID: 1499077392802127399, guid: 8b469b18ceb444f2cb7ba987b5506761,
         type: 3}
       propertyPath: isOneUse
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1558817475894252959, guid: 8b469b18ceb444f2cb7ba987b5506761,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e8e30dde8cf948a8a826dd8c69682ae, type: 2}
     - target: {fileID: 351194104910242448, guid: 8b469b18ceb444f2cb7ba987b5506761,
         type: 3}
       propertyPath: m_RootOrder
@@ -13186,7 +13224,7 @@ PrefabInstance:
     - target: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 724769
+      value: 1773345
       objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -13321,7 +13359,7 @@ PrefabInstance:
     - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 855841
+      value: 2952993
       objectReference: {fileID: 0}
     - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
@@ -15046,6 +15084,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1898815977}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1902161626 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  m_PrefabInstance: {fileID: 210575306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1902574503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4305550855402056811, guid: 2216c9cffdf65204fb0a30593686efe1,
@@ -16017,7 +16061,7 @@ GameObject:
   - component: {fileID: 2107758261}
   - component: {fileID: 2107758263}
   - component: {fileID: 2107758262}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

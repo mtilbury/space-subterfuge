@@ -30,8 +30,8 @@ TagManager:
   - AttackerMask
   - DefenderMask
   - ReverseReveal
-  - 
-  - 
+  - AttackerUI
+  - DefenderUI
   - 
   - 
   - 
