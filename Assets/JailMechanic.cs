@@ -66,6 +66,18 @@ public class JailMechanic : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Attacker"))
+        {
+            JailManagement jail = jailManagement.GetComponent<JailManagement>();
+            collision.gameObject.transform.position = jailSpawn.transform.position;
+            jail.jailedAttackers.Enqueue(collision.gameObject);
+            Debug.Log("Player was jailed");
+            Debug.Log(jail.jailedAttackers.Count);
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         // Remove instruction
