@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 4753963118041648147}
   m_Layer: 0
   m_Name: AttackerCamera
-  m_TagString: MainCamera
+  m_TagString: AttackerMainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

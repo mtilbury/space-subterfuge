@@ -9,6 +9,8 @@ TagManager:
   - Defender
   - Interact
   - Jail Gate
+  - AttackerMainCamera
+  - DefenderMainCamera
   layers:
   - Default
   - TransparentFX

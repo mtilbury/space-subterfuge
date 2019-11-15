@@ -1649,6 +1649,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &188799259 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4398199867530223724, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  m_PrefabInstance: {fileID: 222631007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &194559548 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4398199867530223724, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545817178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &210575306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1669,7 +1681,7 @@ PrefabInstance:
     - target: {fileID: 8832440671287929787, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929787, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -1761,6 +1773,11 @@ PrefabInstance:
       propertyPath: offset.z
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 7468212291743206627, guid: e2ae6d90c5b919142bb019448dbbd317,
+        type: 3}
+      propertyPath: m_Name
+      value: Attacker3Canvas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ae6d90c5b919142bb019448dbbd317, type: 3}
 --- !u!4 &210575307 stripped
@@ -1789,7 +1806,7 @@ PrefabInstance:
     - target: {fileID: 8832440671287929787, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929787, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -1885,6 +1902,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset.z
       value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468212291743206627, guid: e2ae6d90c5b919142bb019448dbbd317,
+        type: 3}
+      propertyPath: m_Name
+      value: Attacker2Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ae6d90c5b919142bb019448dbbd317, type: 3}
@@ -1995,6 +2017,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
@@ -3114,6 +3141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: LocationMarker
       objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
@@ -5310,6 +5342,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: LocationMarker
+      objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
       propertyPath: m_Layer
@@ -6001,6 +6038,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
       propertyPath: m_Layer
@@ -6470,6 +6512,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
@@ -8288,6 +8335,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 854076400}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &857288504 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4398199867530223724, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  m_PrefabInstance: {fileID: 210575306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &858937642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8389,6 +8442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
@@ -11156,6 +11214,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: LocationMarker
+      objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
       propertyPath: m_Layer
@@ -12972,6 +13035,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
       propertyPath: m_Layer
@@ -14191,6 +14259,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
       propertyPath: m_Layer
@@ -14566,7 +14639,7 @@ PrefabInstance:
     - target: {fileID: 8832440671287929787, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929787, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -14662,6 +14735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset.z
       value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468212291743206627, guid: e2ae6d90c5b919142bb019448dbbd317,
+        type: 3}
+      propertyPath: m_Name
+      value: Attacker1Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ae6d90c5b919142bb019448dbbd317, type: 3}
@@ -14838,6 +14916,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefenderCamera - Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2952993
+      objectReference: {fileID: 0}
+    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8726858392366336771, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14846,7 +14944,7 @@ PrefabInstance:
     - target: {fileID: 8726858392366336771, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.38
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8726858392366336771, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
@@ -14907,26 +15005,6 @@ PrefabInstance:
         type: 3}
       propertyPath: offset.z
       value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 2952993
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: orthographic
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da05e61d378ab94f98dc6e9ade81b64, type: 3}
@@ -16196,6 +16274,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1761076005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1766245634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8446684469660463945, guid: e3c230eefd752be44ac940a39eecb42e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1898815977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1766245635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766245634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScreen: 6
+  targetCamera: {fileID: 1006301930}
+  targetCanvas: {fileID: 1020256036}
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  m_edgeBuffer: 50
+  m_innerEdgeBuffer: 0
+  disappearRange: 0.15
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 1, y: 0.5, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 1
+--- !u!114 &1766245636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766245634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScreen: 4
+  targetCamera: {fileID: 243630565}
+  targetCanvas: {fileID: 857288504}
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  m_edgeBuffer: 50
+  m_innerEdgeBuffer: 0
+  disappearRange: 0.2
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 1, y: 0.5, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 1
+--- !u!114 &1766245637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766245634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScreen: 4
+  targetCamera: {fileID: 1498799477}
+  targetCanvas: {fileID: 188799259}
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  m_edgeBuffer: 50
+  m_innerEdgeBuffer: 0
+  disappearRange: 0
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 1, y: 0.5, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 1
+--- !u!114 &1766245638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766245634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScreen: 4
+  targetCamera: {fileID: 603493931}
+  targetCanvas: {fileID: 194559548}
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  m_edgeBuffer: 50
+  m_innerEdgeBuffer: 0
+  disappearRange: 0
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 1, y: 0.5, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 1
 --- !u!1 &1773323277
 GameObject:
   m_ObjectHideFlags: 0
@@ -16404,6 +16584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarkerCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}
@@ -18831,6 +19016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532426198944667751, guid: c3ac82911a84c4d0299431462d9faa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: LocationMarker
       objectReference: {fileID: 0}
     - target: {fileID: 2532426197627373970, guid: c3ac82911a84c4d0299431462d9faa6c,
         type: 3}

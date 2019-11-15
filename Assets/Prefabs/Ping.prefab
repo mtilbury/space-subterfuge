@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 616345545415603852}
   - component: {fileID: 616345545415603854}
   - component: {fileID: 616345545415603855}
+  - component: {fileID: 5598552702852504297}
+  - component: {fileID: 4297688625128124410}
+  - component: {fileID: 1324148615147263569}
+  - component: {fileID: 4844083305547252731}
   m_Layer: 14
   m_Name: Ping
   m_TagString: Untagged
@@ -114,3 +118,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 8
+--- !u!114 &5598552702852504297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616345545415603843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
+    type: 3}
+  targetCanvas: {fileID: 0}
+  onScreenSprite: {fileID: 0}
+  offScreenSprite: {fileID: 0}
+  m_edgeBuffer: 0
+  m_innerEdgeBuffer: 0
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 0
+--- !u!114 &4297688625128124410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616345545415603843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+    type: 3}
+  targetCanvas: {fileID: 0}
+  onScreenSprite: {fileID: 0}
+  offScreenSprite: {fileID: 0}
+  m_edgeBuffer: 0
+  m_innerEdgeBuffer: 0
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 0
+--- !u!114 &1324148615147263569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616345545415603843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
+    type: 3}
+  targetCanvas: {fileID: 0}
+  onScreenSprite: {fileID: 0}
+  offScreenSprite: {fileID: 0}
+  m_edgeBuffer: 0
+  m_innerEdgeBuffer: 0
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 0
+--- !u!114 &4844083305547252731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616345545415603843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 0}
+  targetCanvas: {fileID: 0}
+  onScreenSprite: {fileID: 0}
+  offScreenSprite: {fileID: 0}
+  m_edgeBuffer: 0
+  m_innerEdgeBuffer: 0
+  m_targetIconScale: {x: 1, y: 1, z: 1}
+  PointTarget: 1
+  ShowDebugLines: 0
