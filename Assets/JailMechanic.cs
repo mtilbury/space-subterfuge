@@ -5,85 +5,32 @@ using UnityEngine.UI;
 
 public class JailMechanic : MonoBehaviour
 {
-    public GameObject defender;
     public GameObject jailManagement;
     public GameObject jailSpawn;
 
-    public Text jailInstruction;
-
-    private PlayerMovement playerMove;
+    private JailManagement jail;
 
     public bool inTutorialDefender = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerMove = defender.GetComponent<PlayerMovement>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Attacker"))
-        {
-            if (other.GetComponent<PlayerMovement>().canMove)
-            {
-                // Display instruction
-                jailInstruction.enabled = true;
-            }
-
-        }
+        jail = jailManagement.GetComponent<JailManagement>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Attacker"))
+        if (other.CompareTag("Attacker") && !other.name.Contains("Follower"))
         {
-            Debug.Log("Can jail Attacker");
-            // Check if controller reference exists
-            if (playerMove.controller != null)
-            {
-                // Check if X was pressed
-                if (playerMove.controller.xButton.wasPressedThisFrame)
-                {
-                    JailManagement jail = jailManagement.GetComponent<JailManagement>();
-                    other.gameObject.transform.position = jailSpawn.transform.position;
-                    jail.jailedAttackers.Enqueue(other.gameObject);
-                    Debug.Log("Player was jailed");
-                    Debug.Log(jail.jailedAttackers.Count);
-
-                    if (inTutorialDefender)
-                    {
-                        TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
-                    }
-                }
-            }
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Attacker"))
-        {
-            JailManagement jail = jailManagement.GetComponent<JailManagement>();
-            collision.gameObject.transform.position = jailSpawn.transform.position;
-            jail.jailedAttackers.Enqueue(collision.gameObject);
+            other.transform.position = jailSpawn.transform.position;
+            jail.jailedAttackers.Enqueue(other.gameObject);
             Debug.Log("Player was jailed");
             Debug.Log(jail.jailedAttackers.Count);
-        }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        // Remove instruction
-        if (other.CompareTag("Attacker"))
-        {
-            jailInstruction.enabled = false;
+            if (inTutorialDefender)
+            {
+                TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
+            }
         }
     }
 }
