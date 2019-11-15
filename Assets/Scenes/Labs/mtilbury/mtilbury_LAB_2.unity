@@ -2625,10 +2625,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 1291333477}
   jailManagement: {fileID: 1147318673}
   jailSpawn: {fileID: 2105035014}
-  jailInstruction: {fileID: 0}
   inTutorialDefender: 0
 --- !u!1 &319845685
 GameObject:
@@ -7234,18 +7232,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 764356917}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &764356919 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4566613540974756978, guid: 3b77112f8af0dcc4c88332aea5751dfe,
-    type: 3}
-  m_PrefabInstance: {fileID: 764356917}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &776577357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4305550855402056811, guid: 2216c9cffdf65204fb0a30593686efe1,
@@ -8158,21 +8144,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3311943866573077955, guid: f1cf4ac3b0856e24a861e34812ba4c11,
         type: 3}
@@ -13703,21 +13674,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3311943866573077955, guid: f1cf4ac3b0856e24a861e34812ba4c11,
         type: 3}
       propertyPath: end
@@ -15054,21 +15010,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3311943866573077955, guid: f1cf4ac3b0856e24a861e34812ba4c11,
         type: 3}
       propertyPath: end
@@ -16344,29 +16285,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1786185222}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1786185224 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6632079366649608897, guid: 5ba11a1d72a1109488e0948eb65bff44,
-    type: 3}
-  m_PrefabInstance: {fileID: 1786185222}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1786185225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786185224}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defender: {fileID: 1291333477}
-  jailManagement: {fileID: 1147318673}
-  jailSpawn: {fileID: 2105035014}
-  jailInstruction: {fileID: 764356919}
-  inTutorialDefender: 0
 --- !u!1001 &1805240882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17418,21 +17336,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3311943866573077959, guid: f1cf4ac3b0856e24a861e34812ba4c11,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3311943866573077955, guid: f1cf4ac3b0856e24a861e34812ba4c11,
         type: 3}
