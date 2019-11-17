@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1482939797824823141}
   - component: {fileID: 1482939797824823140}
+  - component: {fileID: 707610870246042252}
   m_Layer: 0
   m_Name: DefenderCaptureHitbox
   m_TagString: Untagged
@@ -44,6 +45,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &707610870246042252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482939797824823142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jailManagement: {fileID: 0}
+  jailSpawn: {fileID: 0}
+  inTutorialDefender: 0
 --- !u!1 &1482939798891013785
 GameObject:
   m_ObjectHideFlags: 0

@@ -56,7 +56,8 @@ public class TutorialManagerDefender : MonoBehaviour
             teleportDoor
         };
 
-        UIAlertManagerDefender.instance.AddToQueue("Your goal is to capture all of the attackers.");
+        UIAlertManagerDefender.instance.AddToQueue("Your goal is to send all the attackers to the jail.");
+        UIAlertManagerDefender.instance.AddToQueue("Press 'X' to capture an attacker.");
     }
 
     // Update is called once per frame
