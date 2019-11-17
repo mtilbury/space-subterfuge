@@ -22,13 +22,13 @@ public class PingArrow : MonoBehaviour
     public Sprite offScreenSprite;
     public Color spriteColor = Color.white;
     [Space]
-    [Range(0, 600)]
+    [Range(0, 100)]
     public float leftLimit;
-    [Range(0, 600)]
+    [Range(0, 100)]
     public float rightLimit;
-    [Range(0, 600)]
+    [Range(0, 100)]
     public float upLimit;
-    [Range(0, 600)]
+    [Range(0, 100)]
     public float downLimit;
 
     [Range(0, 1)]
@@ -111,8 +111,8 @@ public class PingArrow : MonoBehaviour
         
 
         newPos = targetCamera.ViewportToScreenPoint(newPos);
-        newPos.x = Mathf.Clamp(newPos.x, leftLimit, Screen.width - rightLimit);
-        newPos.y = Mathf.Clamp(newPos.y, downLimit, Screen.height - upLimit);
+        newPos.x = Mathf.Clamp(newPos.x, Screen.width * leftLimit / 100, Screen.width * rightLimit / 100);
+        newPos.y = Mathf.Clamp(newPos.y, Screen.width * downLimit / 100, Screen.height * upLimit / 100);
         newPos.z = 0;
         //m_icon.anchoredPosition = newPos;
         //Debug.Log(m_icon.name + newPos);

@@ -1759,7 +1759,7 @@ PrefabInstance:
     - target: {fileID: 4753963118041648147, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: offset.z
-      value: -7
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 4587321283031930805, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -1940,7 +1940,7 @@ PrefabInstance:
     - target: {fileID: 4753963118041648147, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: offset.z
-      value: -7
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 4587321283031930805, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
@@ -9661,72 +9661,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1007326223}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1017325073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8832440671287929790, guid: e2ae6d90c5b919142bb019448dbbd317,
-    type: 3}
-  m_PrefabInstance: {fileID: 1545817178}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1017325076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017325073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1545817179}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &1020256032
 GameObject:
   m_ObjectHideFlags: 0
@@ -11186,6 +11120,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
@@ -11204,83 +11158,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 616345545415603855, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: destroyTime
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: targetScreen
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: targetCanvas
-      value: 
-      objectReference: {fileID: 1020256036}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: onScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc,
-        type: 3}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: offScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4,
-        type: 3}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.b
-      value: 0.91142464
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_edgeBuffer
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: disappearRange
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: ShowDebugLines
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.a
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11288,29 +11165,9 @@ PrefabInstance:
       objectReference: {fileID: 1006301930}
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
-      propertyPath: leftLimit
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: rightLimit
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: upLimit
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: downLimit
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: targetScreen
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: targetCanvas
+      value: 
+      objectReference: {fileID: 1020256036}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11321,73 +11178,6 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1545817180}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: onScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc,
-        type: 3}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: offScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4,
-        type: 3}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: leftLimit
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: rightLimit
-      value: 530
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: upLimit
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: downLimit
-      value: 315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: disappearRange
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11398,88 +11188,6 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 222631009}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: onScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc,
-        type: 3}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: offScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4,
-        type: 3}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: targetScreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: leftLimit
-      value: 530
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: rightLimit
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: upLimit
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: downLimit
-      value: 315
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: disappearRange
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11490,88 +11198,6 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 210575308}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: targetScreen
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: onScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc,
-        type: 3}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: offScreenSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4,
-        type: 3}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: m_targetOffScreenScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: leftLimit
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: rightLimit
-      value: 530
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: disappearRange
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: upLimit
-      value: 315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: downLimit
-      value: 35
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
 --- !u!1 &1147318673 stripped
@@ -15242,16 +14868,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 358240657}
-    - target: {fileID: 4753963118041648147, guid: e2ae6d90c5b919142bb019448dbbd317,
-        type: 3}
-      propertyPath: offset.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753963118041648147, guid: e2ae6d90c5b919142bb019448dbbd317,
-        type: 3}
-      propertyPath: offset.z
-      value: -7
-      objectReference: {fileID: 0}
     - target: {fileID: 4587321283031930805, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -15483,26 +15099,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefenderCamera - Player 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 2952993
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8726858392366336771, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15538,31 +15134,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336771, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726858392366336771, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8660254
-      objectReference: {fileID: 0}
     - target: {fileID: 2653077255860748524, guid: 6da05e61d378ab94f98dc6e9ade81b64,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1291333477}
-    - target: {fileID: 2653077255860748524, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: offset.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2653077255860748524, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-        type: 3}
-      propertyPath: offset.z
-      value: -15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da05e61d378ab94f98dc6e9ade81b64, type: 3}
 --- !u!4 &1572359697 stripped
@@ -16465,72 +16041,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 438637971}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1715863072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8726858392366336780, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-    type: 3}
-  m_PrefabInstance: {fileID: 1572359696}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1715863076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715863072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1572359697}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!4 &1729303836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3721666130408012460, guid: e3c230eefd752be44ac940a39eecb42e,
