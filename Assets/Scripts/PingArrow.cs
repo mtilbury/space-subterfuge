@@ -15,7 +15,9 @@ public class PingArrow : MonoBehaviour
 
     [Space]
 
+    public GameObject pingIcon;
     private RectTransform m_icon;
+    private Transform typeIcon;
     private Image m_iconImage;
 
     public Sprite onScreenSprite;
@@ -62,6 +64,7 @@ public class PingArrow : MonoBehaviour
 
     private void InstainateTargetIcon()
     {
+        /*
         m_icon = new GameObject().AddComponent<RectTransform>();
         m_icon.transform.SetParent(targetCanvas.transform);
         m_icon.localScale = m_targetIconScale;
@@ -69,13 +72,24 @@ public class PingArrow : MonoBehaviour
         m_iconImage = m_icon.gameObject.AddComponent<Image>();
         m_iconImage.sprite = onScreenSprite;
         m_iconImage.color = spriteColor;
+        */
+
+        m_icon = Instantiate(pingIcon).GetComponent<RectTransform>();
+        m_icon.transform.SetParent(targetCanvas.transform);
+        m_icon.localScale = m_targetIconScale;
+        m_icon.name = name + ": OTI icon";
+        m_iconImage = m_icon.gameObject.GetComponent<Image>();
+        m_iconImage.sprite = onScreenSprite;
+        m_iconImage.color = spriteColor;
+
+        typeIcon = m_icon.GetChild(0);
     }
 
     private void UpdateTargetPosition()
     {
         Vector3 newPos = transform.position;
         newPos = targetCamera.WorldToViewportPoint(newPos);
-        Debug.Log(newPos);
+        //Debug.Log(newPos);
         //Simple check if the target object is out of the screen or inside
      
 
@@ -124,6 +138,8 @@ public class PingArrow : MonoBehaviour
             //Show the target off screen icon
             m_iconImage.sprite = offScreenSprite;
             m_icon.localScale = m_targetOffScreenScale;
+
+            typeIcon.gameObject.SetActive(true);
             if (PointTarget)
             {
                 //Rotate the sprite towards the target object
@@ -141,6 +157,9 @@ public class PingArrow : MonoBehaviour
             m_icon.transform.eulerAngles = new Vector3(0, 0, 0);
             m_iconImage.sprite = onScreenSprite;
             m_icon.localScale = m_targetIconScale;
+
+            typeIcon.gameObject.SetActive(false);
+
         }
 
     }
