@@ -2607,27 +2607,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 532004149}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &312874338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1482939797824823142, guid: 2e91e4058903488439134c823b75461b,
-    type: 3}
-  m_PrefabInstance: {fileID: 320409443}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &312874341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312874338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jailManagement: {fileID: 1147318673}
-  jailSpawn: {fileID: 2105035014}
-  inTutorialDefender: 0
 --- !u!1 &319845685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2709,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1291333484}
     m_Modifications:
+    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: jailManagement
+      value: 
+      objectReference: {fileID: 1147318673}
+    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: jailSpawn
+      value: 
+      objectReference: {fileID: 2105035014}
     - target: {fileID: 1482939798891013785, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
       propertyPath: m_Name
@@ -18856,6 +18845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c289aeecd7ddf4e46b65f0571a5e8725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inMenu: 1
 --- !u!1001 &2145593691
 PrefabInstance:
   m_ObjectHideFlags: 0

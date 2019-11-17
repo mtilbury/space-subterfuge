@@ -5,6 +5,7 @@ using UnityEngine;
 public class DefenderCaptureAttack : MonoBehaviour
 {
     public float rotationSpeed = 200f;
+    public PlayerMovement defenderMov;
 
     public float rotationAngleStart = -30f;
     public float rotationAngleEnd = 30f;
@@ -16,6 +17,13 @@ public class DefenderCaptureAttack : MonoBehaviour
         transform.localPosition = new Vector3(0, 0, returnZPos);
         transform.localRotation = Quaternion.Euler(0, 0, 0);
         StartCoroutine(RotateInRange());
+
+        defenderMov.playerSpeed = defenderMov.playerSpeed / 2.0f;
+    }
+
+    private void OnDisable()
+    {
+        defenderMov.playerSpeed = defenderMov.playerSpeed * 2.0f;
     }
 
     private IEnumerator RotateInRange()
