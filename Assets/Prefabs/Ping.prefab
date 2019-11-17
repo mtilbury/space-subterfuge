@@ -130,16 +130,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 8832440671287929784, guid: e2ae6d90c5b919142bb019448dbbd317,
-    type: 3}
+  targetScreen: 3
+  targetCamera: {fileID: 0}
   targetCanvas: {fileID: 0}
-  onScreenSprite: {fileID: 0}
-  offScreenSprite: {fileID: 0}
-  m_edgeBuffer: 0
-  m_innerEdgeBuffer: 0
-  m_targetIconScale: {x: 1, y: 1, z: 1}
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  spriteColor: {r: 0, g: 1, b: 0.91142464, a: 1}
+  leftLimit: 75
+  rightLimit: 75
+  upLimit: 75
+  downLimit: 75
+  disappearRange: 0.15
+  m_targetIconScale: {x: 0.5, y: 0.5, z: 1}
+  m_targetOffScreenScale: {x: 0.25, y: 0.5, z: 1}
   PointTarget: 1
-  ShowDebugLines: 0
+  ShowDebugLines: 1
 --- !u!114 &4297688625128124410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,14 +157,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-    type: 3}
+  targetScreen: 0
+  targetCamera: {fileID: 0}
   targetCanvas: {fileID: 0}
-  onScreenSprite: {fileID: 0}
-  offScreenSprite: {fileID: 0}
-  m_edgeBuffer: 0
-  m_innerEdgeBuffer: 0
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  spriteColor: {r: 1, g: 0, b: 0, a: 1}
+  leftLimit: 35
+  rightLimit: 530
+  upLimit: 35
+  downLimit: 315
+  disappearRange: 0.15
   m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 0.5, y: 1, z: 1}
   PointTarget: 1
   ShowDebugLines: 0
 --- !u!114 &1324148615147263569
@@ -174,14 +184,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 8726858392366336770, guid: 6da05e61d378ab94f98dc6e9ade81b64,
-    type: 3}
+  targetScreen: 1
+  targetCamera: {fileID: 0}
   targetCanvas: {fileID: 0}
-  onScreenSprite: {fileID: 0}
-  offScreenSprite: {fileID: 0}
-  m_edgeBuffer: 0
-  m_innerEdgeBuffer: 0
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  spriteColor: {r: 1, g: 0, b: 0, a: 1}
+  leftLimit: 530
+  rightLimit: 35
+  upLimit: 35
+  downLimit: 315
+  disappearRange: 0.15
   m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 0.5, y: 1, z: 1}
   PointTarget: 1
   ShowDebugLines: 0
 --- !u!114 &4844083305547252731
@@ -196,12 +211,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836c10fe7d0e34746a1309755596f38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetScreen: 2
   targetCamera: {fileID: 0}
   targetCanvas: {fileID: 0}
-  onScreenSprite: {fileID: 0}
-  offScreenSprite: {fileID: 0}
-  m_edgeBuffer: 0
-  m_innerEdgeBuffer: 0
+  onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
+  offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
+  spriteColor: {r: 1, g: 0, b: 0, a: 1}
+  leftLimit: 35
+  rightLimit: 530
+  upLimit: 315
+  downLimit: 35
+  disappearRange: 0.15
   m_targetIconScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 0.5, y: 1, z: 1}
   PointTarget: 1
   ShowDebugLines: 0
