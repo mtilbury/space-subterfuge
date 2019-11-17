@@ -11158,6 +11158,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603855, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: destroyTime
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11168,6 +11173,32 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1020256036}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6518228894752935684, guid: d38ffb138a3e747a0b7f3795a3d77f97,
+        type: 3}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetIconScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetIconScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11178,6 +11209,27 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1545817180}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6518228894752935684, guid: d38ffb138a3e747a0b7f3795a3d77f97,
+        type: 3}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetIconScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11188,6 +11240,27 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 222631009}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6518228894752935684, guid: d38ffb138a3e747a0b7f3795a3d77f97,
+        type: 3}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetIconScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: targetCamera
@@ -11198,6 +11271,27 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 210575308}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6518228894752935684, guid: d38ffb138a3e747a0b7f3795a3d77f97,
+        type: 3}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetIconScale.x
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
 --- !u!1 &1147318673 stripped
@@ -13022,59 +13116,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1323524544}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1333908778
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1333908780}
-  - component: {fileID: 1333908779}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1333908779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333908778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88653dc62f5e044c38b898101a7bd4a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameras:
-  - {fileID: 603493931}
-  - {fileID: 1498799477}
-  - {fileID: 243630565}
-  - {fileID: 1006301930}
-  canvases:
-  - {fileID: 1545817180}
-  - {fileID: 222631009}
-  - {fileID: 210575308}
-  - {fileID: 1020256036}
---- !u!4 &1333908780
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333908778}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1367702716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14768,6 +14809,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1980240496}
     m_Modifications:
+    - target: {fileID: 6442608092625166647, guid: e2ae6d90c5b919142bb019448dbbd317,
+        type: 3}
+      propertyPath: volumeLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442608092625166647, guid: e2ae6d90c5b919142bb019448dbbd317,
+        type: 3}
+      propertyPath: m_ShowToolkit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442608092625166647, guid: e2ae6d90c5b919142bb019448dbbd317,
+        type: 3}
+      propertyPath: m_ShowCustomSorter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8832440671287929790, guid: e2ae6d90c5b919142bb019448dbbd317,
         type: 3}
       propertyPath: m_Name
@@ -16362,6 +16418,7 @@ MonoBehaviour:
   targetScreen: 3
   targetCamera: {fileID: 1006301930}
   targetCanvas: {fileID: 1020256036}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 1, g: 0, b: 0, a: 1}
@@ -16389,6 +16446,7 @@ MonoBehaviour:
   targetScreen: 0
   targetCamera: {fileID: 603493931}
   targetCanvas: {fileID: 1545817180}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 1, g: 1, b: 1, a: 1}
@@ -16416,6 +16474,7 @@ MonoBehaviour:
   targetScreen: 1
   targetCamera: {fileID: 1498799477}
   targetCanvas: {fileID: 229282213}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
@@ -16443,6 +16502,7 @@ MonoBehaviour:
   targetScreen: 2
   targetCamera: {fileID: 603493931}
   targetCanvas: {fileID: 229282213}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
@@ -19954,3 +20014,112 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79ed679d615e34147a623fb61158bd53, type: 3}
+--- !u!1001 &8782138963471338923
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8782138964620499073, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_Name
+      value: PingManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499079, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: cameras.Array.data[0]
+      value: 
+      objectReference: {fileID: 603493931}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: cameras.Array.data[1]
+      value: 
+      objectReference: {fileID: 1498799477}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: cameras.Array.data[2]
+      value: 
+      objectReference: {fileID: 243630565}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: cameras.Array.data[3]
+      value: 
+      objectReference: {fileID: 1006301930}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: canvases.Array.data[0]
+      value: 
+      objectReference: {fileID: 1545817180}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: canvases.Array.data[1]
+      value: 
+      objectReference: {fileID: 222631009}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: canvases.Array.data[2]
+      value: 
+      objectReference: {fileID: 210575308}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: canvases.Array.data[3]
+      value: 
+      objectReference: {fileID: 1020256036}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f0406425e0284fc5b03fed48526bbb9, type: 3}

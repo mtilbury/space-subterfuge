@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PingManager : MonoBehaviour
 {
+    [Header("Order: Attacker 1, 2, 3 ; Defender")]
     public Camera[] cameras;
     public Canvas[] canvases;
 
