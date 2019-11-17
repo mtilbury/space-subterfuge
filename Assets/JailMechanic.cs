@@ -11,6 +11,7 @@ public class JailMechanic : MonoBehaviour
     private JailManagement jail;
 
     public bool inTutorialDefender = false;
+    private int defenderTutorialCaptured = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,11 @@ public class JailMechanic : MonoBehaviour
 
             if (inTutorialDefender)
             {
-                TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
+                defenderTutorialCaptured++;
+                if(defenderTutorialCaptured >= 3)
+                {
+                    TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
+                }
             }
         }
     }
