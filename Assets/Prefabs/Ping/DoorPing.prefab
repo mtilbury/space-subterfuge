@@ -70,17 +70,17 @@ PrefabInstance:
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.033018887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.86418796
+      value: 0.9656594
       objectReference: {fileID: 0}
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.109803915
       objectReference: {fileID: 0}
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
@@ -101,17 +101,17 @@ PrefabInstance:
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.r
-      value: 0.033018887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.86418796
+      value: 0.9656594
       objectReference: {fileID: 0}
     - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 1
+      value: 0.109803915
       objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
@@ -122,17 +122,17 @@ PrefabInstance:
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.r
-      value: 0.033018887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.86418796
+      value: 0.9656594
       objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 1
+      value: 0.109803915
       objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
@@ -143,17 +143,17 @@ PrefabInstance:
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.r
-      value: 0.033018887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.86418796
+      value: 0.9656594
       objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 1
+      value: 0.109803915
       objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
@@ -164,17 +164,17 @@ PrefabInstance:
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.r
-      value: 0.033018887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.86418796
+      value: 0.9656594
       objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 1
+      value: 0.109803915
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}

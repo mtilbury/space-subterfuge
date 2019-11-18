@@ -30,6 +30,7 @@ public class Teleport : MonoBehaviour
             {
                 canTeleport = false;
                 other.transform.position = end.transform.position;
+                PingManager.Instance.SpawnPing(PingManager.PingTypes.Teleport, end.transform.position);
                 if (inTutorialDefender)
                 {
                     TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.teleport);

@@ -70,22 +70,27 @@ PrefabInstance:
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.9656594
+      value: 0.009995077
       objectReference: {fileID: 0}
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.109803915
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.9656594
+      value: 0.009995077
       objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 0.109803915
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
@@ -96,12 +101,12 @@ PrefabInstance:
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.9656594
+      value: 0.009995077
       objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 0.109803915
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
@@ -112,12 +117,12 @@ PrefabInstance:
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.g
-      value: 0.9656594
+      value: 0.009995077
       objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: spriteColor.b
-      value: 0.109803915
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
