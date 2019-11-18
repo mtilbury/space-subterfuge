@@ -4447,7 +4447,8 @@ PrefabInstance:
       propertyPath: defenderCaptureAttack
       value: 
       objectReference: {fileID: 1792823090}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1291333478, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
 --- !u!4 &296773071 stripped
 Transform:
@@ -26354,6 +26355,7 @@ MonoBehaviour:
   targetScreen: 3
   targetCamera: {fileID: 1006301930}
   targetCanvas: {fileID: 1020256036}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 1, g: 0, b: 0, a: 1}
@@ -26381,6 +26383,7 @@ MonoBehaviour:
   targetScreen: 0
   targetCamera: {fileID: 603493931}
   targetCanvas: {fileID: 1545817180}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 1, g: 1, b: 1, a: 1}
@@ -26408,6 +26411,7 @@ MonoBehaviour:
   targetScreen: 1
   targetCamera: {fileID: 1498799477}
   targetCanvas: {fileID: 229282213}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
@@ -26435,6 +26439,7 @@ MonoBehaviour:
   targetScreen: 2
   targetCamera: {fileID: 603493931}
   targetCanvas: {fileID: 229282213}
+  pingIcon: {fileID: 0}
   onScreenSprite: {fileID: 21300000, guid: c374d3477d04a464d8e5508f6212d1dc, type: 3}
   offScreenSprite: {fileID: 21300000, guid: 9a144315452c6498f9c3e8f5cea43aa4, type: 3}
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
