@@ -11,13 +11,10 @@ public class InteractWithComputers : MonoBehaviour
     public Text instruction;
     public CheckAttackerWin point_collector;
     public float ping_scale = 1.0f;
-    public float stealTime = 2.0f;
+    public float stealRate = 20.0f;
 
     public bool inTutorial = false;
     public int id = 1;
-
-    private float _currentTime = 0.0f;
-    private Coroutine _stealing = null;
 
     private void Start()
     {
@@ -35,14 +32,29 @@ public class InteractWithComputers : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Computer"))
-        {
-            other.gameObject.GetComponent<StealingProgress>().progressBar.fillAmount = _currentTime / stealTime;
-
+        if (other.CompareTag("Computer")) {
+            StealingProgress sp = other.gameObject.GetComponent<StealingProgress>();
+            if (sp == null) return;
+            
             // Check if A was pressed
-            if (player_mov.controller.aButton.wasPressedThisFrame && _currentTime <= 0.0f)
-            {
-                _stealing = StartCoroutine(Stealing(other));
+            if (player_mov.controller.aButton.isPressed) {
+                player_mov.canMove = false;
+                if (gameObject.CompareTag("Attacker")) {
+                    if (sp.AddProgress(stealRate * Time.deltaTime)) {
+                        // stealing is done. allow them to move
+                        StealData(other);
+                        player_mov.canMove = true;
+                    }
+                    // stealing not done
+                } else if (gameObject.CompareTag("Defender")) {
+                    if (sp.RemoveProgress(stealRate * Time.deltaTime)) {
+                        // unhacking is done. allow them to move
+                        player_mov.canMove = true;
+                    }
+                    // unhacking not done
+                }
+            } else {
+                player_mov.canMove = true;
             }
         }
     }
@@ -50,22 +62,6 @@ public class InteractWithComputers : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         instruction.enabled = false;
-    }
-
-    private IEnumerator Stealing(Collider other)
-    {
-        _currentTime = 0.0f;
-        while (_currentTime < stealTime)
-        {
-            _currentTime += Time.deltaTime;
-            if (!player_mov.controller.aButton.isPressed)
-            {
-                _currentTime = 0.0f;
-                StopCoroutine(_stealing);
-            }
-            yield return null;
-        }
-        StealData(other);
     }
 
 
@@ -97,9 +93,6 @@ public class InteractWithComputers : MonoBehaviour
         parent.transform.GetChild(0).gameObject.SetActive(false);
         parent.transform.GetChild(1).gameObject.SetActive(false);
         parent.transform.GetChild(3).gameObject.SetActive(false);
-
-        // Reset timer
-        _currentTime = 0.0f;
-        other.gameObject.GetComponent<StealingProgress>().progressBar.fillAmount = 0.0f;
+        parent.transform.GetChild(5).gameObject.SetActive(false);
     }
 }

@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 1185316534908974988}
   m_LocalRotation: {x: 0.20065163, y: 0.67804056, z: -0.20065163, w: 0.67804056}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.030000007, y: 0.003, z: 1}
+  m_LocalScale: {x: 0.030000007, y: 0.005, z: 1}
   m_Children:
   - {fileID: 5012831113431711317}
   - {fileID: 299854564523493503}
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80fb4d151ae2bab4cb066d56dde63eae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09dc61dfcb85ed848b106826b2b84503, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -624,7 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3721666130408012460}
   - component: {fileID: 5900663282128982943}
-  - component: {fileID: 5243798497797629958}
+  - component: {fileID: 5554503105738031210}
   m_Layer: 9
   m_Name: ComputerTrigger
   m_TagString: Computer
@@ -659,7 +659,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 1, z: 3}
   m_Center: {x: 0, y: 0, z: -1}
---- !u!114 &5243798497797629958
+--- !u!114 &5554503105738031210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -668,7 +668,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9063194822748169507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d60d1f154d854042b37a6e3299776b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 31f8fa825610f4d9cb554eb6d2e05a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 6117420594491838593}
+  currentProgress: 0
