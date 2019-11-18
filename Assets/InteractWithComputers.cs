@@ -11,9 +11,13 @@ public class InteractWithComputers : MonoBehaviour
     public Text instruction;
     public CheckAttackerWin point_collector;
     public float ping_scale = 1.0f;
+    public float stealTime = 2.0f;
 
     public bool inTutorial = false;
     public int id = 1;
+
+    private float _currentTime = 0.0f;
+    private Coroutine _stealing = null;
 
     private void Start()
     {
@@ -33,37 +37,12 @@ public class InteractWithComputers : MonoBehaviour
     {
         if (other.CompareTag("Computer"))
         {
+            other.gameObject.GetComponent<StealingProgress>().progressBar.fillAmount = _currentTime / stealTime;
+
             // Check if A was pressed
-            if (player_mov.controller.aButton.wasPressedThisFrame)
+            if (player_mov.controller.aButton.wasPressedThisFrame && _currentTime <= 0.0f)
             {
-                // TODO: Add one to player score
-
-                // Spawn ping here
-                GameObject spawned_ping = GameObject.Instantiate(ping);
-                spawned_ping.transform.position = transform.position;
-                spawned_ping.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
-                spawned_ping.transform.localScale = Vector3.one * ping_scale;
-
-                // Disable instruction text
-                instruction.enabled = false;
-
-                // TODO: disable trigger
-                other.gameObject.SetActive(false);
-
-                // Add point
-                point_collector.AddPoint();
-
-                // If in tutorial, let manager know
-                if (inTutorial)
-                {
-                    TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.computer, id);
-                }
-
-                // Disabled Computer Models for Player Guidance 
-                GameObject parent = other.gameObject.transform.parent.gameObject;
-                parent.transform.GetChild(0).gameObject.SetActive(false);
-                parent.transform.GetChild(1).gameObject.SetActive(false);
-                parent.transform.GetChild(3).gameObject.SetActive(false);
+                _stealing = StartCoroutine(Stealing(other));
             }
         }
     }
@@ -71,5 +50,56 @@ public class InteractWithComputers : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         instruction.enabled = false;
+    }
+
+    private IEnumerator Stealing(Collider other)
+    {
+        _currentTime = 0.0f;
+        while (_currentTime < stealTime)
+        {
+            _currentTime += Time.deltaTime;
+            if (!player_mov.controller.aButton.isPressed)
+            {
+                _currentTime = 0.0f;
+                StopCoroutine(_stealing);
+            }
+            yield return null;
+        }
+        StealData(other);
+    }
+
+
+    private void StealData(Collider other)
+    {
+        // Spawn ping here
+        GameObject spawned_ping = GameObject.Instantiate(ping);
+        spawned_ping.transform.position = transform.position;
+        spawned_ping.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
+        spawned_ping.transform.localScale = Vector3.one * ping_scale;
+
+        // Disable instruction text
+        instruction.enabled = false;
+
+        // TODO: disable trigger
+        other.gameObject.SetActive(false);
+
+        // Add point
+        point_collector.AddPoint();
+
+        // If in tutorial, let manager know
+        if (inTutorial)
+        {
+            TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.computer, id);
+        }
+
+        // Disabled Computer Models for Player Guidance 
+        GameObject parent = other.gameObject.transform.parent.gameObject;
+        parent.transform.GetChild(0).gameObject.SetActive(false);
+        parent.transform.GetChild(1).gameObject.SetActive(false);
+        parent.transform.GetChild(3).gameObject.SetActive(false);
+
+        // Reset timer
+        _currentTime = 0.0f;
+        other.gameObject.GetComponent<StealingProgress>().progressBar.fillAmount = 0.0f;
     }
 }
