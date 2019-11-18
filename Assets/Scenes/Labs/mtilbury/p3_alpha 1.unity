@@ -4521,6 +4521,11 @@ PrefabInstance:
       propertyPath: targetMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: view_radius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3468781245936899337, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: m_Layer
