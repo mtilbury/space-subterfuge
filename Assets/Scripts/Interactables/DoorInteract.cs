@@ -14,6 +14,9 @@ public class DoorInteract : Interactable
     public override void Interact()
     {
         Debug.Log("Opening Door.");
+
+        PingManager.Instance.SpawnPing(PingManager.PingTypes.Door, transform.position);
+
         //doorAnimControl.speed *= -1.0f;
         door.doorAnimControl.SetFloat("Direction", door.animationSpeed);
         if (door.open)

@@ -63,12 +63,13 @@ public class InteractWithObject : MonoBehaviour
                     Interactable interactable  = other.GetComponent<Interactable>();
                     interactable.Interact();
 
+                    /*
                     // Spawn ping here
                     GameObject spawned_ping = Instantiate(ping);
                     spawned_ping.transform.position = new Vector3(transform.position.x, pingHeight, transform.position.z);
                     spawned_ping.transform.rotation = Quaternion.Euler(90, 0, 0);
                     spawned_ping.transform.localScale = new Vector3(pingScale, pingScale, 1.0f);
-
+                    */
 
                     
                     // Disable instruction text
