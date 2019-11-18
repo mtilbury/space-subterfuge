@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3785,9 +3785,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ca817bb34ad8409f957b8f3298325da, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ping: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
   interactPrompt: {fileID: 1229208821}
   pingHeight: 8
   pingScale: 3
@@ -5200,9 +5200,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ca817bb34ad8409f957b8f3298325da, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ping: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
   interactPrompt: {fileID: 568060387}
   pingHeight: 7
   pingScale: 2
@@ -10686,8 +10686,44 @@ PrefabInstance:
       propertyPath: canvases.Array.data[3]
       value: 
       objectReference: {fileID: 1020256036}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8f0406425e0284fc5b03fed48526bbb9, type: 3}
+--- !u!1 &750306254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8782138964620499073, guid: 8f0406425e0284fc5b03fed48526bbb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 750306253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &750306255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750306254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88653dc62f5e044c38b898101a7bd4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pings:
+  - {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  - {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
+  - {fileID: 1511214585870132049, guid: 394a53374fa504eafaa8e6390ed21a07, type: 3}
+  - {fileID: 4048416942282540626, guid: 03355783036a34dc48c0b5dbe5649c0e, type: 3}
+  - {fileID: 8112415779501653171, guid: dabd83ed500ef415a9afc00e2ee8de7f, type: 3}
+  - {fileID: 1264930896336852058, guid: 827fe6ebca45f457d994c17aa3535e75, type: 3}
+  cameras:
+  - {fileID: 603493931}
+  - {fileID: 1498799477}
+  - {fileID: 243630565}
+  - {fileID: 1006301930}
+  canvases:
+  - {fileID: 1545817180}
+  - {fileID: 222631009}
+  - {fileID: 210575308}
+  - {fileID: 1020256036}
 --- !u!1001 &750486134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19582,9 +19618,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ca817bb34ad8409f957b8f3298325da, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ping: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
   interactPrompt: {fileID: 1033239094}
   pingHeight: 8
   pingScale: 3
@@ -20489,8 +20525,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88653dc62f5e044c38b898101a7bd4a3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pings: []
   cameras:
   - {fileID: 603493931}
   - {fileID: 1498799477}
@@ -23952,9 +23989,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ca817bb34ad8409f957b8f3298325da, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ping: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
   interactPrompt: {fileID: 718277842}
   pingHeight: 8
   pingScale: 3
