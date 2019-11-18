@@ -2793,6 +2793,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 1291333478, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
+      propertyPath: interactPrompt
+      value: 
+      objectReference: {fileID: 1033239094}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
 --- !u!4 &296773071 stripped
@@ -3401,7 +3405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca817bb34ad8409f957b8f3298325da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  ping: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
   interactPrompt: {fileID: 568060387}
   pingHeight: 7
   pingScale: 2
@@ -7428,18 +7432,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 764356917}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &764356919 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4566613540974756978, guid: 3b77112f8af0dcc4c88332aea5751dfe,
-    type: 3}
-  m_PrefabInstance: {fileID: 764356917}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &776577357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4305550855402056811, guid: 2216c9cffdf65204fb0a30593686efe1,
@@ -11103,6 +11095,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ping
       objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12431,26 +12428,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 287503351}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1291333478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291333477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca817bb34ad8409f957b8f3298325da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ping: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
-  interactPrompt: {fileID: 1033239094}
-  pingHeight: 8
-  pingScale: 3
-  coolDown: 1
-  inTutorial: 0
-  inTutorialDefender: 0
-  id: 1
 --- !u!4 &1291333484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3468781246121713228, guid: fa6ce6aebbb274b56956c8cd245ba0df,
@@ -16971,10 +16948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 1291333477}
   jailManagement: {fileID: 1147318673}
   jailSpawn: {fileID: 2105035014}
-  jailInstruction: {fileID: 764356919}
   inTutorialDefender: 0
 --- !u!1001 &1805240882
 PrefabInstance:
@@ -18053,6 +18028,21 @@ PrefabInstance:
       propertyPath: end
       value: 
       objectReference: {fileID: 1621850014}
+    - target: {fileID: 5065400258212391662, guid: f1cf4ac3b0856e24a861e34812ba4c11,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065400258212391662, guid: f1cf4ac3b0856e24a861e34812ba4c11,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.0990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065400258212391662, guid: f1cf4ac3b0856e24a861e34812ba4c11,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.82104576
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1cf4ac3b0856e24a861e34812ba4c11, type: 3}
 --- !u!1 &1990681204 stripped
@@ -20083,6 +20073,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
         type: 3}
+      propertyPath: Pings.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
       propertyPath: cameras.Array.data[0]
       value: 
       objectReference: {fileID: 603493931}
@@ -20121,5 +20116,41 @@ PrefabInstance:
       propertyPath: canvases.Array.data[3]
       value: 
       objectReference: {fileID: 1020256036}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: Pings.Array.data[0]
+      value: 
+      objectReference: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: Pings.Array.data[1]
+      value: 
+      objectReference: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d,
+        type: 3}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: Pings.Array.data[2]
+      value: 
+      objectReference: {fileID: 1511214585870132049, guid: 394a53374fa504eafaa8e6390ed21a07,
+        type: 3}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: Pings.Array.data[3]
+      value: 
+      objectReference: {fileID: 4048416942282540626, guid: 03355783036a34dc48c0b5dbe5649c0e,
+        type: 3}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: Pings.Array.data[4]
+      value: 
+      objectReference: {fileID: 8112415779501653171, guid: dabd83ed500ef415a9afc00e2ee8de7f,
+        type: 3}
+    - target: {fileID: 8782138964620499072, guid: 8f0406425e0284fc5b03fed48526bbb9,
+        type: 3}
+      propertyPath: Pings.Array.data[5]
+      value: 
+      objectReference: {fileID: 1264930896336852058, guid: 827fe6ebca45f457d994c17aa3535e75,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f0406425e0284fc5b03fed48526bbb9, type: 3}

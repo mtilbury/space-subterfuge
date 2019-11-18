@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2940331363825301116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Name
+      value: DoorPing
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603853, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.033018887
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.86418796
+      objectReference: {fileID: 0}
+    - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 8491313688640751308, guid: a2644b1edb3324e8a8e60719c622bd35,
+        type: 3}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetIconScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.r
+      value: 0.033018887
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.86418796
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 8491313688640751308, guid: a2644b1edb3324e8a8e60719c622bd35,
+        type: 3}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.r
+      value: 0.033018887
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.86418796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 8491313688640751308, guid: a2644b1edb3324e8a8e60719c622bd35,
+        type: 3}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.r
+      value: 0.033018887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.86418796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 8491313688640751308, guid: a2644b1edb3324e8a8e60719c622bd35,
+        type: 3}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.r
+      value: 0.033018887
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.86418796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
