@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class CheckAttackerWin : MonoBehaviour
 {
     public Text numPointsText;
+    public Text numPointsText2;
     public int numPointsToWin = 5;
     public Text AttackersWinText;
     public Text DefenderLoseText;
@@ -26,7 +27,8 @@ public class CheckAttackerWin : MonoBehaviour
     public void AddPoint()
     {
         numPoints++;
-        numPointsText.text = "Points: " + numPoints;
+        numPointsText.text = "Data: " + numPoints;
+        numPointsText2.text = "Data: \n" + numPoints;
     }
 
     private IEnumerator AttackerWinScreen()

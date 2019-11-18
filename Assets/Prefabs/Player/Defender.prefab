@@ -1,20 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &312874341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482939797857674226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jailManagement: {fileID: 0}
-  jailSpawn: {fileID: 0}
-  inTutorialDefender: 0
 --- !u!1 &3468781245936899337
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +186,7 @@ GameObject:
   - component: {fileID: 1427161202541192830}
   - component: {fileID: 1291333478}
   - component: {fileID: 1291333486}
+  - component: {fileID: 6694343472813398982}
   m_Layer: 10
   m_Name: Defender
   m_TagString: Defender
@@ -222,7 +208,6 @@ Transform:
   - {fileID: 3468781245936899334}
   - {fileID: 3468781246218969506}
   - {fileID: 3468781246024154345}
-  - {fileID: 1482939798922189324}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -377,7 +362,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cf8ef3d6ebae8419edb6d55866d1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderCaptureAttack: {fileID: 1482939798922189325}
+  defenderCaptureAttack: {fileID: 0}
+--- !u!114 &6694343472813398982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468781246121713200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb033bda87d32d64dbaddb818f115c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ping: {fileID: 0}
+  instruction: {fileID: 0}
+  point_collector: {fileID: 0}
+  ping_scale: 1
+  stealRate: 20
+  inTutorial: 0
+  id: 1
 --- !u!1 &3468781246218969507
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,3 +474,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 0}
+--- !u!114 &312874341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f32fe34c5a8d74bb73803775a10474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jailManagement: {fileID: 0}
+  jailSpawn: {fileID: 0}
+  inTutorialDefender: 0

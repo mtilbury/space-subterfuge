@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Labs/mtilbury/mtilbury_TUTORIAL_LAB.unity
     guid: 8f63f16fc0f901f4f9b87e6d037b6a8d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/p3_alpha.unity
     guid: 0db8bc59dd543418f80f98fee768a261
   - enabled: 0
     path: Assets/Scenes/Labs/mtilbury/mtilbury_LAB.unity
     guid: 5e2062e48e5d9604ea6aacc7395b9428
+  - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/p3_alpha 1.unity
+    guid: aed97c1185a61b7459feeb85911da963
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 89d44e97cc9226e46836264119c12e9e,
       type: 2}
