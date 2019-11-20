@@ -1,5 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8816990986700741603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: TransparentReveal
+  m_EditorClassIdentifier: 
+  settings:
+    passTag: TransparentReveal
+    Event: 300
+    filterSettings:
+      RenderQueueType: 1
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 512
+      PassNames: []
+    overrideMaterial: {fileID: 0}
+    overrideMaterialPassIndex: 0
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+    stencilSettings:
+      overrideStencilState: 1
+      stencilReference: 1
+      stencilCompareFunction: 3
+      passOperation: 2
+      failOperation: 0
+      zFailOperation: 0
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
 --- !u!114 &-6737301017648225147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +210,7 @@ MonoBehaviour:
   - {fileID: -127574648420279355}
   - {fileID: -6737301017648225147}
   - {fileID: 1197428327294843392}
+  - {fileID: -8816990986700741603}
   shaders:
     blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
     copyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
@@ -205,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     passTag: Reveal
-    Event: 300
+    Event: 250
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -215,13 +254,13 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideDepthState: 0
-    depthCompareFunction: 2
-    enableWrite: 1
+    depthCompareFunction: 0
+    enableWrite: 0
     stencilSettings:
       overrideStencilState: 1
       stencilReference: 1
       stencilCompareFunction: 3
-      passOperation: 0
+      passOperation: 2
       failOperation: 1
       zFailOperation: 0
     cameraSettings:

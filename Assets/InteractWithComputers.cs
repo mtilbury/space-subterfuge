@@ -35,7 +35,16 @@ public class InteractWithComputers : MonoBehaviour
         if (other.CompareTag("Computer")) {
             StealingProgress sp = other.gameObject.GetComponent<StealingProgress>();
             if (sp == null) return;
-            
+
+
+            // Spawn ping at start of hack
+            if (player_mov.controller.aButton.wasPressedThisFrame)
+            {
+                if (gameObject.CompareTag("Attacker"))
+                {
+                    PingManager.Instance.SpawnPing(PingManager.PingTypes.Hacking, other.transform.position);
+                }
+            }
             // Check if A was pressed
             if (player_mov.controller.aButton.isPressed) {
                 player_mov.canMove = false;
@@ -67,11 +76,13 @@ public class InteractWithComputers : MonoBehaviour
 
     private void StealData(Collider other)
     {
+        /*
         // Spawn ping here
         GameObject spawned_ping = GameObject.Instantiate(ping);
         spawned_ping.transform.position = transform.position;
         spawned_ping.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
         spawned_ping.transform.localScale = Vector3.one * ping_scale;
+        */
 
         // Disable instruction text
         instruction.enabled = false;

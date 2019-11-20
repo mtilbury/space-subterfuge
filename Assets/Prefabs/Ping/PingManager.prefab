@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8782138964620499079}
-  - component: {fileID: 8782138964620499072}
+  - component: {fileID: 750306255}
   m_Layer: 0
   m_Name: PingManager
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8782138964620499072
+--- !u!114 &750306255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,6 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88653dc62f5e044c38b898101a7bd4a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pings:
+  - {fileID: 616345545415603843, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
+  - {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d, type: 3}
+  - {fileID: 1511214585870132049, guid: 394a53374fa504eafaa8e6390ed21a07, type: 3}
+  - {fileID: 4048416942282540626, guid: 03355783036a34dc48c0b5dbe5649c0e, type: 3}
+  - {fileID: 8112415779501653171, guid: dabd83ed500ef415a9afc00e2ee8de7f, type: 3}
+  - {fileID: 1264930896336852058, guid: 827fe6ebca45f457d994c17aa3535e75, type: 3}
+  - {fileID: 5554025370789247677, guid: 84938c18ab3644d42af7ceb5a968ef62, type: 3}
   cameras:
   - {fileID: 0}
   - {fileID: 0}

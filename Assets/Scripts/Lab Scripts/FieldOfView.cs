@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class FieldOfView : MonoBehaviour
 
     public MeshFilter viewMeshFilter;
     private Mesh viewMesh;
+
+    public PostProcessLayer ppl;
+    public LayerMask regularPPLayer;
+    public LayerMask chasePPLayer;
 
     private void Start()
     {
@@ -62,12 +67,23 @@ public class FieldOfView : MonoBehaviour
             {
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-                if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask))
+                if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask) &&
+                    target.gameObject.CompareTag("Defender"))
                 {
                     visibleTargets.Add(target);
                 }
             }
         }
+
+        if(visibleTargets.Count >= 1)
+        {
+            ppl.volumeLayer = chasePPLayer;
+        }
+        else
+        {
+            ppl.volumeLayer = regularPPLayer;
+        }
+        
     }
 
     void DrawFieldOfView()

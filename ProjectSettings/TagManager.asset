@@ -34,8 +34,8 @@ TagManager:
   - ReverseReveal
   - AttackerUI
   - DefenderUI
-  - 
-  - 
+  - RegularPostProcessing
+  - ChasePostProcessing
   - 
   - 
   - 

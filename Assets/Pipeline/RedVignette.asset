@@ -1,39 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8132061169882744251
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
-  m_Name: LensDistortion
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 25
-  intensityX:
-    overrideState: 1
-    value: 1
-  intensityY:
-    overrideState: 1
-    value: 1
-  centerX:
-    overrideState: 0
-    value: 0
-  centerY:
-    overrideState: 0
-    value: 0
-  scale:
-    overrideState: 0
-    value: 1
 --- !u!114 &-2948779168060682471
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -52,25 +18,25 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 10
+    value: 7
   threshold:
     overrideState: 0
-    value: 1.4
+    value: 0.9
   softKnee:
-    overrideState: 0
-    value: 0.045
+    overrideState: 1
+    value: 1
   clamp:
     overrideState: 0
     value: 65457.07
   diffusion:
     overrideState: 1
-    value: 7.08
+    value: 7
   anamorphicRatio:
     overrideState: 0
     value: 1
   color:
     overrideState: 1
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 1, g: 0, b: 0, a: 1}
   fastMode:
     overrideState: 0
     value: 0
@@ -91,12 +57,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
-  m_Name: PostProcessingProfile
+  m_Name: RedVignette
   m_EditorClassIdentifier: 
   settings:
   - {fileID: -2948779168060682471}
-  - {fileID: -8132061169882744251}
+  - {fileID: 2847785643635655428}
   - {fileID: 5447775488489843580}
+--- !u!114 &2847785643635655428
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 25
+  intensityX:
+    overrideState: 0
+    value: 1
+  intensityY:
+    overrideState: 0
+    value: 1
+  centerX:
+    overrideState: 0
+    value: 0
+  centerY:
+    overrideState: 0
+    value: 0
+  scale:
+    overrideState: 0
+    value: 1
 --- !u!114 &5447775488489843580
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -118,26 +118,26 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 1, g: 0, b: 0, a: 1}
   center:
-    overrideState: 0
+    overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.5
+    value: 0.571
   smoothness:
-    overrideState: 0
-    value: 0.444
+    overrideState: 1
+    value: 1
   roundness:
     overrideState: 0
     value: 1
   rounded:
-    overrideState: 1
+    overrideState: 0
     value: 1
   mask:
     overrideState: 1
-    value: {fileID: 10906, guid: 0000000000000000f000000000000000, type: 0}
+    value: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
     defaultState: 1
   opacity:
-    overrideState: 0
+    overrideState: 1
     value: 1
