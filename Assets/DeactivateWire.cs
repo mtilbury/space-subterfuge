@@ -16,6 +16,7 @@ public class DeactivateWire : MonoBehaviour
 
     void ChangeColor()
     {
-        material.SetVector("_SineOutPut", new Vector2(0.0f, 0.0f));
+        Debug.Log("Shutting Off");
+        material.SetVector("_SineOutput", new Vector2(0.0f, 0.0f));
     }
 }

@@ -323,6 +323,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOneUse: 1
   door: {fileID: 3729316344651896234}
+  activeColor: {r: 0, g: 1, b: 0.04290104, a: 1}
+  inactiveColor: {r: 1, g: 0, b: 0, a: 1}
+  doorRenderer: {fileID: 666068752614488257}
+  linkedDoorRenderer: {fileID: 6403780175993099213}
 --- !u!1 &5821260759815275904
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +466,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOneUse: 1
   door: {fileID: 3729316344651896234}
+  activeColor: {r: 0, g: 1, b: 0.04290104, a: 1}
+  inactiveColor: {r: 1, g: 0, b: 0, a: 1}
+  doorRenderer: {fileID: 6403780175993099213}
+  linkedDoorRenderer: {fileID: 666068752614488257}
 --- !u!1 &5821260760364540744
 GameObject:
   m_ObjectHideFlags: 0

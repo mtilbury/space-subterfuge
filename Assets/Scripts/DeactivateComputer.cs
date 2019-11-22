@@ -11,6 +11,7 @@ public class DeactivateComputer : MonoBehaviour
     public GameObject DefenderTriangle;
     public RectTransform AttackerImage;
     public RectTransform DefenderImage;
+    public GameObject AreaIndicator;
     [Space]
     public ParticleSystem hackParticle;
 
@@ -31,6 +32,7 @@ public class DeactivateComputer : MonoBehaviour
         DefenderTriangle.gameObject.SetActive(false);
         AttackerImage.gameObject.SetActive(true);
         DefenderImage.gameObject.SetActive(true);
+        AreaIndicator.SetActive(false);
 
 
         if (OnComputerHacked != null)

@@ -100,11 +100,13 @@ public class InteractWithComputers : MonoBehaviour
             TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.computer, id);
         }
 
+        /*
         // Disabled Computer Models for Player Guidance 
         GameObject parent = other.gameObject.transform.parent.gameObject;
         parent.transform.GetChild(0).gameObject.SetActive(false);
         parent.transform.GetChild(1).gameObject.SetActive(false);
         parent.transform.GetChild(3).gameObject.SetActive(false);
         parent.transform.GetChild(5).gameObject.SetActive(false);
+        */
     }
 }
