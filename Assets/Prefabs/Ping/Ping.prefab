@@ -173,7 +173,7 @@ MonoBehaviour:
   downLimit: 32
   disappearRange: 0.15
   m_targetIconScale: {x: 2, y: 1, z: 1}
-  m_targetOffScreenScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 2, y: 2, z: 1}
   PointTarget: 1
   ShowDebugLines: 0
 --- !u!114 &1324148615147263569
@@ -202,7 +202,7 @@ MonoBehaviour:
   downLimit: 32
   disappearRange: 0.15
   m_targetIconScale: {x: 2, y: 1, z: 1}
-  m_targetOffScreenScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 2, y: 2, z: 1}
   PointTarget: 1
   ShowDebugLines: 0
 --- !u!114 &4844083305547252731
@@ -231,6 +231,6 @@ MonoBehaviour:
   downLimit: 4
   disappearRange: 0.15
   m_targetIconScale: {x: 2, y: 1, z: 1}
-  m_targetOffScreenScale: {x: 1, y: 1, z: 1}
+  m_targetOffScreenScale: {x: 2, y: 2, z: 1}
   PointTarget: 1
   ShowDebugLines: 0

@@ -309,7 +309,7 @@ MonoBehaviour:
     m_Bits: 0
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 16842752
   visibleTargets: []
   meshResolution: 5
   edgeResolveIterations: 4
@@ -495,16 +495,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefenderCaptureAttack
       objectReference: {fileID: 0}
-    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
-        type: 3}
-      propertyPath: jailManagement
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
-        type: 3}
-      propertyPath: jailSpawn
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1482939798891013784, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -565,6 +555,16 @@ PrefabInstance:
       propertyPath: defenderMov
       value: 
       objectReference: {fileID: 1427161202541192830}
+    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: jailManagement
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: jailSpawn
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e91e4058903488439134c823b75461b, type: 3}
 --- !u!1 &1482939797743770207 stripped

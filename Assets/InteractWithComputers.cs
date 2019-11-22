@@ -88,7 +88,8 @@ public class InteractWithComputers : MonoBehaviour
         instruction.enabled = false;
 
         // TODO: disable trigger
-        other.gameObject.SetActive(false);
+        //other.gameObject.SetActive(false);
+        other.gameObject.GetComponent<DeactivateComputer>().HackComputer();
 
         // Add point
         point_collector.AddPoint();
