@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
     public GameObject player;
 
     public float distanceFraction = 0.05f;
+    //public float distanceDelta = 
 
     public Vector3 offset;
     private Vector3 startingPosition;
@@ -15,7 +16,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        startingPosition = new Vector3(player.transform.position.x, offset.y, player.transform.position.z + offset.z);
+        startingPosition = player.transform.position + offset;
         Debug.Log(player.transform.position.z + offset.z);
     }
 
@@ -27,7 +28,7 @@ public class CameraController : MonoBehaviour
             Debug.Log("I am Lerping");
         }
 
-        if (transform.position.y <= offset.y + .5 && transform.position.z <= offset.z + .5)
+        if (withinRange(transform.position.y, startingPosition.y, .1f) && withinRange(transform.position.z, startingPosition.z, .1f) && withinRange(transform.position.x, startingPosition.x, .1f))
         {
             lerping = false;
         }
@@ -38,5 +39,10 @@ public class CameraController : MonoBehaviour
     {
         if (!lerping) 
             transform.position = player.transform.position + offset;
+    }
+
+    private bool withinRange(float a, float b, float delta)
+    {
+        return Mathf.Abs(Mathf.Abs(a) - Mathf.Abs(b)) <= delta;
     }
 }
