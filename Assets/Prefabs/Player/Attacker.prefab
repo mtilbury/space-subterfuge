@@ -267,7 +267,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3468781246121713226
 Rigidbody:
@@ -301,10 +301,10 @@ MonoBehaviour:
   view_angle: 361
   targetMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 16842752
   visibleTargets: []
   meshResolution: 5
   edgeResolveIterations: 4
@@ -312,6 +312,13 @@ MonoBehaviour:
   maskHeight: 0
   maskCutawayDistance: 0
   viewMeshFilter: {fileID: 3468781245936899336}
+  ppl: {fileID: 0}
+  regularPPLayer:
+    serializedVersion: 2
+    m_Bits: 4194304
+  chasePPLayer:
+    serializedVersion: 2
+    m_Bits: 8388608
 --- !u!114 &1427161202541192830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +350,7 @@ MonoBehaviour:
   instruction: {fileID: 0}
   point_collector: {fileID: 0}
   ping_scale: 1
+  stealRate: 20
   inTutorial: 0
   id: 1
 --- !u!1 &3468781246218969507
@@ -357,13 +365,13 @@ GameObject:
   - component: {fileID: 3468781246218969535}
   - component: {fileID: 3468781246218969504}
   - component: {fileID: 1790668003032725403}
-  m_Layer: 9
+  m_Layer: 17
   m_Name: AreaHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3468781246218969506
 Transform:
   m_ObjectHideFlags: 0

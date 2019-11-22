@@ -67,64 +67,74 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.109803915
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 0.11825953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6680511397094400071, guid: 8ca99643c2ead4e4a9bae1babdb19eaa,
+        type: 3}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: m_targetOffScreenScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.109803915
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 0.11825953
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6680511397094400071, guid: 8ca99643c2ead4e4a9bae1babdb19eaa,
+        type: 3}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.g
+      value: 0.109803915
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: spriteColor.b
+      value: 0.11825953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
+        type: 3}
+      propertyPath: pingIcon
+      value: 
+      objectReference: {fileID: 6680511397094400071, guid: 8ca99643c2ead4e4a9bae1babdb19eaa,
+        type: 3}
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.971191
+      value: 0.109803915
       objectReference: {fileID: 0}
     - target: {fileID: 616345545415603852, guid: 0175211288ccd424e8371c449e1e3d5a,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.109803915
+      value: 0.11825953
       objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.g
-      value: 0.971191
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.b
-      value: 0.109803915
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297688625128124410, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: pingIcon
-      value: 
-      objectReference: {fileID: 6680511397094400071, guid: 8ca99643c2ead4e4a9bae1babdb19eaa,
-        type: 3}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.g
-      value: 0.971191
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.b
-      value: 0.109803915
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324148615147263569, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: pingIcon
-      value: 
-      objectReference: {fileID: 6680511397094400071, guid: 8ca99643c2ead4e4a9bae1babdb19eaa,
-        type: 3}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.g
-      value: 0.971191
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: spriteColor.b
-      value: 0.109803915
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844083305547252731, guid: 0175211288ccd424e8371c449e1e3d5a,
-        type: 3}
-      propertyPath: pingIcon
-      value: 
-      objectReference: {fileID: 6680511397094400071, guid: 8ca99643c2ead4e4a9bae1babdb19eaa,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 5598552702852504297, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0175211288ccd424e8371c449e1e3d5a, type: 3}

@@ -35,7 +35,16 @@ public class InteractWithComputers : MonoBehaviour
         if (other.CompareTag("Computer")) {
             StealingProgress sp = other.gameObject.GetComponent<StealingProgress>();
             if (sp == null) return;
-            
+
+
+            // Spawn ping at start of hack
+            if (player_mov.controller.aButton.wasPressedThisFrame)
+            {
+                if (gameObject.CompareTag("Attacker"))
+                {
+                    PingManager.Instance.SpawnPing(PingManager.PingTypes.Hacking, other.transform.position);
+                }
+            }
             // Check if A was pressed
             if (player_mov.controller.aButton.isPressed) {
                 player_mov.canMove = false;
@@ -67,17 +76,20 @@ public class InteractWithComputers : MonoBehaviour
 
     private void StealData(Collider other)
     {
+        /*
         // Spawn ping here
         GameObject spawned_ping = GameObject.Instantiate(ping);
         spawned_ping.transform.position = transform.position;
         spawned_ping.transform.position = new Vector3(transform.position.x, 8, transform.position.z);
         spawned_ping.transform.localScale = Vector3.one * ping_scale;
+        */
 
         // Disable instruction text
         instruction.enabled = false;
 
         // TODO: disable trigger
-        other.gameObject.SetActive(false);
+        //other.gameObject.SetActive(false);
+        other.gameObject.GetComponent<DeactivateComputer>().HackComputer();
 
         // Add point
         point_collector.AddPoint();
@@ -88,11 +100,13 @@ public class InteractWithComputers : MonoBehaviour
             TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.computer, id);
         }
 
+        /*
         // Disabled Computer Models for Player Guidance 
         GameObject parent = other.gameObject.transform.parent.gameObject;
         parent.transform.GetChild(0).gameObject.SetActive(false);
         parent.transform.GetChild(1).gameObject.SetActive(false);
         parent.transform.GetChild(3).gameObject.SetActive(false);
         parent.transform.GetChild(5).gameObject.SetActive(false);
+        */
     }
 }

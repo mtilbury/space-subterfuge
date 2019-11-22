@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorPingIcon
       objectReference: {fileID: 0}
+    - target: {fileID: 6518228894752935684, guid: d38ffb138a3e747a0b7f3795a3d77f97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 601631320721084932, guid: d38ffb138a3e747a0b7f3795a3d77f97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -116,6 +121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2410484204797837127, guid: d38ffb138a3e747a0b7f3795a3d77f97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9017046946509155390, guid: d38ffb138a3e747a0b7f3795a3d77f97,
         type: 3}

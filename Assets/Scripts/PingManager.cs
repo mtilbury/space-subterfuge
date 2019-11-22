@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PingManager : MonoBehaviour
 {
-    public enum PingTypes {Default, Door, Teleport, Hacking, Jailed, Help};
+    public enum PingTypes {Default, Door, Teleport, Hacking, Jailed, Help, UnJail};
 
     public GameObject[] Pings;
 
@@ -61,6 +61,10 @@ public class PingManager : MonoBehaviour
                 return newPing;
             case PingTypes.Help:
                 newPing = Instantiate(Pings[5]);
+                newPing.transform.position = spawnPosition;
+                return newPing; ;
+            case PingTypes.UnJail:
+                newPing = Instantiate(Pings[6]);
                 newPing.transform.position = spawnPosition;
                 return newPing; ;
             default:

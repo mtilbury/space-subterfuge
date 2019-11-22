@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 49
+    value: 25
   intensityX:
     overrideState: 1
-    value: 0.61
+    value: 1
   intensityY:
     overrideState: 1
-    value: 0.642
+    value: 1
   centerX:
     overrideState: 0
     value: 0
@@ -52,35 +52,35 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 35
+    value: 10
   threshold:
     overrideState: 0
-    value: 1
+    value: 1.4
   softKnee:
     overrideState: 0
-    value: 0.5
+    value: 0.045
   clamp:
     overrideState: 0
-    value: 65472
+    value: 65457.07
   diffusion:
     overrideState: 1
-    value: 3.85
+    value: 7.08
   anamorphicRatio:
     overrideState: 0
-    value: 0.24
+    value: 1
   color:
     overrideState: 1
-    value: {r: 0, g: 0.5716541, b: 1, a: 1}
+    value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
     overrideState: 0
     value: 0
   dirtTexture:
     overrideState: 0
-    value: {fileID: 0}
+    value: {fileID: 28684132378477856, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     defaultState: 1
   dirtIntensity:
     overrideState: 0
-    value: 0
+    value: 3.4
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.586
+    value: 0.5
   smoothness:
     overrideState: 0
     value: 0.444
@@ -132,11 +132,11 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   rounded:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   mask:
     overrideState: 1
-    value: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+    value: {fileID: 10906, guid: 0000000000000000f000000000000000, type: 0}
     defaultState: 1
   opacity:
     overrideState: 0

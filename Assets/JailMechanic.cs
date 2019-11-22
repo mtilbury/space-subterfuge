@@ -28,6 +28,8 @@ public class JailMechanic : MonoBehaviour
             Debug.Log("Player was jailed");
             Debug.Log(jail.jailedAttackers.Count);
 
+            PingManager.Instance.SpawnPing(PingManager.PingTypes.Jailed, transform.position);
+
             if (inTutorialDefender)
             {
                 defenderTutorialCaptured++;

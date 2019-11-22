@@ -57,6 +57,8 @@ public class UnjailMechanic : MonoBehaviour
                         StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
 
+                        PingManager.Instance.SpawnPing(PingManager.PingTypes.UnJail, transform.position);
+
                         // If in tutorial, let manager know
                         if (inTutorial)
                         {
