@@ -65,7 +65,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2952993
+    m_Bits: 19730209
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  distanceFraction: 0.05
   offset: {x: 0, y: 30, z: -15}
 --- !u!114 &5066640258714151697
 MonoBehaviour:
