@@ -4,7 +4,7 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.ColorShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Name\": \"Glow Color\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"263dc509-59a9-4502-be9e-02ccd2e20256\"\n    },\n    \"m_DefaultReferenceName\": \"Color_E1D590CD\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Precision\": 0,\n    \"m_Value\": {\n        \"r\": 0.9716981053352356,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
+            "JSONnodeData": "{\n    \"m_Name\": \"Glow Color\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"263dc509-59a9-4502-be9e-02ccd2e20256\"\n    },\n    \"m_DefaultReferenceName\": \"Color_E1D590CD\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Precision\": 0,\n    \"m_Value\": {\n        \"r\": 2.1185474395751955,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 1,\n    \"m_Hidden\": false\n}"
         },
         {
             "typeInfo": {
@@ -22,7 +22,7 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Vector2ShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Name\": \"SineOutput\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"65b1945b-a3ed-4c9d-bf61-fc92f8dc3bbe\"\n    },\n    \"m_DefaultReferenceName\": \"Vector2_F7961BE0\",\n    \"m_OverrideReferenceName\": \"_SineOutput\",\n    \"m_Precision\": 0,\n    \"m_Value\": {\n        \"x\": 0.75,\n        \"y\": 2.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    },\n    \"m_Hidden\": false\n}"
+            "JSONnodeData": "{\n    \"m_Name\": \"SineOutput\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"65b1945b-a3ed-4c9d-bf61-fc92f8dc3bbe\"\n    },\n    \"m_DefaultReferenceName\": \"Vector2_F7961BE0\",\n    \"m_OverrideReferenceName\": \"_SineOutput\",\n    \"m_Precision\": 0,\n    \"m_Value\": {\n        \"x\": 0.30000001192092898,\n        \"y\": 1.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    },\n    \"m_Hidden\": false\n}"
         }
     ],
     "m_SerializableNodes": [

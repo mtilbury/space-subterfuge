@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1235602112495723510
+--- !u!114 &-702283347346777276
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Outline
-  m_Shader: {fileID: -6465566751694194690, guid: b97271f781e764413a51b179a19b8c39,
+  m_Name: TestDissolve
+  m_Shader: {fileID: -6465566751694194690, guid: 9cbfe6aff58ac49588427d67ffba1e3e,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,6 +33,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_DB66D78C:
+        m_Texture: {fileID: 2800000, guid: 4bc69227d65a24a4e8aafb3a2a1cb0e3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -62,8 +66,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1C697329: 0.9
-    - Vector1_DAECCFFE: 0.5
+    - Vector1_5F714053: 0.01
+    - Vector1_7FD3A12B: 30
+    - Vector1_D8A0D46F: -3.85
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -86,8 +91,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_381655FA: {r: 0, g: 0, b: 0, a: 0}
-    - Color_93BC18D3: {r: 0, g: 0.5019608, b: 32, a: 0}
+    - Color_83089866: {r: 0, g: 35.47153, b: 51.98415, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
