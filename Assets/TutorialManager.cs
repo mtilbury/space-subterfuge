@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -43,6 +44,9 @@ public class TutorialManager : MonoBehaviour
     private List<Task> task_walls;
 
     public int attackersNeeded = 3;
+
+    public Text waitForPlayers;
+    public SceneFade fader;
 
     private void Awake()
     {
@@ -109,8 +113,11 @@ public class TutorialManager : MonoBehaviour
         {
             if (TutorialManagerDefender.instance.tutorialFinished)
             {
-                // Done
-                SceneManager.LoadScene(2);
+                fader.FadeToLevel(2);
+            }
+            else
+            {
+                waitForPlayers.enabled = true;
             }
         }
     }
