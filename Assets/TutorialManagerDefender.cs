@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialManagerDefender : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class TutorialManagerDefender : MonoBehaviour
     private bool done = false;
 
     public bool tutorialFinished = false;
+
+    public Text waitForPlayers;
 
     public static TutorialManagerDefender instance;
     private void Awake()
@@ -73,13 +76,14 @@ public class TutorialManagerDefender : MonoBehaviour
             {
                 UIAlertManagerDefender.instance.AddToQueue("Open doors with 'A'");
             }
-            if(current_task == tasks.door)
+            if(current_task == tasks.teleport)
             {
                 UIAlertManagerDefender.instance.AddToQueue("Use these to teleport across the map quickly.");
             }
-            if(current_task > tasks.door)
+            if(current_task > tasks.teleport)
             {
                 tutorialFinished = true;
+                waitForPlayers.enabled = true;
             }
         }
     }

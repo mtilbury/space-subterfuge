@@ -22,6 +22,8 @@ public class CheckDefenderWin : MonoBehaviour
     private PlayerMovement Attacker3_mov;
     */
 
+    public SceneFade fader;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,8 @@ public class CheckDefenderWin : MonoBehaviour
         DefenderWinText.enabled = true;
         AttackersLoseText.enabled = true;
         yield return new WaitForSeconds(5.0f);
-        SceneManager.LoadScene(2); // Go to menu
+        fader.FadeToLevel(2);
+        //SceneManager.LoadScene(2); // Go to menu
+
     }
 }
