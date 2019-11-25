@@ -18,5 +18,11 @@ public class DeactivateWire : MonoBehaviour
     {
         Debug.Log("Shutting Off");
         material.SetVector("_SineOutput", new Vector2(0.0f, 0.0f));
+        material.SetFloat("_Power", 0.0f);
+    }
+
+    private void OnDestroy()
+    {
+        parentComputer.OnComputerHacked -= ChangeColor;
     }
 }

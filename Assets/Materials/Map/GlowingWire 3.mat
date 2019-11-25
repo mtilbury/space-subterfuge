@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1235602112495723510
+--- !u!114 &-800391035290102571
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UniformOutline
-  m_Shader: {fileID: -6465566751694194690, guid: b97271f781e764413a51b179a19b8c39,
+  m_Name: GlowingWire 3
+  m_Shader: {fileID: -6465566751694194690, guid: 71afed71dd4c346259036619ffee276c,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -62,8 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1C697329: 0.8
-    - Vector1_DAECCFFE: 0.8
+    - Vector1_D0EBF95C: 0.15
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -86,9 +85,10 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_381655FA: {r: 0.7830189, g: 0.5946511, b: 0.5946511, a: 1}
-    - Color_93BC18D3: {r: 0, g: 0.5019608, b: 32, a: 0}
+    - Color_A8337A6B: {r: 0, g: 0, b: 0, a: 0}
+    - Color_E1D590CD: {r: 0.91665447, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SineOutput: {r: 0.3, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

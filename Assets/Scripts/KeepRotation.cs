@@ -6,6 +6,8 @@ public class KeepRotation : MonoBehaviour
 {
     RectTransform rect;
 
+    Vector3 targetRotation;
+
     private void Awake()
     {
         rect = GetComponent<RectTransform>();
