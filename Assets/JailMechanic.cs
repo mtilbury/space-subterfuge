@@ -13,6 +13,9 @@ public class JailMechanic : MonoBehaviour
     public bool inTutorialDefender = false;
     private int defenderTutorialCaptured = 0;
 
+    public AudioClip jailSFX;
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,11 @@ public class JailMechanic : MonoBehaviour
             Debug.Log(jail.jailedAttackers.Count);
 
             PingManager.Instance.SpawnPing(PingManager.PingTypes.Jailed, transform.position);
+
+            if(jailSFX != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(jailSFX);
+            }
 
             if (inTutorialDefender)
             {
