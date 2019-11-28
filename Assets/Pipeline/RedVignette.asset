@@ -12,34 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 7
+    value: 15
   threshold:
     overrideState: 0
-    value: 0.9
+    value: 1.4
   softKnee:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0.045
   clamp:
     overrideState: 0
     value: 65457.07
   diffusion:
-    overrideState: 1
-    value: 7
+    overrideState: 0
+    value: 5.54
   anamorphicRatio:
     overrideState: 0
     value: 1
   color:
     overrideState: 1
-    value: {r: 1, g: 0, b: 0, a: 1}
+    value: {r: 0.7490196, g: 0, b: 0, a: 1}
   fastMode:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   dirtTexture:
     overrideState: 0
     value: {fileID: 28684132378477856, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -118,25 +118,25 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 1, g: 0, b: 0, a: 1}
+    value: {r: 0.6981132, g: 0, b: 0, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.571
+    value: 0.5
   smoothness:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0.01
   roundness:
     overrideState: 0
-    value: 1
+    value: 0
   rounded:
-    overrideState: 0
+    overrideState: 1
     value: 1
   mask:
     overrideState: 1
-    value: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+    value: {fileID: 2800000, guid: ede18adc8bbdc474f8b098894d9db80c, type: 3}
     defaultState: 1
   opacity:
     overrideState: 1

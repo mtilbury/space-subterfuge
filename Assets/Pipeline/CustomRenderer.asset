@@ -138,11 +138,11 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideDepthState: 0
-    depthCompareFunction: 4
-    enableWrite: 0
+    depthCompareFunction: 2
+    enableWrite: 1
     stencilSettings:
       overrideStencilState: 1
-      stencilReference: 1
+      stencilReference: 2
       stencilCompareFunction: 8
       passOperation: 2
       failOperation: 2
@@ -258,10 +258,10 @@ MonoBehaviour:
     enableWrite: 0
     stencilSettings:
       overrideStencilState: 1
-      stencilReference: 1
+      stencilReference: 2
       stencilCompareFunction: 3
       passOperation: 2
-      failOperation: 1
+      failOperation: 2
       zFailOperation: 0
     cameraSettings:
       overrideCamera: 0
