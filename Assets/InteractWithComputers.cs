@@ -71,6 +71,7 @@ public class InteractWithComputers : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         instruction.enabled = false;
+        player_mov.canMove = true;
     }
 
 
