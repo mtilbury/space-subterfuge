@@ -73,7 +73,7 @@ public class InteractWithObject : MonoBehaviour
 
                     
                     // Disable instruction text
-                    if(interactable.isOneUse)
+                    //if(interactable.isOneUse)
                         interactPrompt.SetActive(false);
                     onCoolDown = true;
                     coolDownTimer = coolDown;

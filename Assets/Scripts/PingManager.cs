@@ -49,31 +49,34 @@ public class PingManager : MonoBehaviour
             case PingTypes.Door:
                 newPing = Instantiate(Pings[1]);
                 newPing.transform.position = spawnPosition;
-                return newPing; 
+                break;
             case PingTypes.Teleport:
                 newPing = Instantiate(Pings[2]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
             case PingTypes.Hacking:
                 newPing = Instantiate(Pings[3]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
             case PingTypes.Jailed:
                 newPing = Instantiate(Pings[4]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
             case PingTypes.Help:
                 newPing = Instantiate(Pings[5]);
                 newPing.transform.position = spawnPosition;
-                return newPing; ;
+                break;
             case PingTypes.UnJail:
                 newPing = Instantiate(Pings[6]);
                 newPing.transform.position = spawnPosition;
-                return newPing; ;
+                break;
             default:
                 newPing = Instantiate(Pings[0]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
         }
+
+        newPing.transform.localScale *= 3.0f;
+        return newPing;
     }
 }
