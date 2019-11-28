@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -52,7 +52,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 25
+    value: 10
   threshold:
     overrideState: 0
     value: 1.4
@@ -64,16 +64,16 @@ MonoBehaviour:
     value: 65457.07
   diffusion:
     overrideState: 1
-    value: 4.94
+    value: 5.54
   anamorphicRatio:
     overrideState: 0
     value: 1
   color:
     overrideState: 1
-    value: {r: 0.3820755, g: 0.7909195, b: 1, a: 1}
+    value: {r: 0, g: 1.3333334, b: 2, a: 1}
   fastMode:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   dirtTexture:
     overrideState: 0
     value: {fileID: 28684132378477856, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -29,8 +29,8 @@ public class CheckAttackerWin : MonoBehaviour
     public void AddPoint()
     {
         numPoints++;
-        numPointsText.text = "Data: " + numPoints;
-        numPointsText2.text = "Data: \n" + numPoints;
+        numPointsText.text = "Data: " + numPoints + "/" + numPointsToWin;
+        numPointsText2.text = "Data: \n" + numPoints + "/" + numPointsToWin;
     }
 
     private IEnumerator AttackerWinScreen()
