@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour, HasController
     //public bool dashing = false;
 
     private Rigidbody rb;
-    Vector3 movementInput;
+    public Vector3 movementInput;
     //private bool jumpPressed = false;
     //private bool grounded = true;
     //private Camera viewCamera;
@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour, HasController
         }
 
         // Get movementInput
-        Vector3 movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
+        movementInput = new Vector3(controller.leftStick.x.ReadValue(), 0, controller.leftStick.y.ReadValue());
 
         if (canMove)
         {
