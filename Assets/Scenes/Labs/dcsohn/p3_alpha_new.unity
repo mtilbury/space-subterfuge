@@ -4171,6 +4171,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1842274125}
+    - target: {fileID: 707610869097748042, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: linecastMask.m_Bits
+      value: 98304
+      objectReference: {fileID: 0}
     - target: {fileID: 1291333478, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
       propertyPath: interactPrompt
       value: 

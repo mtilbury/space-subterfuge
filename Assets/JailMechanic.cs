@@ -8,6 +8,10 @@ public class JailMechanic : MonoBehaviour
     public GameObject jailManagement;
     public GameObject jailSpawn;
 
+    public GameObject defender;
+
+    public LayerMask linecastMask;
+
     private JailManagement jail;
 
     public bool inTutorialDefender = false;
@@ -26,6 +30,14 @@ public class JailMechanic : MonoBehaviour
     {
         if (other.CompareTag("Attacker") && !other.name.Contains("Follower"))
         {
+            // Make sure nothing is in the way
+            if(Physics.Linecast(defender.transform.position, other.gameObject.transform.position, linecastMask))
+            {
+                Debug.Log("Blocked!");
+                Debug.DrawLine(defender.transform.position, other.gameObject.transform.position, Color.green, 100f, false);
+                return;
+            }
+
             other.transform.position = jailSpawn.transform.position;
             jail.jailedAttackers.Enqueue(other.gameObject);
             Debug.Log("Player was jailed");
