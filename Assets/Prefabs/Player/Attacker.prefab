@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ping: {fileID: 0}
-  instruction: {fileID: 0}
+  interactPrompt: {fileID: 0}
   point_collector: {fileID: 0}
   ping_scale: 1
   stealRate: 20
