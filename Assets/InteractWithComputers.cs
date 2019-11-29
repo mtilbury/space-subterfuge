@@ -61,6 +61,7 @@ public class InteractWithComputers : MonoBehaviour
                     if (sp.RemoveProgress(stealRate * Time.deltaTime)) {
                         // unhacking is done. allow them to move
                         player_mov.canMove = true;
+                        interactPrompt.SetActive(false);
                     }
                     // unhacking not done
                 }
