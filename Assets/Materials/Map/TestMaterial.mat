@@ -61,10 +61,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_5F714053: 0.75
-    - Vector1_7FD3A12B: 30
+    - Vector1_5F714053: 0.81
+    - Vector1_7FD3A12B: 30.4
     - Vector1_BFBCFDEF: 1
-    - Vector1_D8A0D46F: 0.1
+    - Vector1_D8A0D46F: 0.12
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
