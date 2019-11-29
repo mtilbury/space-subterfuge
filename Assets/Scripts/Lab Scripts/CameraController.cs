@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         startingPosition = player.transform.position + offset;
-        Debug.Log(player.transform.position.z + offset.z);
+        //Debug.Log(player.transform.position.z + offset.z);
     }
 
     private void Update()
@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
         if (lerping)
         {
             transform.position = Vector3.Lerp(transform.position, startingPosition, distanceFraction);
-            Debug.Log("I am Lerping");
+            //Debug.Log("I am Lerping");
         }
 
         if (withinRange(transform.position.y, startingPosition.y, .1f) && withinRange(transform.position.z, startingPosition.z, .1f) && withinRange(transform.position.x, startingPosition.x, .1f))
