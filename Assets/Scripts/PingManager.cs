@@ -6,7 +6,8 @@ public class PingManager : MonoBehaviour
 {
     public enum PingTypes {Default, Door, Teleport, Hacking, Jailed, Help, UnJail};
 
-    public GameObject[] Pings;
+    //public GameObject[] Pings;
+    public List<GameObject> Pings;
 
     [Header("Order: Attacker 1, 2, 3 ; Defender")]
     public Camera[] cameras;
@@ -40,6 +41,8 @@ public class PingManager : MonoBehaviour
     public GameObject SpawnPing(PingTypes pingType, Vector3 spawnPosition)
     {
         GameObject newPing;
+        Debug.Log(pingType);
+        Debug.Log(Pings);
 
         switch (pingType)
         {

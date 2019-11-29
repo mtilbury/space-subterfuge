@@ -15,6 +15,9 @@ public class GameManagement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             fader.FadeToLevel(0);
 
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            fader.FadeToLevel(2);
+
         if (inMenu && Gamepad.current.startButton.wasPressedThisFrame)
             fader.FadeToLevel(1);
     }

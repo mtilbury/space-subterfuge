@@ -24,7 +24,10 @@ public class DeactivateComputer : MonoBehaviour
 
     public void HackComputer()
     {
-        computerTrigger.enabled = false;
+        computerTrigger.size = new Vector3(0f, 0f, 0f);
+        computerTrigger.center = new Vector3(0f, 100f, 0f);
+        StartCoroutine(DisableAfter());
+        //computerTrigger.enabled = false;
 
         Instantiate(hackParticle, transform.position, Quaternion.identity);
 
@@ -39,5 +42,11 @@ public class DeactivateComputer : MonoBehaviour
         {
             OnComputerHacked.Invoke();
         }
+    }
+
+    private IEnumerator DisableAfter()
+    {
+        yield return null;
+        computerTrigger.enabled = false;
     }
 }
