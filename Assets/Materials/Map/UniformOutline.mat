@@ -86,8 +86,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_381655FA: {r: 0.7830189, g: 0.5946511, b: 0.5946511, a: 1}
-    - Color_93BC18D3: {r: 0, g: 25.660229, b: 42.722507, a: 0}
+    - Color_381655FA: {r: 0, g: 0, b: 0, a: 1}
+    - Color_93BC18D3: {r: 0, g: 1, b: 0.25330424, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
