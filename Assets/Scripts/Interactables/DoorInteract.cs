@@ -6,6 +6,13 @@ public class DoorInteract : Interactable
 {
     public Door door;
 
+    public float doorCooldown = 5.0f;
+    private bool onCooldown;
+    private float doorCooldownTimer;
+    private BoxCollider doorTrigger;
+
+    [Space]
+    [Header("Color Options")]
     public Color activeColor;
     public Color inactiveColor;
 
@@ -14,6 +21,7 @@ public class DoorInteract : Interactable
 
     private bool pingActive;
 
+    public DoorInteract linkedDoor;
     public Renderer doorRenderer;
     public Renderer linkedDoorRenderer;
     private Material material;
@@ -21,14 +29,18 @@ public class DoorInteract : Interactable
 
     public void Awake()
     {
+        doorTrigger = GetComponent<BoxCollider>();
+        onCooldown = false;
+        doorCooldownTimer = 0.0f;
+
         isOneUse = false;
         pingTimer = 0.0f;
         pingActive = false;
         material = doorRenderer.material;
         linkedDoorMaterial = linkedDoorRenderer.material;
 
-        material.SetColor("_Color", inactiveColor);
-        linkedDoorMaterial.SetColor("_Color", inactiveColor);
+        material.SetColor("_Color", activeColor);
+        linkedDoorMaterial.SetColor("_Color", activeColor);
     }
 
     private void Update()
@@ -40,6 +52,18 @@ public class DoorInteract : Interactable
             if(pingTimer <= 0.0f)
             {
                 pingActive = false;
+            }
+        }
+
+        if (onCooldown)
+        {
+            doorCooldownTimer -= Time.deltaTime;
+
+            if(doorCooldownTimer <= 0.0f)
+            {
+                onCooldown = false;
+                EnableDoor();
+                linkedDoor.EnableDoor();
             }
         }
     }
@@ -61,16 +85,31 @@ public class DoorInteract : Interactable
         {
             door.doorAnimControl.Play("Door", 0, 0.0f);
             door.open = false;
-            material.SetColor("_Color", inactiveColor);
-            linkedDoorMaterial.SetColor("_Color", inactiveColor);
         }
         else if (!door.open)
         {
             door.doorAnimControl.Play("Door", 0, 1.0f);
             door.open = true;
-            material.SetColor("_Color", activeColor);
-            linkedDoorMaterial.SetColor("_Color", activeColor);
         }
         door.animationSpeed *= -1.0f;
+
+        onCooldown = true;
+        DisableDoor();
+        linkedDoor.DisableDoor();
+        doorCooldownTimer = doorCooldown;
+    }
+
+    public void EnableDoor()
+    {
+        doorTrigger.enabled = true;
+        material.SetColor("_Color", activeColor);
+        linkedDoorMaterial.SetColor("_Color", activeColor);
+    }
+
+    public void DisableDoor()
+    {
+        doorTrigger.enabled = false;
+        material.SetColor("_Color", inactiveColor);
+        linkedDoorMaterial.SetColor("_Color", inactiveColor);
     }
 }

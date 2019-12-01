@@ -13,7 +13,8 @@ public class UnjailMechanic : MonoBehaviour
     private PlayerMovement playerMove;
     private JailManagement jail;
 
-    public Text unjailInstruction;
+    //public Text unjailInstruction;
+    public GameObject unjailButtonPrompt;
 
     public bool inTutorial = false;
     public int id = 1;
@@ -36,7 +37,8 @@ public class UnjailMechanic : MonoBehaviour
         if (other.CompareTag("Jail Gate") && jail.jailedAttackers.Count > 0)
         {
             // Display instruction
-            unjailInstruction.enabled = true;
+            //unjailInstruction.enabled = true;
+            unjailButtonPrompt.SetActive(true);
         }
     }
 
@@ -44,6 +46,11 @@ public class UnjailMechanic : MonoBehaviour
     {
         if (other.CompareTag("Jail Gate"))
         {
+            if(jail.jailedAttackers.Count <= 0)
+            {
+                unjailButtonPrompt.SetActive(false);
+            }
+
             // Check if X was pressed
             if (playerMove.controller != null)
             {
@@ -75,7 +82,9 @@ public class UnjailMechanic : MonoBehaviour
         // Remove instruction
         if (other.CompareTag("Jail Gate"))
         {
-            unjailInstruction.enabled = false;
+            //unjailInstruction.enabled = false;
+            unjailButtonPrompt.SetActive(false);
+
         }
     }
 

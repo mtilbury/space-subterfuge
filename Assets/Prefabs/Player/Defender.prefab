@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ping: {fileID: 0}
-  instruction: {fileID: 0}
+  interactPrompt: {fileID: 0}
   point_collector: {fileID: 0}
   ping_scale: 1
   stealRate: 20
@@ -565,6 +565,11 @@ PrefabInstance:
       propertyPath: jailSpawn
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: defender
+      value: 
+      objectReference: {fileID: 3468781246121713200}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e91e4058903488439134c823b75461b, type: 3}
 --- !u!1 &1482939797743770207 stripped
@@ -593,4 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jailManagement: {fileID: 0}
   jailSpawn: {fileID: 0}
+  defender: {fileID: 0}
   inTutorialDefender: 0
+  jailSFX: {fileID: 0}
+  audioSource: {fileID: 0}

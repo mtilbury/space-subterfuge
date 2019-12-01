@@ -8,7 +8,8 @@ public class InteractWithComputers : MonoBehaviour
     private PlayerMovement player_mov;
 
     public GameObject ping;
-    public Text instruction;
+    //public Text instruction;
+    public GameObject interactPrompt;
     public CheckAttackerWin point_collector;
     public float ping_scale = 1.0f;
     public float stealRate = 20.0f;
@@ -26,7 +27,8 @@ public class InteractWithComputers : MonoBehaviour
         if (other.CompareTag("Computer"))
         {
             // Tell player to press A to steal info
-            instruction.enabled = true;
+            //instruction.enabled = true;
+            interactPrompt.SetActive(true);
         }
     }
 
@@ -59,6 +61,7 @@ public class InteractWithComputers : MonoBehaviour
                     if (sp.RemoveProgress(stealRate * Time.deltaTime)) {
                         // unhacking is done. allow them to move
                         player_mov.canMove = true;
+                        interactPrompt.SetActive(false);
                     }
                     // unhacking not done
                 }
@@ -70,7 +73,9 @@ public class InteractWithComputers : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        instruction.enabled = false;
+        //instruction.enabled = false;
+        interactPrompt.SetActive(false);
+        player_mov.canMove = true;
     }
 
 
@@ -85,7 +90,9 @@ public class InteractWithComputers : MonoBehaviour
         */
 
         // Disable instruction text
-        instruction.enabled = false;
+        //instruction.enabled = false;
+        interactPrompt.SetActive(false);
+
 
         // TODO: disable trigger
         //other.gameObject.SetActive(false);

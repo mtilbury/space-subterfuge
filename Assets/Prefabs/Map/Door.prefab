@@ -195,7 +195,6 @@ GameObject:
   - component: {fileID: 9127390193956481763}
   - component: {fileID: 4591751876780244434}
   - component: {fileID: 6790769603308432943}
-  - component: {fileID: 5910936676219796649}
   - component: {fileID: 6350562889988648752}
   - component: {fileID: 5875700505000889622}
   - component: {fileID: 3064535089949389986}
@@ -267,19 +266,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5910936676219796649
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806911049934437095}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6350562889988648752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -323,8 +309,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOneUse: 1
   door: {fileID: 3729316344651896234}
+  doorCooldown: 5
   activeColor: {r: 0, g: 1, b: 0.04290104, a: 1}
   inactiveColor: {r: 1, g: 0, b: 0, a: 1}
+  linkedDoor: {fileID: 1499077392802127399}
   doorRenderer: {fileID: 666068752614488257}
   linkedDoorRenderer: {fileID: 6403780175993099213}
 --- !u!1 &5821260759815275904
@@ -338,7 +326,6 @@ GameObject:
   - component: {fileID: 3390552198404665928}
   - component: {fileID: 454391317720528287}
   - component: {fileID: 1558817475894252959}
-  - component: {fileID: 1916138877272844165}
   - component: {fileID: 2768878607410609678}
   - component: {fileID: 1499077392802127396}
   - component: {fileID: 1499077392802127399}
@@ -410,19 +397,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1916138877272844165
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5821260759815275904}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2768878607410609678
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -466,8 +440,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOneUse: 1
   door: {fileID: 3729316344651896234}
+  doorCooldown: 5
   activeColor: {r: 0, g: 1, b: 0.04290104, a: 1}
   inactiveColor: {r: 1, g: 0, b: 0, a: 1}
+  linkedDoor: {fileID: 3064535089949389986}
   doorRenderer: {fileID: 6403780175993099213}
   linkedDoorRenderer: {fileID: 666068752614488257}
 --- !u!1 &5821260760364540744

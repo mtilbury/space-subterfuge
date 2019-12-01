@@ -6,7 +6,8 @@ public class PingManager : MonoBehaviour
 {
     public enum PingTypes {Default, Door, Teleport, Hacking, Jailed, Help, UnJail};
 
-    public GameObject[] Pings;
+    //public GameObject[] Pings;
+    public List<GameObject> Pings;
 
     [Header("Order: Attacker 1, 2, 3 ; Defender")]
     public Camera[] cameras;
@@ -40,37 +41,42 @@ public class PingManager : MonoBehaviour
     public GameObject SpawnPing(PingTypes pingType, Vector3 spawnPosition)
     {
         GameObject newPing;
+        Debug.Log(pingType);
+        Debug.Log(Pings);
 
         switch (pingType)
         {
             case PingTypes.Door:
                 newPing = Instantiate(Pings[1]);
                 newPing.transform.position = spawnPosition;
-                return newPing; 
+                break;
             case PingTypes.Teleport:
                 newPing = Instantiate(Pings[2]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
             case PingTypes.Hacking:
                 newPing = Instantiate(Pings[3]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
             case PingTypes.Jailed:
                 newPing = Instantiate(Pings[4]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
             case PingTypes.Help:
                 newPing = Instantiate(Pings[5]);
                 newPing.transform.position = spawnPosition;
-                return newPing; ;
+                break;
             case PingTypes.UnJail:
                 newPing = Instantiate(Pings[6]);
                 newPing.transform.position = spawnPosition;
-                return newPing; ;
+                break;
             default:
                 newPing = Instantiate(Pings[0]);
                 newPing.transform.position = spawnPosition;
-                return newPing;
+                break;
         }
+
+        newPing.transform.localScale *= 3.0f;
+        return newPing;
     }
 }

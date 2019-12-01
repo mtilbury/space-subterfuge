@@ -14,6 +14,8 @@ public class CheckAttackerWin : MonoBehaviour
 
     private int numPoints = 0;
 
+    public SceneFade fader;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,8 +29,8 @@ public class CheckAttackerWin : MonoBehaviour
     public void AddPoint()
     {
         numPoints++;
-        numPointsText.text = "Data: " + numPoints;
-        numPointsText2.text = "Data: \n" + numPoints;
+        numPointsText.text = "Data: " + numPoints + "/" + numPointsToWin;
+        numPointsText2.text = "Data: \n" + numPoints + "/" + numPointsToWin;
     }
 
     private IEnumerator AttackerWinScreen()
@@ -36,6 +38,7 @@ public class CheckAttackerWin : MonoBehaviour
         AttackersWinText.enabled = true;
         DefenderLoseText.enabled = true;
         yield return new WaitForSeconds(5.0f);
-        SceneManager.LoadScene(2); // Go to menu
+        fader.FadeToLevel(2);
+        //SceneManager.LoadScene(2); // Go to menu
     }
 }

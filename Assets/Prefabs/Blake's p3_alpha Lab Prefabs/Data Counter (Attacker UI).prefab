@@ -167,7 +167,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Data: \n0"
+  m_Text: "Data: \n0/5"
 --- !u!114 &7117439718626735331
 MonoBehaviour:
   m_ObjectHideFlags: 0

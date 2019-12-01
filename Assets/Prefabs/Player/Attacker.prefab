@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ping: {fileID: 0}
-  instruction: {fileID: 0}
+  interactPrompt: {fileID: 0}
   point_collector: {fileID: 0}
   ping_scale: 1
   stealRate: 20
@@ -371,7 +371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3468781246218969506
 Transform:
   m_ObjectHideFlags: 0
