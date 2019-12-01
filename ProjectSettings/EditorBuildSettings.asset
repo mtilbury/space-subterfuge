@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Labs/mtilbury/mtilbury_MENU_LAB.unity
     guid: e0db8f5f82d187d47917ee00b64aee1b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Labs/mtilbury/mtilbury_TUTORIAL_LAB.unity
     guid: 8f63f16fc0f901f4f9b87e6d037b6a8d
   - enabled: 0
