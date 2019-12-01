@@ -155,41 +155,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: obstacleMask.m_Bits
-      value: 65536
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: targetMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4625803906486067832, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: targetCamera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: 1427161202541192830, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: playerSpeed
@@ -205,15 +170,50 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713230, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3468781246121713229, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 3468781246121713230, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
-      propertyPath: m_Enabled
+      propertyPath: obstacleMask.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: targetMask.m_Bits
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625803906486067832, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3468781246121713230, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
@@ -318,46 +318,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: obstacleMask.m_Bits
-      value: 65536
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: targetMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4625803906486067832, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: targetCamera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: 1427161202541192830, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: playerSpeed
@@ -378,21 +338,76 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246024154346, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713230, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713230, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5a0bd854a2f373b40ac18e725a89edf3, type: 2}
+    - target: {fileID: 3468781246121713230, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 55f44e586bf8b4fea91c5167aa6b57e1, type: 2}
     - target: {fileID: 3468781246121713229, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2534964839176971238, guid: bbbf813d2baede2468638aed9f09de8d,
         type: 3}
+    - target: {fileID: 3468781246121713226, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: targetMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7735275053839793519, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713226, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+    - target: {fileID: 4625803906486067832, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
-      propertyPath: m_UseGravity
-      value: 0
+      propertyPath: targetCamera
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7735275053839793519, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
