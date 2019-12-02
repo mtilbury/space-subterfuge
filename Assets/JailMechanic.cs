@@ -41,7 +41,17 @@ public class JailMechanic : MonoBehaviour
             //
             //other.transform.position = jailSpawn.transform.position;
             //jail.jailedAttackers.Enqueue(other.gameObject);
-            other.GetComponent<ActOnJailed>().act();
+            if (other.GetComponent<ActOnJailed>().act())
+            {
+                if (inTutorialDefender)
+                {
+                    defenderTutorialCaptured++;
+                    if (defenderTutorialCaptured >= 3)
+                    {
+                        TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
+                    }
+                }
+            }
             Debug.Log("Player was jailed");
             Debug.Log(jail.jailedAttackers.Count);
 
@@ -52,14 +62,7 @@ public class JailMechanic : MonoBehaviour
                 audioSource.PlayOneShot(jailSFX);
             }
 
-            if (inTutorialDefender)
-            {
-                defenderTutorialCaptured++;
-                if(defenderTutorialCaptured >= 3)
-                {
-                    TutorialManagerDefender.instance.RegisterSuccess(TutorialManagerDefender.instance.tasks.capture);
-                }
-            }
+
         }
     }
 }

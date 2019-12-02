@@ -27,9 +27,10 @@ public class TutorialJailer : MonoBehaviour
         jail2ManagementComp = jail2Management.GetComponent<JailManagement>();
         jail3ManagementComp = jail3Management.GetComponent<JailManagement>();
 
-        playerInJail1.transform.position = jail1Spawn.transform.position;
-        playerInJail2.transform.position = jail2Spawn.transform.position;
-        playerInJail3.transform.position = jail3Spawn.transform.position;
+        playerInJail1.transform.parent.position = jail1Spawn.transform.position;
+        playerInJail1.transform.localPosition = Vector3.zero;
+        playerInJail2.transform.parent.position = jail2Spawn.transform.position;
+        playerInJail3.transform.parent.position = jail3Spawn.transform.position;
 
         jail1ManagementComp.jailedAttackers.Enqueue(playerInJail1);
         jail2ManagementComp.jailedAttackers.Enqueue(playerInJail2);
