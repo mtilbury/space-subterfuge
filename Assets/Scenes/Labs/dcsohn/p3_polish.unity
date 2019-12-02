@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8121,7 +8121,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021573, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Name
-      value: Attacker Graphics 1
+      value: Attacker Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 497416759051265814, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -10735,7 +10735,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021573, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Name
-      value: Attacker Graphics 3
+      value: Attacker Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 497416759051265814, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -21068,7 +21068,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021573, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Name
-      value: Attacker Graphics 2
+      value: Attacker Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 497416759051265814, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -31959,7 +31959,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687611670}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 0, z: 3.7}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 967249280}
@@ -31969,7 +31969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 39.9, y: 0.77685165}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687611672
@@ -38485,7 +38485,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052056887}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 0, z: -2.3000002}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 986740928}
@@ -38495,7 +38495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -46.1, y: 0.77685165}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052056889

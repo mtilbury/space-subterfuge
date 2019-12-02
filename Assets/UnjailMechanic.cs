@@ -58,19 +58,24 @@ public class UnjailMechanic : MonoBehaviour
                 {
                     if (jail.jailedAttackers.Count > 0 && canUnjail)
                     {
-                        canUnjail = false;
-                        GameObject temp = jail.jailedAttackers.Dequeue();
-                        temp.transform.parent.position = jailExit.transform.position;
-                        StartCoroutine(UnjailCooldown());
-                        Debug.Log("Attacker freed from jail");
-
-                        PingManager.Instance.SpawnPing(PingManager.PingTypes.UnJail, transform.position);
-
                         // If in tutorial, let manager know
                         if (inTutorial)
                         {
                             TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.jail, id);
                         }
+
+                        canUnjail = false;
+                        GameObject temp = jail.jailedAttackers.Dequeue();
+                        temp.transform.parent.position = jailExit.transform.position;
+                        temp.transform.localPosition = Vector3.zero;
+                        temp.transform.parent.Find("Attacker Graphics").localPosition = Vector3.zero;
+             
+                        StartCoroutine(UnjailCooldown());
+                        Debug.Log("Attacker freed from jail");
+
+                        PingManager.Instance.SpawnPing(PingManager.PingTypes.UnJail, transform.position);
+
+                        
                     }
                 }
             }

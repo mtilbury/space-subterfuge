@@ -15161,7 +15161,7 @@ MonoBehaviour:
   canUnjail: 1
   unjailCooldown: 5
   unjailButtonPrompt: {fileID: 1194441483}
-  inTutorial: 0
+  inTutorial: 1
   id: 3
 --- !u!114 &414258097 stripped
 MonoBehaviour:
@@ -16329,7 +16329,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021573, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Name
-      value: Attacker Graphics 3
+      value: Attacker Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 497416759051265814, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -16471,6 +16471,7 @@ PrefabInstance:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
+    - {fileID: 4935175918429478009, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
 --- !u!1 &439324746
 GameObject:
@@ -16827,7 +16828,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021573, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Name
-      value: Attacker Graphics 1
+      value: Attacker Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 497416759051265814, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -65812,7 +65813,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021573, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Name
-      value: Attacker Graphics 2
+      value: Attacker Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 497416759051265814, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -65954,6 +65955,7 @@ PrefabInstance:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
+    - {fileID: 4935175918429478009, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
 --- !u!1001 &1843850048
 PrefabInstance:
