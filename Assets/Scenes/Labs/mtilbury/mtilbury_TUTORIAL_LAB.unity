@@ -2029,7 +2029,7 @@ MonoBehaviour:
     attacker1_wall: {fileID: 660168625}
     attacker2_wall: {fileID: 717924865}
     attacker3_wall: {fileID: 1961172522}
-  attackersNeeded: 2
+  attackersNeeded: 3
   waitForPlayers: {fileID: 2010080474}
   fader: {fileID: 1331941794}
 --- !u!1001 &75785663
@@ -23716,7 +23716,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 414258091}
+      objectReference: {fileID: 965290211}
     - target: {fileID: 328778572539091777, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -27062,7 +27062,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 965290211}
+      objectReference: {fileID: 414258091}
     - target: {fileID: 328778572539091777, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -41843,7 +41843,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194441483}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 0, z: -2.3000002}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 283047286}
@@ -41853,7 +41853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -46.1, y: 0.77685165}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1196856273
@@ -43860,7 +43860,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defender
       value: 
-      objectReference: {fileID: 965290211}
+      objectReference: {fileID: 1581353414}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker1
@@ -59463,7 +59463,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674980552}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 0, z: 3.7}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 941203278}
@@ -59473,7 +59473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 39.9, y: 0.77685165}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1675386368 stripped
