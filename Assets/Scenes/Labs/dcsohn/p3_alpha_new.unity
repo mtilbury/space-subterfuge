@@ -5669,48 +5669,48 @@ PrefabInstance:
     - target: {fileID: 497416759160310888, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: viewMeshFilter
-      value: 
+      value:
       objectReference: {fileID: 1710958511}
     - target: {fileID: 497416759160310888, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ppl
-      value: 
+      value:
       objectReference: {fileID: 54538244}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: interactPrompt
-      value: 
+      value:
       objectReference: {fileID: 568060387}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: point_collector
-      value: 
+      value:
       objectReference: {fileID: 726462513}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ping
-      value: 
+      value:
       objectReference: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d,
         type: 3}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: interactPrompt
-      value: 
+      value:
       objectReference: {fileID: 568060387}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jailManagement
-      value: 
+      value:
       objectReference: {fileID: 1147318673}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jailExit
-      value: 
+      value:
       objectReference: {fileID: 831876277}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: unjailButtonPrompt
-      value: 
+      value:
       objectReference: {fileID: 773960935}
     - target: {fileID: 497416759433991100, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -5725,12 +5725,12 @@ PrefabInstance:
     - target: {fileID: 3322812984221561134, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: targetCamera
-      value: 
+      value:
       objectReference: {fileID: 603493931}
     - target: {fileID: 3322812983739999674, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: targetCamera
-      value: 
+      value:
       objectReference: {fileID: 603493931}
     - target: {fileID: 3946485617410033148, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -5763,8 +5763,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3cfa070804021444b43cf2eb9f64276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!136 &440674108
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7189,7 +7189,7 @@ PrefabInstance:
     - target: {fileID: 603113538491685736, guid: e3c230eefd752be44ac940a39eecb42e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: cd8e7386c76ad4e2f961dffcaf39fa96, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c230eefd752be44ac940a39eecb42e, type: 3}
@@ -7863,8 +7863,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &564636738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7975,22 +7975,22 @@ PrefabInstance:
     - target: {fileID: 497416759160310888, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: viewMeshFilter
-      value: 
+      value:
       objectReference: {fileID: 1901796673}
     - target: {fileID: 497416759160310888, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ppl
-      value: 
+      value:
       objectReference: {fileID: 210575309}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: interactPrompt
-      value: 
+      value:
       objectReference: {fileID: 718277842}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: point_collector
-      value: 
+      value:
       objectReference: {fileID: 726462513}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -8005,28 +8005,28 @@ PrefabInstance:
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ping
-      value: 
+      value:
       objectReference: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d,
         type: 3}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: interactPrompt
-      value: 
+      value:
       objectReference: {fileID: 718277842}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jailManagement
-      value: 
+      value:
       objectReference: {fileID: 1147318673}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jailExit
-      value: 
+      value:
       objectReference: {fileID: 831876277}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: unjailButtonPrompt
-      value: 
+      value:
       objectReference: {fileID: 2052056887}
     - target: {fileID: 497416759433991100, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -8041,7 +8041,7 @@ PrefabInstance:
     - target: {fileID: 3322812983739999674, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: targetCamera
-      value: 
+      value:
       objectReference: {fileID: 243630565}
     - target: {fileID: 3946485617410033148, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -8051,7 +8051,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
     m_RemovedComponents:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
@@ -10052,7 +10052,7 @@ PrefabInstance:
     - target: {fileID: 603113538491685736, guid: e3c230eefd752be44ac940a39eecb42e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: e2fef6438bbef458bbae2c72fdd5f582, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c230eefd752be44ac940a39eecb42e, type: 3}
@@ -13219,7 +13219,7 @@ PrefabInstance:
     - target: {fileID: 4954981772396710796, guid: 2c9df07c983bd9a4ea7c97ff1ce3dd7f,
         type: 3}
       propertyPath: attacker
-      value: 
+      value:
       objectReference: {fileID: 440674106}
     - target: {fileID: 4954981772396710796, guid: 2c9df07c983bd9a4ea7c97ff1ce3dd7f,
         type: 3}
@@ -13845,7 +13845,7 @@ PrefabInstance:
     - target: {fileID: 603113538491685736, guid: e3c230eefd752be44ac940a39eecb42e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 6373bb28cf82b45de820e7d35832ba93, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c230eefd752be44ac940a39eecb42e, type: 3}
@@ -15778,8 +15778,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f59d511c2d974d139c7b078abcd7251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 440674106}
   distanceFraction: 0.05
   offset: {x: 0, y: 10, z: -5}
@@ -15899,22 +15899,22 @@ PrefabInstance:
     - target: {fileID: 497416759160310888, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: viewMeshFilter
-      value: 
+      value:
       objectReference: {fileID: 400596290}
     - target: {fileID: 497416759160310888, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ppl
-      value: 
+      value:
       objectReference: {fileID: 222631010}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: interactPrompt
-      value: 
+      value:
       objectReference: {fileID: 1229208821}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: point_collector
-      value: 
+      value:
       objectReference: {fileID: 726462513}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -15929,28 +15929,28 @@ PrefabInstance:
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ping
-      value: 
+      value:
       objectReference: {fileID: 2324865427753861375, guid: d350ee798c9ca49808e9d8edd33c015d,
         type: 3}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: interactPrompt
-      value: 
+      value:
       objectReference: {fileID: 1229208821}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jailManagement
-      value: 
+      value:
       objectReference: {fileID: 1147318673}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jailExit
-      value: 
+      value:
       objectReference: {fileID: 831876277}
     - target: {fileID: 3946485616577507727, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: unjailButtonPrompt
-      value: 
+      value:
       objectReference: {fileID: 1687611670}
     - target: {fileID: 497416759433991100, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -15965,7 +15965,7 @@ PrefabInstance:
     - target: {fileID: 3322812983739999674, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: targetCamera
-      value: 
+      value:
       objectReference: {fileID: 1498799477}
     - target: {fileID: 3946485617410033148, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
@@ -15975,7 +15975,7 @@ PrefabInstance:
     - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
     m_RemovedComponents:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
@@ -16389,7 +16389,7 @@ PrefabInstance:
     - target: {fileID: 603113538491685736, guid: e3c230eefd752be44ac940a39eecb42e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 12af2db4b85fb4ccda7b5fa16242e591, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c230eefd752be44ac940a39eecb42e, type: 3}
@@ -19091,7 +19091,7 @@ PrefabInstance:
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker3
-      value: 
+      value:
       objectReference: {fileID: 564636740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 485f2894fe7e80c4599ff1de303d4fd2, type: 3}
@@ -20265,12 +20265,12 @@ PrefabInstance:
     - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
       propertyPath: Attacker2
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
       propertyPath: Attacker3
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
@@ -20792,7 +20792,7 @@ PrefabInstance:
     - target: {fileID: 603113538491685736, guid: e3c230eefd752be44ac940a39eecb42e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 74dc8a5559a61458b8ce05642b806228, type: 2}
     - target: {fileID: 5900663282128982943, guid: e3c230eefd752be44ac940a39eecb42e,
         type: 3}
@@ -26448,7 +26448,7 @@ PrefabInstance:
     - target: {fileID: 4954981772396710796, guid: 2c9df07c983bd9a4ea7c97ff1ce3dd7f,
         type: 3}
       propertyPath: attacker
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4954981772396710796, guid: 2c9df07c983bd9a4ea7c97ff1ce3dd7f,
         type: 3}
@@ -27122,7 +27122,7 @@ PrefabInstance:
     - target: {fileID: 4954981772396710796, guid: 2c9df07c983bd9a4ea7c97ff1ce3dd7f,
         type: 3}
       propertyPath: attacker
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4954981772396710796, guid: 2c9df07c983bd9a4ea7c97ff1ce3dd7f,
         type: 3}
@@ -30036,7 +30036,7 @@ PrefabInstance:
     - target: {fileID: 5076327457760551677, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: targetCamera
-      value: 
+      value:
       objectReference: {fileID: 1006301930}
     - target: {fileID: 1121788418637993679, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
@@ -30071,22 +30071,22 @@ PrefabInstance:
     - target: {fileID: 3918979277301892521, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_Materials.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 5a0bd854a2f373b40ac18e725a89edf3, type: 2}
     - target: {fileID: 3918979277301892521, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_Materials.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 3d0e9e30cde531f4698a8c10e5609cd5, type: 2}
     - target: {fileID: 3918979277301892521, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 3d0e9e30cde531f4698a8c10e5609cd5, type: 2}
     - target: {fileID: 3918979277301892521, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_Materials.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: c0874173f087b014d86f25737bf81302, type: 2}
     m_RemovedComponents:
     - {fileID: 450523556039042335, guid: f9b7b05de3d817e43846ee6e8d451bd7, type: 3}
