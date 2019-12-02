@@ -19,6 +19,10 @@ public class StealingProgress : MonoBehaviour
     // Update is called once per frame
     void Update() {
         progressBar.fillAmount = currentProgress / _maxProgress;
+        if (currentProgress >= 100)
+        {
+            progressBar.enabled = false;
+        }
     }
 
     public bool AddProgress(float progress) {
