@@ -8198,16 +8198,16 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 243630565}
-    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
     - target: {fileID: 3946485617410033148, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: offset
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
     m_RemovedComponents:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
@@ -16385,16 +16385,16 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1498799477}
-    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
     - target: {fileID: 3946485617410033148, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: offset
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
     m_RemovedComponents:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
