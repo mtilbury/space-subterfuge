@@ -38,8 +38,10 @@ public class JailMechanic : MonoBehaviour
                 return;
             }
 
-            other.transform.position = jailSpawn.transform.position;
-            jail.jailedAttackers.Enqueue(other.gameObject);
+            //
+            //other.transform.position = jailSpawn.transform.position;
+            //jail.jailedAttackers.Enqueue(other.gameObject);
+            other.GetComponent<ActOnJailed>().act();
             Debug.Log("Player was jailed");
             Debug.Log(jail.jailedAttackers.Count);
 

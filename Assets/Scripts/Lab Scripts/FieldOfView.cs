@@ -5,7 +5,8 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class FieldOfView : MonoBehaviour
 {
-
+    [Range(1.0f, 10.0f)]
+    public float viewExtension = 1.0f;
     public float view_radius;
     [Range(0,361)]
     public float view_angle;
@@ -117,7 +118,7 @@ public class FieldOfView : MonoBehaviour
             }
 
             viewPoints.Add(newViewCast.point);
-            viewPoints.Add(newViewCast.point + Vector3.up * maskHeight);
+            //viewPoints.Add(newViewCast.point + Vector3.up * maskHeight);
             oldViewCast = newViewCast;
         }
 
@@ -181,7 +182,7 @@ public class FieldOfView : MonoBehaviour
         RaycastHit hit;
 
         if(Physics.Raycast(transform.position, direction, out hit, view_radius, obstacleMask)){
-            return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
+            return new ViewCastInfo(true, hit.point + direction * viewExtension, hit.distance, globalAngle);
         }
         else
         {
