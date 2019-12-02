@@ -60,7 +60,7 @@ public class UnjailMechanic : MonoBehaviour
                     {
                         canUnjail = false;
                         GameObject temp = jail.jailedAttackers.Dequeue();
-                        temp.transform.position = jailExit.transform.position;
+                        temp.transform.parent.position = jailExit.transform.position;
                         StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
 

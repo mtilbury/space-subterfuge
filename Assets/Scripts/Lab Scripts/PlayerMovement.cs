@@ -28,10 +28,10 @@ public class PlayerMovement : MonoBehaviour, HasController
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -10f)
-        {
-            SceneManager.LoadScene(0);
-        }
+        //if (transform.position.y < -10f)
+        //{
+        //    SceneManager.LoadScene(0);
+        //}
 
         // If no gamepad is connected
         if (controller == null)
