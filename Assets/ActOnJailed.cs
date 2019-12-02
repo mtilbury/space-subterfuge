@@ -24,11 +24,12 @@ public class ActOnJailed : MonoBehaviour
         
     }
 
-    public void act()
+    public bool act()
     {
+        bool temp = !jailing;
         if (!jailing)
             StartCoroutine(actOnJail());
-        
+        return temp;
     }
 
     private IEnumerator actOnJail()
