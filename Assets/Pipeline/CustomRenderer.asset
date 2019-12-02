@@ -171,7 +171,7 @@ MonoBehaviour:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 98561
+        m_Bits: 16875777
       PassNames: []
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
@@ -254,14 +254,14 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideDepthState: 0
-    depthCompareFunction: 2
+    depthCompareFunction: 3
     enableWrite: 0
     stencilSettings:
       overrideStencilState: 1
       stencilReference: 2
-      stencilCompareFunction: 3
+      stencilCompareFunction: 4
       passOperation: 2
-      failOperation: 2
+      failOperation: 0
       zFailOperation: 0
     cameraSettings:
       overrideCamera: 0
@@ -292,12 +292,12 @@ MonoBehaviour:
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideDepthState: 1
-    depthCompareFunction: 7
+    depthCompareFunction: 5
     enableWrite: 0
     stencilSettings:
       overrideStencilState: 1
       stencilReference: 15
-      stencilCompareFunction: 6
+      stencilCompareFunction: 8
       passOperation: 1
       failOperation: 0
       zFailOperation: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     passTag: ShowBehindWalls
-    Event: 300
+    Event: 450
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -337,7 +337,7 @@ MonoBehaviour:
       stencilReference: 15
       stencilCompareFunction: 3
       passOperation: 0
-      failOperation: 1
+      failOperation: 0
       zFailOperation: 0
     cameraSettings:
       overrideCamera: 0
