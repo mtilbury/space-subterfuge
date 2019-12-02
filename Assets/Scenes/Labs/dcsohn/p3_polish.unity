@@ -26729,6 +26729,11 @@ PrefabInstance:
       propertyPath: fader
       value: 
       objectReference: {fileID: 1307140146}
+    - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
+        type: 3}
+      propertyPath: miniCam
+      value: 
+      objectReference: {fileID: 7909105979851225571}
     - target: {fileID: 2163586114198291037, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26824,6 +26829,11 @@ PrefabInstance:
       propertyPath: fader
       value: 
       objectReference: {fileID: 1307140146}
+    - target: {fileID: 2163586114198291036, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
+        type: 3}
+      propertyPath: miniCam
+      value: 
+      objectReference: {fileID: 7909105979851225571}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d, type: 3}
 --- !u!4 &1371002396 stripped
@@ -41059,6 +41069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Attacker Minimap Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1680379235139298755, guid: 79ed679d615e34147a623fb61158bd53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1680379235139298758, guid: 79ed679d615e34147a623fb61158bd53,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41131,3 +41146,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79ed679d615e34147a623fb61158bd53, type: 3}
+--- !u!1 &7909105979851225571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1680379235139298755, guid: 79ed679d615e34147a623fb61158bd53,
+    type: 3}
+  m_PrefabInstance: {fileID: 7909105979851225570}
+  m_PrefabAsset: {fileID: 0}

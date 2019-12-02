@@ -12,6 +12,8 @@ public class CheckAttackerWin : MonoBehaviour
     public Text AttackersWinText;
     public Text DefenderLoseText;
 
+    public GameObject miniCam;
+
     private int numPoints = 0;
 
     public SceneFade fader;
@@ -37,6 +39,7 @@ public class CheckAttackerWin : MonoBehaviour
     {
         AttackersWinText.enabled = true;
         DefenderLoseText.enabled = true;
+        miniCam.transform.position = new Vector3(200, 0, 200);
         yield return new WaitForSeconds(5.0f);
         fader.FadeToLevel(2);
         //SceneManager.LoadScene(2); // Go to menu
