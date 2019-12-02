@@ -55,7 +55,7 @@ MonoBehaviour:
   jailExit: {fileID: 0}
   canUnjail: 1
   unjailCooldown: 5
-  unjailInstruction: {fileID: 0}
+  unjailButtonPrompt: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &3946485617410033148
@@ -73,6 +73,7 @@ MonoBehaviour:
   player: {fileID: 497416759160310801}
   hopForce: 2
   frequency: 8
+  offset: 0.5
 --- !u!1 &870877771058424071
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +202,7 @@ PrefabInstance:
     - target: {fileID: 3468781246218969507, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3468781246218969507, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
@@ -222,6 +223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: 5bb016b1d34641a40ba877f1f342d5db,
+        type: 3}
+      propertyPath: viewExtension
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3468781246121713231, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
@@ -370,6 +376,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1427161202541192830, guid: 5bb016b1d34641a40ba877f1f342d5db,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3468781246121713231, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
       propertyPath: m_Enabled
@@ -378,11 +389,6 @@ PrefabInstance:
     - target: {fileID: 3468781246121713226, guid: 5bb016b1d34641a40ba877f1f342d5db,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1427161202541192830, guid: 5bb016b1d34641a40ba877f1f342d5db,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
