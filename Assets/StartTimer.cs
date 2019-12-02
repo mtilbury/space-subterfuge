@@ -24,9 +24,13 @@ public class StartTimer : MonoBehaviour
     private IEnumerator Countdown()
     {
         defender.enabled = false;
+        defender.canMove = false;
         attacker1.enabled = false;
+        attacker1.canMove = false;
         attacker2.enabled = false;
+        attacker2.canMove = false;
         attacker3.enabled = false;
+        attacker3.canMove = false;
 
         int countdownInt = countdownStart;
         while(countdownInt > 0)
@@ -41,9 +45,13 @@ public class StartTimer : MonoBehaviour
         countdownDefender.text = "Start!";
 
         defender.enabled = true;
+        defender.canMove = true;
         attacker1.enabled = true;
+        attacker1.canMove = true;
         attacker2.enabled = true;
+        attacker2.canMove = true;
         attacker3.enabled = true;
+        attacker3.canMove = true;
 
         yield return new WaitForSeconds(0.5f);
 

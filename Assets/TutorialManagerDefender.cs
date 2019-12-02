@@ -78,7 +78,7 @@ public class TutorialManagerDefender : MonoBehaviour
             }
             if(current_task == tasks.teleport)
             {
-                UIAlertManagerDefender.instance.AddToQueue("Use these to teleport across the map quickly.");
+                UIAlertManagerDefender.instance.AddToQueue("Use the pink teleporters to move across the map quickly.");
             }
             if(current_task > tasks.teleport)
             {
