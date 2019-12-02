@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198fa391ededa439f802c9dbb1a27997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewExtension: 1
   view_radius: 10
   view_angle: 361
   targetMask:
@@ -339,6 +340,7 @@ MonoBehaviour:
   playerSpeed: 12
   jumpPower: 0
   canMove: 1
+  movementInput: {x: 0, y: 0, z: 0}
 --- !u!114 &1291333486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefenderCaptureAttack
       objectReference: {fileID: 0}
+    - target: {fileID: 1482939798891013785, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1482939798891013784, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -599,6 +606,9 @@ MonoBehaviour:
   jailManagement: {fileID: 0}
   jailSpawn: {fileID: 0}
   defender: {fileID: 0}
+  linecastMask:
+    serializedVersion: 2
+    m_Bits: 0
   inTutorialDefender: 0
   jailSFX: {fileID: 0}
   audioSource: {fileID: 0}
