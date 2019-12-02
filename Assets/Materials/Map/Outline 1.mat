@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CircleOutline
-  m_Shader: {fileID: -6465566751694194690, guid: 64d96943d76d24fed94b7fb11b8b0134,
+  m_Name: Outline 1
+  m_Shader: {fileID: -6465566751694194690, guid: b97271f781e764413a51b179a19b8c39,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -63,7 +63,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_1C697329: 0.8
-    - Vector1_DAECCFFE: 0.8
+    - Vector1_DAECCFFE: 0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -87,7 +87,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_381655FA: {r: 0, g: 0, b: 0, a: 0}
-    - Color_93BC18D3: {r: 1, g: 1, b: 1, a: 0}
+    - Color_93BC18D3: {r: 0.43336582, g: 0, b: 1, a: 1}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
