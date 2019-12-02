@@ -11635,11 +11635,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594344875}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 63.355766, y: 31.014698, z: -36.926647}
+  m_LocalPosition: {x: 12.093482, y: 442, z: -290}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 711445729}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!114 &594344877
 MonoBehaviour:
@@ -11714,7 +11714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2080502360}
-  distanceFraction: 0.05
+  distanceFraction: 0.1
   offset: {x: 0, y: 30, z: -17}
 --- !u!81 &594344879
 AudioListener:
@@ -14927,8 +14927,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 936829871}
   - {fileID: 594344876}
+  - {fileID: 936829871}
   m_Father: {fileID: 135034953}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22920,7 +22920,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 564636740}
+      objectReference: {fileID: 1147724110}
     - target: {fileID: 328778572539091777, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -26095,7 +26095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353614108}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: -14.573401, y: 31.642332, z: -50.69212}
+  m_LocalPosition: {x: 12.093482, y: 442, z: -290}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 964800871}
@@ -26278,7 +26278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1147724110}
-  distanceFraction: 0.05
+  distanceFraction: 0.1
   offset: {x: 0, y: 30, z: -12}
 --- !u!81 &1353614114
 AudioListener:
@@ -27879,7 +27879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420497301}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 5.468949, y: 31.642332, z: -50.69212}
+  m_LocalPosition: {x: 12.093482, y: 442, z: -290}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 998396523}
@@ -28062,7 +28062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 564636740}
-  distanceFraction: 0.05
+  distanceFraction: 0.1
   offset: {x: 0, y: 30, z: -12}
 --- !u!81 &1420497307
 AudioListener:
@@ -33488,7 +33488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783511307}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 12.093482, y: 31.642332, z: -53.635506}
+  m_LocalPosition: {x: 12.093482, y: 442, z: -290}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 719026246}
@@ -33611,7 +33611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 440674106}
-  distanceFraction: 0.05
+  distanceFraction: 0.1
   offset: {x: 0, y: 30, z: -12}
 --- !u!81 &1783511312
 AudioListener:
@@ -37547,7 +37547,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1147724110}
+      objectReference: {fileID: 564636740}
     - target: {fileID: 328778572539091777, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d,
         type: 3}
       propertyPath: m_textInfo.characterCount
