@@ -5,9 +5,13 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class FieldOfView : MonoBehaviour
 {
+    public enum PlayerType { Attacker, Defender}
+    public PlayerType playerType;
+
     [Range(1.0f, 10.0f)]
     public float viewExtension = 1.0f;
     public float view_radius;
+    public float enemy_view_radius;
     [Range(0,361)]
     public float view_angle;
 
@@ -15,6 +19,7 @@ public class FieldOfView : MonoBehaviour
     public LayerMask obstacleMask;
 
     public List<Transform> visibleTargets = new List<Transform>();
+    public List<Transform> checkTargets = new List<Transform>();
 
     public float meshResolution;
     public int edgeResolveIterations;
@@ -30,12 +35,17 @@ public class FieldOfView : MonoBehaviour
     public LayerMask regularPPLayer;
     public LayerMask chasePPLayer;
 
+    [Space]
+
+    public GameObject graphics;
+    public bool isSeen;
+    public int numSeenBy;
     private void Start()
     {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-
+        isSeen = false;
         StartCoroutine(FindTargetsWithDelay(.2f));
     }
 
@@ -53,9 +63,26 @@ public class FieldOfView : MonoBehaviour
     private void LateUpdate()
     {
         DrawFieldOfView();
+        /*
+        if (playerType == PlayerType.Defender && numSeenBy > 1)
+        {
+            isSeen = true;
+        }
+        else isSeen &= playerType != PlayerType.Defender;
+        */
+
+        if (isSeen)
+        {
+            MakeVisible();
+        }
+        else
+        {
+            MakeInvisible();
+        }
     }
     void FindVisibleTargets()
     {
+
         visibleTargets.Clear();
 
         Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, view_radius, targetMask);
@@ -68,21 +95,74 @@ public class FieldOfView : MonoBehaviour
             {
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-                if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask) &&
-                    target.gameObject.CompareTag("Defender"))
+                if (playerType == PlayerType.Attacker)
                 {
-                    visibleTargets.Add(target);
+
+                    if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask) &&
+                        target.gameObject.CompareTag("Defender"))
+                    {
+                        Debug.Log("Defender Spotted!");
+                        visibleTargets.Add(target);
+                        target.gameObject.GetComponent<FieldOfView>().isSeen = true;
+                        // Reverse do this
+                    }
+                }
+                else if (playerType == PlayerType.Defender)
+                {
+                    if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask) &&
+                      target.gameObject.CompareTag("Attacker"))
+                    {
+                        Debug.Log("Attacker Spotted!");
+                        visibleTargets.Add(target);
+                        target.gameObject.GetComponent<FieldOfView>().isSeen = true;
+                    }
                 }
             }
         }
 
-        if(visibleTargets.Count >= 1)
+
+        for (int i = 0; i < checkTargets.Count; i++)
         {
-            ppl.volumeLayer = chasePPLayer;
+            Transform target = checkTargets[i];
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
+            if (Vector3.Angle(transform.forward, directionToTarget) < view_angle / 2)
+            {
+                float distanceToTarget = Vector3.Distance(transform.position, target.position);
+
+                if (playerType == PlayerType.Attacker)
+                {
+
+                    if (!Physics.Raycast(transform.position, directionToTarget, view_radius, obstacleMask) &&
+                        target.gameObject.CompareTag("Defender"))
+                    {
+                        Debug.Log("Defender Out of Vision!");
+                        target.gameObject.GetComponent<FieldOfView>().isSeen = false;
+                    }
+                }
+                else if (playerType == PlayerType.Defender)
+                {
+                    Debug.Log("Seeing if Attackers out of Range!");
+
+                    if (!Physics.Raycast(transform.position, directionToTarget, view_radius, obstacleMask) &&
+                      target.gameObject.CompareTag("Attacker"))
+                    {
+                        Debug.Log("Attacker Out of Vision!");
+                        visibleTargets.Add(target);
+                        target.gameObject.GetComponent<FieldOfView>().isSeen = false;
+                    }
+                }
+            }
+        }
+
+        if (visibleTargets.Count >= 1)
+        {
+            if(playerType == PlayerType.Attacker)
+                ppl.volumeLayer = chasePPLayer;
         }
         else
         {
-            ppl.volumeLayer = regularPPLayer;
+            if (playerType == PlayerType.Attacker)
+                ppl.volumeLayer = regularPPLayer;
         }
         
     }
@@ -226,5 +306,21 @@ public class FieldOfView : MonoBehaviour
             pointA = _pointA;
             pointB = _pointB;
         }
+    }
+
+    // Changes the TARGET'S current visibility
+    public void MakeVisible()
+    {
+        graphics.layer = 10;
+    }
+
+    public void MakeInvisible()
+    {
+        if (playerType == PlayerType.Attacker)
+            graphics.layer = 25;
+        else if (playerType == PlayerType.Defender)
+            graphics.layer = 26;
+
+
     }
 }
