@@ -93,17 +93,17 @@ public class TutorialManager : MonoBehaviour
             if(current_task == tasks.jail)
             {
                 // Display jail text
-                UIAlertManager.instance.AddToQueue("If you get caught, you'll be sent to jail. Press A to free other attackers.");
+                UIAlertManager.instance.AddToQueue("If you get caught, you'll be sent to jail. Press A to free other attackers.", true);
             }
 
             if(current_task == tasks.door)
             {
-                UIAlertManager.instance.AddToQueue("Hit a button to open a door with 'A'");
+                UIAlertManager.instance.AddToQueue("Hit a button to open a door with 'A'", true);
             }
 
             if(current_task == tasks.dash)
             {
-                UIAlertManager.instance.AddToQueue("Press X to do a dash!");
+                UIAlertManager.instance.AddToQueue("Press X to do a dash!", true);
                 UIAlertManager.instance.AddToQueue("Press X to do a dash!");
             }
 
@@ -117,7 +117,8 @@ public class TutorialManager : MonoBehaviour
             }
             else
             {
-                waitForPlayers.enabled = true;
+                //waitForPlayers.enabled = true;
+                UIAlertManager.instance.AddToQueue("Waiting for other players...", true);
             }
         }
     }
