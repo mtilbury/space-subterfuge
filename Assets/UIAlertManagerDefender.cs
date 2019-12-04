@@ -13,6 +13,8 @@ public class UIAlertManagerDefender : MonoBehaviour
     private Queue<string> to_alert;
     private bool is_displaying_alert = false;
 
+    private Coroutine curCoroutine;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -38,7 +40,7 @@ public class UIAlertManagerDefender : MonoBehaviour
         if (!is_displaying_alert && to_alert.Count > 0)
         {
             // If there's an alert, display it
-            StartCoroutine(DisplayText(to_alert.Dequeue()));
+            curCoroutine = StartCoroutine(DisplayText(to_alert.Dequeue()));
         }
     }
 
@@ -47,12 +49,16 @@ public class UIAlertManagerDefender : MonoBehaviour
         is_displaying_alert = true;
         ui_alert.text = alert;
         yield return new WaitForSeconds(alert_time);
-        ui_alert.text = "";
         is_displaying_alert = false;
     }
 
-    public void AddToQueue(string alert)
+    public void AddToQueue(string alert, bool bypass=false)
     {
+        if (bypass)
+        {
+            StopCoroutine(curCoroutine);
+            is_displaying_alert = false;
+        }
         to_alert.Enqueue(alert);
     }
 

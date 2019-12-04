@@ -74,16 +74,17 @@ public class TutorialManagerDefender : MonoBehaviour
 
             if(current_task == tasks.door)
             {
-                UIAlertManagerDefender.instance.AddToQueue("Open doors with 'A'");
+                UIAlertManagerDefender.instance.AddToQueue("Open doors with 'A'", true);
             }
             if(current_task == tasks.teleport)
             {
-                UIAlertManagerDefender.instance.AddToQueue("Use the pink teleporters to move across the map quickly.");
+                UIAlertManagerDefender.instance.AddToQueue("Use the pink teleporters to move across the map quickly.", true);
             }
             if(current_task > tasks.teleport)
             {
                 tutorialFinished = true;
-                waitForPlayers.enabled = true;
+                //waitForPlayers.enabled = true;
+                UIAlertManagerDefender.instance.AddToQueue("Waiting for other players...", true);
             }
         }
     }

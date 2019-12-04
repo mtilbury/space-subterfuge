@@ -11,6 +11,9 @@ public class ActOnJailed : MonoBehaviour
     public GameObject hoppingPlayer;
     public GameObject playerGraphics;
 
+    public AudioClip jailSFX;
+    public AudioSource audioSource;
+
     private bool jailing = false;
 
     // Start is called before the first frame update
@@ -39,6 +42,11 @@ public class ActOnJailed : MonoBehaviour
         jailUI.jailed = true;
         Debug.Log("JailUI.jailed set to true");
         gameObject.GetComponent<PlayerMovement>().enabled = false;
+
+        if (jailSFX != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(jailSFX);
+        }
 
         jailCage.SetActive(true);
         jailCage.transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);

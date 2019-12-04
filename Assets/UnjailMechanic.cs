@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class UnjailMechanic : MonoBehaviour
 {
     public GameObject jailManagement;
-    public GameObject jailExit;
+
+    public Transform jailExitWest;
+    public Transform jailExitNorth;
+    public Transform jailExitEast;
+    public Transform jailExitSouth;
+
     public bool canUnjail = true;
     public float unjailCooldown = 5.0f;
 
@@ -19,18 +24,23 @@ public class UnjailMechanic : MonoBehaviour
     public bool inTutorial = false;
     public int id = 1;
 
+    private List<Transform> jailExits;
+
     // Start is called before the first frame update
     void Start()
     {
         playerMove = GetComponent<PlayerMovement>();
         jail = jailManagement.GetComponent<JailManagement>();
+
+        jailExits = new List<Transform>
+        {
+            jailExitWest,
+            jailExitNorth,
+            jailExitEast,
+            jailExitSouth
+        };
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -54,7 +64,7 @@ public class UnjailMechanic : MonoBehaviour
             // Check if X was pressed
             if (playerMove.controller != null)
             {
-                if (playerMove.controller.xButton.wasPressedThisFrame)
+                if (playerMove.controller.aButton.wasPressedThisFrame)
                 {
                     if (jail.jailedAttackers.Count > 0 && canUnjail)
                     {
@@ -65,10 +75,24 @@ public class UnjailMechanic : MonoBehaviour
                         }
 
                         canUnjail = false;
-                        GameObject temp = jail.jailedAttackers.Dequeue();
-                        temp.transform.parent.position = jailExit.transform.position;
-                        temp.transform.localPosition = Vector3.zero;
-                        temp.transform.parent.Find("Attacker Graphics").localPosition = Vector3.zero;
+                        GameObject jailedAttacker = jail.jailedAttackers.Dequeue();
+
+                        // Find closest jailExit
+                        float minDistance = Mathf.Abs(Vector3.Distance(transform.position, jailExitWest.position));
+                        Transform closestJailExit = jailExitWest;
+                        foreach(Transform jailExit in jailExits)
+                        {
+                            float dist = Mathf.Abs(Vector3.Distance(transform.position, jailExit.position));
+                            if(dist < minDistance)
+                            {
+                                minDistance = dist;
+                                closestJailExit = jailExit;
+                            }
+                        }
+
+                        jailedAttacker.transform.parent.position = closestJailExit.position;
+                        jailedAttacker.transform.localPosition = Vector3.zero;
+                        jailedAttacker.transform.parent.Find("Attacker Graphics").localPosition = Vector3.zero;
              
                         StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
