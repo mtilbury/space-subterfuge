@@ -54,7 +54,7 @@ public class UnjailMechanic : MonoBehaviour
             // Check if X was pressed
             if (playerMove.controller != null)
             {
-                if (playerMove.controller.xButton.wasPressedThisFrame)
+                if (playerMove.controller.aButton.wasPressedThisFrame)
                 {
                     if (jail.jailedAttackers.Count > 0 && canUnjail)
                     {
