@@ -8,6 +8,9 @@ public class CheckAttackerWin : MonoBehaviour
 {
     public Text numPointsText;
     public Text numPointsText2;
+    public Text numPointsText3;
+    public Text numPointsText4;
+
     public int numPointsToWin = 5;
     public Text AttackersWinText;
     public Text DefenderLoseText;
@@ -18,10 +21,12 @@ public class CheckAttackerWin : MonoBehaviour
 
     public SceneFade fader;
 
+    public bool inTutorial = false;
+
     // Update is called once per frame
     void Update()
     {
-        if(numPoints >= numPointsToWin)
+        if(!inTutorial && numPoints >= numPointsToWin)
         {
             // Attackers win
             StartCoroutine(AttackerWinScreen());
@@ -32,7 +37,9 @@ public class CheckAttackerWin : MonoBehaviour
     {
         numPoints++;
         numPointsText.text = "Data: " + numPoints + "/" + numPointsToWin;
-        numPointsText2.text = "Data: \n" + numPoints + "/" + numPointsToWin;
+        numPointsText2.text = "Data: " + numPoints + "/" + numPointsToWin;
+        numPointsText3.text = "Data: " + numPoints + "/" + numPointsToWin;
+        numPointsText4.text = "Data: " + numPoints + "/" + numPointsToWin;
     }
 
     private IEnumerator AttackerWinScreen()
