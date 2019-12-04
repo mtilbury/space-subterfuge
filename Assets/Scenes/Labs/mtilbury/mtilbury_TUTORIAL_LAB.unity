@@ -13331,12 +13331,12 @@ PrefabInstance:
     - target: {fileID: 4664184704662631420, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4664184704662631420, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1356956959204688312, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
@@ -13369,6 +13369,11 @@ PrefabInstance:
       propertyPath: defenderMov
       value: 
       objectReference: {fileID: 1581353418}
+    - target: {fileID: 4664184704662631417, guid: f9b7b05de3d817e43846ee6e8d451bd7,
+        type: 3}
+      propertyPath: returnZPos
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4664184703596268032, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: m_Size.z
