@@ -39,7 +39,6 @@ public class FieldOfView : MonoBehaviour
 
     public GameObject graphics;
     public bool isSeen;
-    public int numSeenBy;
     private void Start()
     {
         viewMesh = new Mesh();
@@ -86,7 +85,6 @@ public class FieldOfView : MonoBehaviour
         visibleTargets.Clear();
 
         Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, view_radius, targetMask);
-
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
             Transform target = targetsInViewRadius[i].transform;
@@ -103,8 +101,6 @@ public class FieldOfView : MonoBehaviour
                     {
                         Debug.Log("Defender Spotted!");
                         visibleTargets.Add(target);
-                        target.gameObject.GetComponent<FieldOfView>().isSeen = true;
-                        // Reverse do this
                     }
                 }
                 else if (playerType == PlayerType.Defender)
@@ -114,16 +110,17 @@ public class FieldOfView : MonoBehaviour
                     {
                         Debug.Log("Attacker Spotted!");
                         visibleTargets.Add(target);
-                        target.gameObject.GetComponent<FieldOfView>().isSeen = true;
                     }
                 }
             }
         }
 
-
-        for (int i = 0; i < checkTargets.Count; i++)
+        // Check if in can be seen at all
+        Collider[] canBeSeenBy = Physics.OverlapSphere(transform.position, enemy_view_radius, targetMask);
+        int numSeenBy = 0;
+        for (int i = 0; i < canBeSeenBy.Length; i++)
         {
-            Transform target = checkTargets[i];
+            Transform target = canBeSeenBy[i].transform;
             Vector3 directionToTarget = (target.position - transform.position).normalized;
             if (Vector3.Angle(transform.forward, directionToTarget) < view_angle / 2)
             {
@@ -132,27 +129,35 @@ public class FieldOfView : MonoBehaviour
                 if (playerType == PlayerType.Attacker)
                 {
 
-                    if (!Physics.Raycast(transform.position, directionToTarget, view_radius, obstacleMask) &&
+                    if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask) &&
                         target.gameObject.CompareTag("Defender"))
                     {
-                        Debug.Log("Defender Out of Vision!");
-                        target.gameObject.GetComponent<FieldOfView>().isSeen = false;
+                        Debug.Log("Spotted by Defender!");
+                        numSeenBy++;
+                        // Reverse do this
                     }
                 }
                 else if (playerType == PlayerType.Defender)
                 {
-                    Debug.Log("Seeing if Attackers out of Range!");
-
-                    if (!Physics.Raycast(transform.position, directionToTarget, view_radius, obstacleMask) &&
+                    if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask) &&
                       target.gameObject.CompareTag("Attacker"))
                     {
-                        Debug.Log("Attacker Out of Vision!");
-                        visibleTargets.Add(target);
-                        target.gameObject.GetComponent<FieldOfView>().isSeen = false;
+                        Debug.Log("Spotted by Attacker!");
+                        numSeenBy++;
                     }
                 }
             }
         }
+
+        if(numSeenBy > 0)
+        {
+            isSeen = true;
+        }
+        else
+        {
+            isSeen = false;
+        }
+
 
         if (visibleTargets.Count >= 1)
         {
