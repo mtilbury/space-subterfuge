@@ -511,10 +511,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1427161202541192830, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+    - target: {fileID: 1482939797743770207, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
-      propertyPath: playerSpeed
-      value: 15
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3468781245936899337, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
@@ -572,16 +572,6 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: obstacleMask.m_Bits
-      value: 65536
-      objectReference: {fileID: 0}
-    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
-      propertyPath: targetMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3468781246218969507, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: m_IsActive
@@ -592,10 +582,25 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 1427161202541192830, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: playerSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4625803906486067832, guid: fa6ce6aebbb274b56956c8cd245ba0df,
         type: 3}
       propertyPath: targetCamera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468781246121713225, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
+      propertyPath: targetMask.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7735275053839793519, guid: fa6ce6aebbb274b56956c8cd245ba0df, type: 3}
@@ -632,7 +637,7 @@ PrefabInstance:
     - target: {fileID: 1482939798891013785, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1482939798891013784, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
@@ -704,12 +709,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1482939798891013789, guid: 2e91e4058903488439134c823b75461b,
-        type: 3}
-      propertyPath: defenderMov
-      value: 
-      objectReference: {fileID: 1427161202541192830, guid: fa6ce6aebbb274b56956c8cd245ba0df,
-        type: 3}
     - target: {fileID: 1482939797824823141, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -730,6 +729,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1482939798891013789, guid: 2e91e4058903488439134c823b75461b,
+        type: 3}
+      propertyPath: defenderMov
+      value: 
+      objectReference: {fileID: 1427161202541192830, guid: fa6ce6aebbb274b56956c8cd245ba0df,
+        type: 3}
     - target: {fileID: 707610870246042252, guid: 2e91e4058903488439134c823b75461b,
         type: 3}
       propertyPath: jailManagement

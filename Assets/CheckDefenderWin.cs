@@ -16,6 +16,8 @@ public class CheckDefenderWin : MonoBehaviour
     public Text AttackersLoseText;
     public int jailCount;
 
+    public GameObject miniCam;
+
     /*
     private PlayerMovement Attacker1_mov;
     private PlayerMovement Attacker2_mov;
@@ -57,6 +59,7 @@ public class CheckDefenderWin : MonoBehaviour
     {
         DefenderWinText.enabled = true;
         AttackersLoseText.enabled = true;
+        miniCam.transform.position = new Vector3(200, 0, 200);
         yield return new WaitForSeconds(5.0f);
         fader.FadeToLevel(2);
         //SceneManager.LoadScene(2); // Go to menu
