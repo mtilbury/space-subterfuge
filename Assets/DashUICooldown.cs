@@ -21,7 +21,7 @@ public class DashUICooldown : MonoBehaviour
     {
         if (playerMov.controller != null)
         {
-            if (playerMov.controller.bButton.wasPressedThisFrame && !isCooldown)
+            if (playerMov.controller.xButton.wasPressedThisFrame && !isCooldown)
             {
                 isCooldown = true;
                 imageCooldown.fillAmount = 1;
