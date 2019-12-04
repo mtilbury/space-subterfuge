@@ -235,16 +235,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198fa391ededa439f802c9dbb1a27997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerType: 1
   viewExtension: 1
   view_radius: 10
   view_angle: 361
   targetMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   obstacleMask:
     serializedVersion: 2
     m_Bits: 65536
   visibleTargets: []
+  checkTargets: []
   meshResolution: 5
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
@@ -258,6 +260,9 @@ MonoBehaviour:
   chasePPLayer:
     serializedVersion: 2
     m_Bits: 0
+  graphics: {fileID: 3918979277301892567}
+  isSeen: 0
+  numSeenBy: 0
 --- !u!114 &1553424408792114939
 MonoBehaviour:
   m_ObjectHideFlags: 0

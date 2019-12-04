@@ -37,11 +37,11 @@ TagManager:
   - RegularPostProcessing
   - ChasePostProcessing
   - BlocksView
-  - 
-  - 
-  - 
-  - 
-  - 
+  - HideAttacker
+  - HideDefender
+  - Attacker1ChasePP
+  - Attacker2ChasePP
+  - Attacker3ChasePP
   - 
   - 
   m_SortingLayers:
