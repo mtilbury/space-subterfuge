@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SprintMechanic : MonoBehaviour
 {
-    public PlayerMovement playerMove;
-    public SprintUICooldown sprintUI;
+    public GameObject sprintUIGO;
+
+    private PlayerMovement playerMove;
+    private SprintUICooldown sprintUI;
+
     public float originalSpeed;
     public float sprintSpeed = 15.0f;
 
@@ -18,6 +21,8 @@ public class SprintMechanic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerMove = GetComponent<PlayerMovement>();
+        sprintUI = sprintUIGO.GetComponent<SprintUICooldown>();
         originalSpeed = playerMove.playerSpeed;
     }
 
