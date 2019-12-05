@@ -8507,6 +8507,16 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1842274125}
+    - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: sprintUIGO
+      value: 
+      objectReference: {fileID: 614736782}
+    - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: originalSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
@@ -8547,25 +8557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c1a3b83f69d943b08932cf3f3ee5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &440674109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440674106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57c1a3b83f69d943b08932cf3f3ee5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprintUIGO: {fileID: 614736782}
-  originalSpeed: 10
-  sprintSpeed: 15
-  isSprinting: 0
-  canSprint: 1
-  inTutorial: 0
-  id: 1
 --- !u!4 &440674116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 497416759160310893, guid: 7afe215a8206df54fba38011eb63f476,
@@ -11203,6 +11194,16 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1842274125}
+    - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: sprintUIGO
+      value: 
+      objectReference: {fileID: 864375503}
+    - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: originalSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
@@ -11243,25 +11244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c1a3b83f69d943b08932cf3f3ee5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &564636743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564636740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57c1a3b83f69d943b08932cf3f3ee5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprintUIGO: {fileID: 864375503}
-  originalSpeed: 10
-  sprintSpeed: 15
-  isSprinting: 0
-  canSprint: 1
-  inTutorial: 0
-  id: 1
 --- !u!4 &564636750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 497416759160310893, guid: 7afe215a8206df54fba38011eb63f476,
@@ -21789,6 +21771,16 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1842274125}
+    - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: sprintUIGO
+      value: 
+      objectReference: {fileID: 1919148063}
+    - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: originalSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 497416759160310892, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
     - {fileID: 497416759160310895, guid: 7afe215a8206df54fba38011eb63f476, type: 3}
@@ -21817,25 +21809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cfa070804021444b43cf2eb9f64276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1147724112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147724110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57c1a3b83f69d943b08932cf3f3ee5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprintUIGO: {fileID: 1919148063}
-  originalSpeed: 10
-  sprintSpeed: 15
-  isSprinting: 0
-  canSprint: 1
-  inTutorial: 0
-  id: 1
 --- !u!114 &1147724117 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
