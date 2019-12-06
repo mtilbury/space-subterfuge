@@ -42,20 +42,20 @@ public class SprintMechanic : MonoBehaviour
 
             if(sprintUI.currentStamina >= 1)
             {
-                trail.Clear();
+                trail.emitting = false;
             }
 
             if (playerMove.controller.xButton.isPressed && sprintUI.currentStamina < 1)
             {
                 isSprinting = true;
                 playerMove.playerSpeed = sprintSpeed;
-                trail.enabled = true;
+                trail.emitting = true;
             }
             else
             {
                 isSprinting = false;
                 playerMove.playerSpeed = originalSpeed;
-                trail.enabled = false;
+                trail.emitting = false;
             }
         }
     }
