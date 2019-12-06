@@ -18,12 +18,16 @@ public class SprintMechanic : MonoBehaviour
     public bool inTutorial = false;
     public int id = 1;
 
+
+    private TrailRenderer trail;
+
     // Start is called before the first frame update
     void Start()
     {
         playerMove = GetComponent<PlayerMovement>();
         sprintUI = sprintUIGO.GetComponent<SprintUICooldown>();
         originalSpeed = playerMove.playerSpeed;
+        trail = GetComponent<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -31,15 +35,27 @@ public class SprintMechanic : MonoBehaviour
     {
         if (playerMove.controller != null)
         {
+            if (playerMove.controller.xButton.wasPressedThisFrame)
+            {
+                trail.Clear();
+            }
+
+            if(sprintUI.currentStamina >= 1)
+            {
+                trail.Clear();
+            }
+
             if (playerMove.controller.xButton.isPressed && sprintUI.currentStamina < 1)
             {
                 isSprinting = true;
                 playerMove.playerSpeed = sprintSpeed;
+                trail.enabled = true;
             }
             else
             {
                 isSprinting = false;
                 playerMove.playerSpeed = originalSpeed;
+                trail.enabled = false;
             }
         }
     }
