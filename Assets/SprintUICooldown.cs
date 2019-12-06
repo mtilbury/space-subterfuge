@@ -9,6 +9,9 @@ public class SprintUICooldown : MonoBehaviour
     public float cooldownStamina = 6.0f;
     public float maxStamina = 3.0f;
     public float currentStamina = 0.0f;
+    public float scalingFactor = 0.05f;
+    public Vector3 originalScaling;
+    public Vector3 maxScaling;
     public PlayerMovement playerMove;
     public SprintMechanic sprintMove;
 
@@ -30,6 +33,11 @@ public class SprintUICooldown : MonoBehaviour
                 currentStamina += 1 / maxStamina * Time.deltaTime;
                 imageCooldown.fillAmount = currentStamina;
 
+                if (transform.localScale.x < maxScaling.x)
+                {
+                    transform.localScale += new Vector3(scalingFactor, scalingFactor, scalingFactor);
+                }
+
                 if (imageCooldown.fillAmount >= 1)
                 {
                     //cooldownDelayActive = true;
@@ -38,6 +46,12 @@ public class SprintUICooldown : MonoBehaviour
             }
             else
             {
+                if (transform.localScale.x >= originalScaling.x)
+                {
+                    transform.localScale -= new Vector3(scalingFactor, scalingFactor, scalingFactor);
+
+                }
+
                 if (currentStamina <= 0)
                 {
                     return;

@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 328778572359566279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8154877, y: 0.8154877, z: 1.6309754}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 328778572539091806}
   - {fileID: 4501361385373349988}
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8679245, g: 0.06959773, b: 0.0779295, a: 1}
+  m_Color: {r: 0.37254903, g: 0.5568628, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09dc61dfcb85ed848b106826b2b84503, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35999764a1f0f7d4bb145d6842f6ba86, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -315,8 +315,9 @@ GameObject:
   - component: {fileID: 328778572593290574}
   - component: {fileID: 328778572593290575}
   - component: {fileID: 328778572593290609}
+  - component: {fileID: 7166981534957231078}
   m_Layer: 5
-  m_Name: Attacker Dash Skill
+  m_Name: Attacker Sprint Skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,12 +365,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09dc61dfcb85ed848b106826b2b84503, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -386,7 +387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328778572593290573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eb6485d7ca90b543a8651e8bea89644, type: 3}
   m_Name: 
@@ -395,6 +396,28 @@ MonoBehaviour:
   cooldown: 10
   isCooldown: 0
   player: {fileID: 0}
+--- !u!114 &7166981534957231078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328778572593290573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d406f73d9c8b8db48b63bae0dd70ab01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageCooldown: {fileID: 0}
+  cooldownStamina: 6
+  maxStamina: 3
+  currentStamina: 0
+  scalingFactor: 0.025
+  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
+  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
+  playerMove: {fileID: 0}
+  sprintMove: {fileID: 0}
+  cooldownDelayActive: 0
 --- !u!1 &3881189744306704327
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +445,7 @@ RectTransform:
   m_GameObject: {fileID: 3881189744306704327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.61279, y: 0.61279, z: 0.61279}
+  m_LocalScale: {x: 0.7036055, y: 0.7036055, z: 0.7036055}
   m_Children: []
   m_Father: {fileID: 328778572359566278}
   m_RootOrder: 1

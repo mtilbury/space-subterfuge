@@ -12799,6 +12799,9 @@ MonoBehaviour:
   cooldownStamina: 6
   maxStamina: 3
   currentStamina: 0
+  scalingFactor: 0.025
+  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
+  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
   playerMove: {fileID: 440674107}
   sprintMove: {fileID: 440674108}
   cooldownDelayActive: 0
@@ -17297,6 +17300,9 @@ MonoBehaviour:
   cooldownStamina: 6
   maxStamina: 3
   currentStamina: 0
+  scalingFactor: 0.025
+  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
+  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
   playerMove: {fileID: 564636741}
   sprintMove: {fileID: 564636742}
   cooldownDelayActive: 0
@@ -23469,7 +23475,8 @@ PrefabInstance:
       propertyPath: m_FillClockwise
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7166981534957231078, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d, type: 3}
 --- !u!224 &1222641167 stripped
 RectTransform:
@@ -36466,6 +36473,9 @@ MonoBehaviour:
   cooldownStamina: 6
   maxStamina: 3
   currentStamina: 0
+  scalingFactor: 0.025
+  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
+  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
   playerMove: {fileID: 1147724111}
   sprintMove: {fileID: 1147724117}
   cooldownDelayActive: 0
@@ -37199,7 +37209,8 @@ PrefabInstance:
       propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7166981534957231078, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d, type: 3}
 --- !u!224 &1981869601 stripped
 RectTransform:
@@ -37857,7 +37868,8 @@ PrefabInstance:
       propertyPath: m_FillClockwise
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7166981534957231078, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d, type: 3}
 --- !u!224 &1998513542 stripped
 RectTransform:
