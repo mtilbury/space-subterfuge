@@ -13302,8 +13302,8 @@ MonoBehaviour:
   maxStamina: 3
   currentStamina: 0
   scalingFactor: 0.025
-  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
-  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
+  originalScaling: {x: 0.35, y: 0.35, z: 0.35}
+  maxScaling: {x: 0.45, y: 0.45, z: 0.45}
   playerMove: {fileID: 440674107}
   sprintMove: {fileID: 440674108}
   cooldownDelayActive: 0
@@ -17906,8 +17906,8 @@ MonoBehaviour:
   maxStamina: 3
   currentStamina: 0
   scalingFactor: 0.025
-  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
-  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
+  originalScaling: {x: 0.35, y: 0.35, z: 0.35}
+  maxScaling: {x: 0.45, y: 0.45, z: 0.45}
   playerMove: {fileID: 564636741}
   sprintMove: {fileID: 564636742}
   cooldownDelayActive: 0
@@ -26534,8 +26534,7 @@ PrefabInstance:
         type: 3}
       propertyPath: GamepadManagerPrefab
       value: 
-      objectReference: {fileID: 5985801362856743745, guid: f4014ddbeb8a75e4bbcc53931b2dae8e,
-        type: 3}
+      objectReference: {fileID: 2080502360}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker1
@@ -26545,7 +26544,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defender
       value: 
-      objectReference: {fileID: 2080502360}
+      objectReference: {fileID: 440674106}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker2
@@ -37579,8 +37578,8 @@ MonoBehaviour:
   maxStamina: 3
   currentStamina: 0
   scalingFactor: 0.025
-  originalScaling: {x: 0.25, y: 0.25, z: 0.25}
-  maxScaling: {x: 0.35, y: 0.35, z: 0.35}
+  originalScaling: {x: 0.35, y: 0.35, z: 0.35}
+  maxScaling: {x: 0.45, y: 0.45, z: 0.45}
   playerMove: {fileID: 1147724111}
   sprintMove: {fileID: 1147724117}
   cooldownDelayActive: 0
