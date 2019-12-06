@@ -8891,6 +8891,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1842274125}
+    - target: {fileID: 497416759753021695, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: sprintUIGO
