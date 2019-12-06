@@ -9,6 +9,8 @@ public class HoppingAnimation : MonoBehaviour
     public float hopForce = 2.0f;
     public float frequency = 8.0f;
     public float offset = 0.5f;
+
+    public float emptyGameObjectPosition = 1.95f;
     Vector3 movementInput;
 
     private Rigidbody rb;
@@ -33,7 +35,15 @@ public class HoppingAnimation : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(movementInput);
         }
 
-        transform.position = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
+        if (transform.position.y > emptyGameObjectPosition)
+        {
+            transform.position = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
+        }
+
+        else
+        {
+            transform.position = new Vector3(player.transform.position.x, emptyGameObjectPosition, player.transform.position.z);
+        }
 
     }
 
