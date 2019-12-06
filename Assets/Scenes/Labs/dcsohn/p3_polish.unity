@@ -8507,6 +8507,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1842274125}
+    - target: {fileID: 497416759753021695, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: sprintUIGO
@@ -25620,7 +25625,8 @@ PrefabInstance:
         type: 3}
       propertyPath: GamepadManagerPrefab
       value: 
-      objectReference: {fileID: 2080502360}
+      objectReference: {fileID: 5985801362856743745, guid: f4014ddbeb8a75e4bbcc53931b2dae8e,
+        type: 3}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker1
@@ -25630,7 +25636,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defender
       value: 
-      objectReference: {fileID: 440674106}
+      objectReference: {fileID: 2080502360}
     - target: {fileID: 6557220936946882439, guid: 485f2894fe7e80c4599ff1de303d4fd2,
         type: 3}
       propertyPath: attacker2
