@@ -13,6 +13,7 @@ public class HoppingAnimation : MonoBehaviour
     public float emptyGameObjectPosition = 1.95f;
     Vector3 movementInput;
 
+
     private Rigidbody rb;
 
     // Start is called before the first frame update

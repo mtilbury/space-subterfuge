@@ -43,5 +43,11 @@ public class FilmingHelper : MonoBehaviour
         {
             SceneManager.LoadScene(7);
         }
+
+        // Title Scene
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SceneManager.LoadScene(8);
+        }
     }
 }

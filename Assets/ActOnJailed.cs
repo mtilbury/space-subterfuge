@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActOnJailed : MonoBehaviour
 {
     public JailManagement jail;
-    public JailEventUI jailUI;
+    //public JailEventUI jailUI;
     public GameObject jailCage;
     public GameObject jailSpawn;
     public GameObject hoppingPlayer;
@@ -39,8 +39,8 @@ public class ActOnJailed : MonoBehaviour
     private IEnumerator actOnJail()
     {
         jailing = true;
-        jailUI.jailed = true;
-        Debug.Log("JailUI.jailed set to true");
+        //jailUI.jailed = true;
+        //Debug.Log("JailUI.jailed set to true");
         gameObject.GetComponent<PlayerMovement>().enabled = false;
 
         if (jailSFX != null && audioSource != null)
@@ -59,6 +59,9 @@ public class ActOnJailed : MonoBehaviour
         {
             jailCage.transform.localScale = new Vector3(jailCage.transform.localScale.x + (1 - jailCage.transform.localScale.x) * .4f, jailCage.transform.localScale.y + (1 - jailCage.transform.localScale.y) * .4f, jailCage.transform.localScale.z + (1 - jailCage.transform.localScale.z) * .4f);
             frame++;
+            hoppingPlayer.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y - 3, jailCage.transform.position.z);
+            transform.localPosition = Vector3.zero;
+            playerGraphics.transform.localPosition = Vector3.zero;
             yield return null;
         }
 
