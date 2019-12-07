@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Labs/mtilbury/mtilbury_MENU_LAB.unity
     guid: e0db8f5f82d187d47917ee00b64aee1b
   - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/p3_TITLE.unity
+    guid: 456dc73dea5d7564e9115a29c5391fb8
+  - enabled: 1
     path: Assets/Scenes/Labs/mtilbury/mtilbury_TUTORIAL_LAB.unity
     guid: 8f63f16fc0f901f4f9b87e6d037b6a8d
   - enabled: 0
