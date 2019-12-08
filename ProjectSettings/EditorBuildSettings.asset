@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Labs/mtilbury/mtilbury_MENU_LAB.unity
     guid: e0db8f5f82d187d47917ee00b64aee1b
   - enabled: 1
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Labs/mtilbury/p3_defender_win.unity
     guid: 769b65f2d2cdc8045ae7a3672be6d195
+  - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/p3_attacker_win.unity
+    guid: 9c74f42bf2a49d740b9187b15f2f719c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 89d44e97cc9226e46836264119c12e9e,
       type: 2}

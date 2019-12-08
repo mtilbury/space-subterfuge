@@ -63,11 +63,11 @@ public class EndScreenManager : MonoBehaviour
 
         if (readyPlayers.Count == numPlayers)
         {
-            fader.FadeToLevel(3);
+            fader.FadeToLevel(2);
         }
         else if (menuPlayers.Count == numPlayers)
         {
-            fader.FadeToLevel(1);
+            fader.FadeToLevel(0);
         }
     }
 

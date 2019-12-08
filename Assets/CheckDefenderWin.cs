@@ -61,7 +61,7 @@ public class CheckDefenderWin : MonoBehaviour
         //AttackersLoseText.enabled = true;
         //miniCam.transform.position = new Vector3(200, 0, 200);
         yield return new WaitForSeconds(2.0f);
-        fader.FadeToLevel(4);
+        fader.FadeToLevel(3);
         //SceneManager.LoadScene(2); // Go to menu
 
     }
