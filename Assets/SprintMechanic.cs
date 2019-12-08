@@ -50,6 +50,10 @@ public class SprintMechanic : MonoBehaviour
                 isSprinting = true;
                 playerMove.playerSpeed = sprintSpeed;
                 trail.emitting = true;
+                if (inTutorial)
+                {
+                    TutorialManager.instance.RegisterSuccess(TutorialManager.instance.tasks.dash, id);
+                }
             }
             else
             {
