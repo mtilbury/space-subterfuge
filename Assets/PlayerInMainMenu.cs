@@ -9,6 +9,7 @@ public class PlayerInMainMenu : MonoBehaviour, HasController
     public Gamepad controller { get; set; }
 
     public Image button;
+    public Image button2;
 
     public Color selectedColor;
     public Color defaultColor;
@@ -18,6 +19,8 @@ public class PlayerInMainMenu : MonoBehaviour, HasController
     public TitleScreenManager titleManager;
     public int playerID;
 
+    private Vector3 defaultScale = Vector3.one;
+
     // Update is called once per frame
     void LateUpdate()
     {
@@ -25,6 +28,9 @@ public class PlayerInMainMenu : MonoBehaviour, HasController
         {
             // Change text color
             button.color = selectedColor;
+            button.transform.localScale = defaultScale * 1.2f;
+            button2.color = selectedColor;
+            button2.transform.localScale = defaultScale * 1.2f;
 
             // Register readyup success
             joined = true;
@@ -33,6 +39,9 @@ public class PlayerInMainMenu : MonoBehaviour, HasController
         else if (joined)
         {
             button.color = defaultColor;
+            button.transform.localScale = defaultScale;
+            button2.color = defaultColor;
+            button2.transform.localScale = defaultScale;
         }
     }
 }

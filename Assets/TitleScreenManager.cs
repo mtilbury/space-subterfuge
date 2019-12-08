@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class TitleScreenManager : MonoBehaviour
 {
     public GameObject StartButtonPrompt;
+    public GameObject StartButtonPrompt2;
 
     public GameObject ReadyUpPanel;
+    public GameObject ReadyUpPanel2;
 
     public GameObject defender;
     public GameObject attacker1;
@@ -46,7 +48,9 @@ public class TitleScreenManager : MonoBehaviour
                 {
                     showingReadyUp = true;
                     StartButtonPrompt.SetActive(false);
+                    StartButtonPrompt2.SetActive(false);
                     ReadyUpPanel.SetActive(true);
+                    ReadyUpPanel2.SetActive(true);
                 }
             }
         }
