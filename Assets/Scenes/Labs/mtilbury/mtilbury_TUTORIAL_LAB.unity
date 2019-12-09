@@ -16453,7 +16453,7 @@ PrefabInstance:
         type: 3}
       propertyPath: point_collector
       value: 
-      objectReference: {fileID: 1637490586}
+      objectReference: {fileID: 339905510}
     - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: inTutorial
