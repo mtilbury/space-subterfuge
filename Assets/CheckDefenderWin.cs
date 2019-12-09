@@ -57,11 +57,11 @@ public class CheckDefenderWin : MonoBehaviour
 
     private IEnumerator DefenderWinScreen()
     {
-        DefenderWinText.enabled = true;
-        AttackersLoseText.enabled = true;
-        miniCam.transform.position = new Vector3(200, 0, 200);
-        yield return new WaitForSeconds(5.0f);
-        fader.FadeToLevel(2);
+        //DefenderWinText.enabled = true;
+        //AttackersLoseText.enabled = true;
+        //miniCam.transform.position = new Vector3(200, 0, 200);
+        yield return new WaitForSeconds(1.0f);
+        fader.FadeToLevel(3);
         //SceneManager.LoadScene(2); // Go to menu
 
     }

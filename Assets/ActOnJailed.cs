@@ -5,7 +5,6 @@ using UnityEngine;
 public class ActOnJailed : MonoBehaviour
 {
     public JailManagement jail;
-    public JailEventUI jailUI;
     public GameObject jailCage;
     public GameObject jailSpawn;
     public GameObject hoppingPlayer;
@@ -39,8 +38,6 @@ public class ActOnJailed : MonoBehaviour
     private IEnumerator actOnJail()
     {
         jailing = true;
-        jailUI.jailed = true;
-        Debug.Log("JailUI.jailed set to true");
         gameObject.GetComponent<PlayerMovement>().enabled = false;
 
         if (jailSFX != null && audioSource != null)

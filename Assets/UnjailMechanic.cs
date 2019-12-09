@@ -93,9 +93,20 @@ public class UnjailMechanic : MonoBehaviour
                         jailedAttacker.transform.parent.position = closestJailExit.position;
                         jailedAttacker.transform.localPosition = Vector3.zero;
                         jailedAttacker.transform.parent.Find("Attacker Graphics").localPosition = Vector3.zero;
-             
+                        
+                        // If there's another in jail, free them too!
+                        if(jail.jailedAttackers.Count > 0)
+                        {
+                            GameObject jailedAttacker2 = jail.jailedAttackers.Dequeue();
+                            jailedAttacker2.transform.parent.position = closestJailExit.position;
+                            jailedAttacker2.transform.localPosition = Vector3.zero;
+                            jailedAttacker2.transform.parent.Find("Attacker Graphics").localPosition = Vector3.zero;
+
+                        }
                         StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
+
+                        PlayAudio.instance.PlayOneShot(PlayAudio.instance.unjailSFX);
 
                         PingManager.Instance.SpawnPing(PingManager.PingTypes.UnJail, transform.position);
 

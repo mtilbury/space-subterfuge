@@ -5,45 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Labs/mtilbury/mtilbury_MENU_LAB.unity
     guid: e0db8f5f82d187d47917ee00b64aee1b
   - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/p3_TITLE.unity
+    guid: 456dc73dea5d7564e9115a29c5391fb8
+  - enabled: 1
     path: Assets/Scenes/Labs/mtilbury/mtilbury_TUTORIAL_LAB.unity
     guid: 8f63f16fc0f901f4f9b87e6d037b6a8d
-  - enabled: 0
-    path: Assets/Scenes/p3_alpha.unity
-    guid: 0db8bc59dd543418f80f98fee768a261
-  - enabled: 0
-    path: Assets/Scenes/Labs/mtilbury/mtilbury_LAB.unity
-    guid: 5e2062e48e5d9604ea6aacc7395b9428
-  - enabled: 0
-    path: Assets/Scenes/Labs/mtilbury/p3_alpha 1.unity
-    guid: aed97c1185a61b7459feeb85911da963
-  - enabled: 0
-    path: Assets/Scenes/Labs/dcsohn/p3_alpha_new.unity
-    guid: e44fcedc6aae34835b4c04b5377e7f06
-  - enabled: 0
-    path: Assets/Scenes/Labs/mtilbury/p3_marketing.unity
-    guid: a2c349cc99954ab4c928bf72bc15c53b
-  - enabled: 0
-    path: Assets/Scenes/Labs/webbling/MarketingFilming-Hacking.unity
-    guid: b0d78edfb58e984418cd492c0d9336e2
-  - enabled: 0
-    path: Assets/Scenes/Labs/webbling/MarketingFilming-Chase.unity
-    guid: d6cb187288b16434b860dd4f56ab64a0
-  - enabled: 0
-    path: Assets/Scenes/Labs/webbling/MarketingFilming-Jailed.unity
-    guid: 131640f6b01d12d4f9480183fb4fcd71
-  - enabled: 0
-    path: Assets/Scenes/Labs/webbling/MarketingFilming-Freed.unity
-    guid: c7f1053a0e25feb499773f5ad894e8da
-  - enabled: 0
-    path: Assets/Scenes/Labs/webbling/MarketingFilming-Splitscreen.unity
-    guid: b57fdc7ddc8ec864fabe0d21d9dc7f59
   - enabled: 1
     path: Assets/Scenes/Labs/dcsohn/p3_polish.unity
     guid: 27a68a9778fe445ec82b9a8c25aac89e
+  - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/p3_defender_win.unity
+    guid: 769b65f2d2cdc8045ae7a3672be6d195
+  - enabled: 1
+    path: Assets/Scenes/Labs/mtilbury/p3_attacker_win.unity
+    guid: 9c74f42bf2a49d740b9187b15f2f719c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 89d44e97cc9226e46836264119c12e9e,
       type: 2}

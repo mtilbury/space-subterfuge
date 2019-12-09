@@ -44,11 +44,11 @@ public class CheckAttackerWin : MonoBehaviour
 
     private IEnumerator AttackerWinScreen()
     {
-        AttackersWinText.enabled = true;
-        DefenderLoseText.enabled = true;
-        miniCam.transform.position = new Vector3(200, 0, 200);
-        yield return new WaitForSeconds(5.0f);
-        fader.FadeToLevel(2);
+        //AttackersWinText.enabled = true;
+        //DefenderLoseText.enabled = true;
+        //miniCam.transform.position = new Vector3(200, 0, 200);
+        yield return new WaitForSeconds(1.0f);
+        fader.FadeToLevel(4);
         //SceneManager.LoadScene(2); // Go to menu
     }
 }
