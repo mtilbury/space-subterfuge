@@ -99,7 +99,7 @@ public class DoorInteract : Interactable
         doorCooldownTimer = doorCooldown;
 
         // Play sound effect
-        PlayAudio.PlayOneShot(PlayAudio.instance.doorSFX);
+        PlayAudio.instance.PlayOneShot(PlayAudio.instance.doorSFX);
     }
 
     public void EnableDoor()

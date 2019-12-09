@@ -106,7 +106,7 @@ public class UnjailMechanic : MonoBehaviour
                         StartCoroutine(UnjailCooldown());
                         Debug.Log("Attacker freed from jail");
 
-                        PlayAudio.PlayOneShot(PlayAudio.instance.unjailSFX);
+                        PlayAudio.instance.PlayOneShot(PlayAudio.instance.unjailSFX);
 
                         PingManager.Instance.SpawnPing(PingManager.PingTypes.UnJail, transform.position);
 

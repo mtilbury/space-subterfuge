@@ -20,7 +20,7 @@ public class DefenderCaptureAttack : MonoBehaviour
 
         defenderMov.playerSpeed = defenderMov.playerSpeed / 2.0f;
 
-        PlayAudio.PlayOneShot(PlayAudio.instance.captureSFX);
+        PlayAudio.instance.PlayOneShot(PlayAudio.instance.captureSFX);
     }
 
     private void OnDisable()

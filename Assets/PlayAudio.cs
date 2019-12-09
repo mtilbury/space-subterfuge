@@ -12,6 +12,8 @@ public class PlayAudio : MonoBehaviour
     public AudioClip doorSFX;
     public AudioClip captureSFX;
 
+    private bool playingJail = false;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -30,8 +32,24 @@ public class PlayAudio : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public static void PlayOneShot(AudioClip sfx)
+    public void PlayOneShot(AudioClip sfx)
     {
+        if(sfx == instance.unjailSFX)
+        {
+            if (instance.playingJail)
+            {
+                return;
+            }
+            StartCoroutine(DontAllowUnjailSound());
+            
+        }
         instance.audioSource.PlayOneShot(sfx);
+    }
+
+    private IEnumerator DontAllowUnjailSound()
+    {
+        instance.playingJail = true;
+        yield return new WaitForSeconds(4.0f);
+        instance.playingJail = false;
     }
 }
