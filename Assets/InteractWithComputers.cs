@@ -14,6 +14,8 @@ public class InteractWithComputers : MonoBehaviour
     public float ping_scale = 1.0f;
     public float stealRate = 20.0f;
 
+    public AudioSource hackingSFX;
+
     public bool inTutorial = false;
     public int id = 1;
 
@@ -46,15 +48,18 @@ public class InteractWithComputers : MonoBehaviour
                 {
                     PingManager.Instance.SpawnPing(PingManager.PingTypes.Hacking, other.transform.position);
                 }
+
             }
             // Check if A was pressed
             if (player_mov.controller.aButton.isPressed) {
                 player_mov.canMove = false;
+                hackingSFX.Play();
                 if (gameObject.CompareTag("Attacker")) {
                     if (sp.AddProgress(stealRate * Time.deltaTime)) {
                         // stealing is done. allow them to move
                         StealData(other);
                         player_mov.canMove = true;
+                        hackingSFX.Pause();
                     }
                     // stealing not done
                 } else if (gameObject.CompareTag("Defender")) {
@@ -62,11 +67,13 @@ public class InteractWithComputers : MonoBehaviour
                         // unhacking is done. allow them to move
                         player_mov.canMove = true;
                         interactPrompt.SetActive(false);
+                        hackingSFX.Pause();
                     }
                     // unhacking not done
                 }
             } else {
                 player_mov.canMove = true;
+                hackingSFX.Pause();
             }
         }
     }
