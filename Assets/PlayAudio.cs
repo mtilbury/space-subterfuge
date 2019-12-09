@@ -6,7 +6,9 @@ public class PlayAudio : MonoBehaviour
 {
     private AudioSource audioSource;
 
-    public PlayAudio instance;
+    public static PlayAudio instance;
+
+    public AudioClip unjailSFX;
 
     private void Awake()
     {
@@ -26,8 +28,8 @@ public class PlayAudio : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayOneShot(AudioClip sfx)
+    public static void PlayOneShot(AudioClip sfx)
     {
-        audioSource.PlayOneShot(sfx);
+        instance.audioSource.PlayOneShot(sfx);
     }
 }
