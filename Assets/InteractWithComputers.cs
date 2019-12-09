@@ -54,11 +54,13 @@ public class InteractWithComputers : MonoBehaviour
             if (player_mov.controller.aButton.isPressed) {
                 player_mov.canMove = false;
                 hackingSFX.Play();
+                //player_mov.controller.SetMotorSpeeds(0.1f, 0.2f);
                 if (gameObject.CompareTag("Attacker")) {
                     if (sp.AddProgress(stealRate * Time.deltaTime)) {
                         // stealing is done. allow them to move
                         StealData(other);
                         player_mov.canMove = true;
+                        //player_mov.controller.PauseHaptics();
                         hackingSFX.Pause();
                     }
                     // stealing not done
@@ -66,6 +68,7 @@ public class InteractWithComputers : MonoBehaviour
                     if (sp.RemoveProgress(stealRate * Time.deltaTime)) {
                         // unhacking is done. allow them to move
                         player_mov.canMove = true;
+                        //player_mov.controller.PauseHaptics();
                         interactPrompt.SetActive(false);
                         hackingSFX.Pause();
                     }
@@ -74,6 +77,7 @@ public class InteractWithComputers : MonoBehaviour
             } else {
                 player_mov.canMove = true;
                 hackingSFX.Pause();
+                //player_mov.controller.PauseHaptics();
             }
         }
     }
