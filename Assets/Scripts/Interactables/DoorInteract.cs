@@ -97,6 +97,9 @@ public class DoorInteract : Interactable
         DisableDoor();
         linkedDoor.DisableDoor();
         doorCooldownTimer = doorCooldown;
+
+        // Play sound effect
+        PlayAudio.PlayOneShot(PlayAudio.instance.doorSFX);
     }
 
     public void EnableDoor()
