@@ -10,6 +10,7 @@ public class PlayAudio : MonoBehaviour
 
     public AudioClip unjailSFX;
     public AudioClip doorSFX;
+    public AudioClip captureSFX;
 
     private void Awake()
     {

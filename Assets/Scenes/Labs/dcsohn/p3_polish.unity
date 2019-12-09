@@ -4239,6 +4239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unjailSFX: {fileID: 8300000, guid: f0fa894a5c84a434b9bc4f5ed34e2c5e, type: 3}
+  doorSFX: {fileID: 8300000, guid: 2a90fb7f93c704d42ab4ee951a64719a, type: 3}
+  captureSFX: {fileID: 8300000, guid: 8f6477972670ef74e807fa3b3b8ad42b, type: 3}
 --- !u!1001 &218894471
 PrefabInstance:
   m_ObjectHideFlags: 0

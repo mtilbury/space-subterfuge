@@ -19,6 +19,8 @@ public class DefenderCaptureAttack : MonoBehaviour
         StartCoroutine(RotateInRange());
 
         defenderMov.playerSpeed = defenderMov.playerSpeed / 2.0f;
+
+        PlayAudio.PlayOneShot(PlayAudio.instance.captureSFX);
     }
 
     private void OnDisable()
