@@ -23,6 +23,9 @@ public class TitleScreenManager : MonoBehaviour
 
     private bool showingReadyUp = false;
 
+    public AudioClip beep;
+    public AudioSource audioSource;
+
     private void Start()
     {
         player_controllers = new List<HasController>
@@ -51,6 +54,8 @@ public class TitleScreenManager : MonoBehaviour
                     StartButtonPrompt2.SetActive(false);
                     ReadyUpPanel.SetActive(true);
                     ReadyUpPanel2.SetActive(true);
+
+                    audioSource.PlayOneShot(beep);
                 }
             }
         }
