@@ -5315,6 +5315,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &410967019
@@ -6791,6 +6792,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &478970844
@@ -7293,6 +7295,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &529841321
@@ -9677,6 +9680,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &710656275
@@ -12544,7 +12548,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 19730177
+    m_Bits: 19762945
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 1
@@ -14657,6 +14661,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &1126491942
@@ -19120,6 +19125,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &1460300545
