@@ -57,7 +57,7 @@ public class TitleScreenManager : MonoBehaviour
 
         if (readyPlayers.Count == numPlayers)
         {
-            fader.FadeToLevel(1);
+            fader.FadeToLevel(5);
         }
     }
 

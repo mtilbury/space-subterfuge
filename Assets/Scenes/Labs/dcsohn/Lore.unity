@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1069,9 +1069,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 45475766}
-  intro: {fileID: 8300000, guid: 1fde65617191dc649a39787736ad9ba6, type: 3}
-  beeping: {fileID: 8300000, guid: fa111d8f4dd63d74db0a5587536c4a3e, type: 3}
   audio: {fileID: 53960909}
+  intro: {fileID: 8300000, guid: 1fde65617191dc649a39787736ad9ba6, type: 3}
+  introVolume: 0.75
+  beeping: {fileID: 8300000, guid: fa111d8f4dd63d74db0a5587536c4a3e, type: 3}
+  beepVolume: 0.3
+  fader: {fileID: 1524910944}
+  timeToWait: 5
   typingTime: 0.05
 --- !u!1 &661717621
 GameObject:
@@ -2229,6 +2233,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1524910944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5981747002307466187, guid: e59bdd66bb0ea174a9bbbdc8e82f241a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1201820164}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323806f715a8bcd4695cbb1521111d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1620321901
 GameObject:
   m_ObjectHideFlags: 0
