@@ -2231,6 +2231,8 @@ MonoBehaviour:
   attacker3: {fileID: 750799191}
   numPlayers: 4
   fader: {fileID: 1327314746}
+  beep: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &146787042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,6 +5786,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &410967019
@@ -7261,6 +7264,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &478970844
@@ -7813,6 +7817,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &529841321
@@ -9733,6 +9738,8 @@ MonoBehaviour:
   defaultColorB: {r: 0.7264151, g: 0, b: 0, a: 1}
   endManager: {fileID: 1405117506}
   playerID: 2
+  beep: {fileID: 8300000, guid: 9c7547e12faa3434cb390fdd0267b701, type: 3}
+  audioSource: {fileID: 2013512608}
 --- !u!1 &678137646
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,6 +10346,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &710656275
@@ -11162,6 +11170,8 @@ MonoBehaviour:
   defaultColorB: {r: 0.7264151, g: 0, b: 0, a: 1}
   endManager: {fileID: 1405117506}
   playerID: 3
+  beep: {fileID: 8300000, guid: 9c7547e12faa3434cb390fdd0267b701, type: 3}
+  audioSource: {fileID: 2013512608}
 --- !u!1 &755333813
 GameObject:
   m_ObjectHideFlags: 0
@@ -11252,7 +11262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &773008528
 Transform:
   m_ObjectHideFlags: 0
@@ -11872,6 +11882,8 @@ MonoBehaviour:
   defaultColorB: {r: 0.7264151, g: 0, b: 0, a: 1}
   endManager: {fileID: 1405117506}
   playerID: 1
+  beep: {fileID: 8300000, guid: 9c7547e12faa3434cb390fdd0267b701, type: 3}
+  audioSource: {fileID: 2013512608}
 --- !u!1 &828405118
 GameObject:
   m_ObjectHideFlags: 0
@@ -15805,6 +15817,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &1126491942
@@ -18157,7 +18170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1249952014
 Transform:
   m_ObjectHideFlags: 0
@@ -20541,6 +20554,7 @@ MonoBehaviour:
   point_collector: {fileID: 635821602}
   ping_scale: 1
   stealRate: 20
+  hackingSFX: {fileID: 0}
   inTutorial: 0
   id: 1
 --- !u!114 &1460300545
@@ -24274,6 +24288,8 @@ MonoBehaviour:
   defaultColorB: {r: 0.7264151, g: 0, b: 0, a: 1}
   endManager: {fileID: 1405117506}
   playerID: 0
+  beep: {fileID: 8300000, guid: 9c7547e12faa3434cb390fdd0267b701, type: 3}
+  audioSource: {fileID: 2013512608}
 --- !u!1 &1739722250
 GameObject:
   m_ObjectHideFlags: 0
@@ -29771,7 +29787,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045874456}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &2045874461
 Camera:
   m_ObjectHideFlags: 0

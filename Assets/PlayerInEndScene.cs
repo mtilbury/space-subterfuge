@@ -26,6 +26,9 @@ public class PlayerInEndScene : MonoBehaviour, HasController
     public EndScreenManager endManager;
     public int playerID;
 
+    public AudioClip beep;
+    public AudioSource audioSource;
+
     private Vector3 defaultScale = Vector3.one;
 
     // Update is called once per frame
@@ -33,6 +36,11 @@ public class PlayerInEndScene : MonoBehaviour, HasController
     {
         if (button.IsActive() && controller != null && controller.aButton.isPressed)
         {
+
+            if(button.color != selectedColorA)
+            {
+                audioSource.PlayOneShot(beep, 0.5f);
+            }
             // Change text color
             button.color = selectedColorA;
             button.transform.localScale = defaultScale * 1.2f;
@@ -49,6 +57,10 @@ public class PlayerInEndScene : MonoBehaviour, HasController
         }
         else if(button.IsActive() && controller != null && controller.bButton.isPressed)
         {
+            if (button.color != selectedColorB)
+            {
+                audioSource.PlayOneShot(beep, 0.5f);
+            }
             // Change text color
             button.color = selectedColorB;
             text.text = "B";
