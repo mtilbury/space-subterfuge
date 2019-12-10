@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5356,18 +5356,6 @@ MonoBehaviour:
   countdownAttackers: {fileID: 1752308682}
   countdownDefender: {fileID: 1161107276}
   countdownStart: 4
---- !u!114 &291171823 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7308762644503786732, guid: defe60125165fa04dac9177b99df524f,
-    type: 3}
-  m_PrefabInstance: {fileID: 647291563}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &301791034 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 328778572495504379, guid: 5b73c6d8a88e28e4db81b0276cd6ab9d,
@@ -35872,6 +35860,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: defe60125165fa04dac9177b99df524f, type: 3}
+--- !u!114 &1083683361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7308762644503786732, guid: defe60125165fa04dac9177b99df524f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1083683360}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1084230565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42762,7 +42762,7 @@ PrefabInstance:
         type: 3}
       propertyPath: numPointsText2
       value: 
-      objectReference: {fileID: 291171823}
+      objectReference: {fileID: 1083683361}
     - target: {fileID: 2163586114198291035, guid: bbc5f0f5f052a7e499e5fe9a30c1e89d,
         type: 3}
       propertyPath: fader
