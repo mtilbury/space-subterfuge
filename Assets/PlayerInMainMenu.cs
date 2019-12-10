@@ -19,6 +19,9 @@ public class PlayerInMainMenu : MonoBehaviour, HasController
     public TitleScreenManager titleManager;
     public int playerID;
 
+    public AudioClip beep;
+    public AudioSource audioSource;
+
     private Vector3 defaultScale = Vector3.one;
 
     // Update is called once per frame
@@ -26,6 +29,10 @@ public class PlayerInMainMenu : MonoBehaviour, HasController
     {
         if (button.IsActive() && controller != null && controller.aButton.isPressed)
         {
+            if(button.color != selectedColor)
+            {
+                audioSource.PlayOneShot(beep, 0.6f);
+            }
             // Change text color
             button.color = selectedColor;
             button.transform.localScale = defaultScale * 1.2f;
