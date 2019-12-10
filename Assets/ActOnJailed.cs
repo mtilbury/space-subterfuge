@@ -48,12 +48,18 @@ public class ActOnJailed : MonoBehaviour
         jailCage.SetActive(true);
         jailCage.transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);
         jailCage.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        hoppingPlayer.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y - 3, jailCage.transform.position.z);
+        transform.localPosition = Vector3.zero;
+        playerGraphics.transform.localPosition = Vector3.zero;
         yield return null;
 
         // Get bigger
         int frame = 0;
         while(frame < 15)
         {
+            hoppingPlayer.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y - 2, jailCage.transform.position.z);
+            transform.localPosition = Vector3.zero;
+            playerGraphics.transform.localPosition = Vector3.zero;
             jailCage.transform.localScale = new Vector3(jailCage.transform.localScale.x + (1 - jailCage.transform.localScale.x) * .4f, jailCage.transform.localScale.y + (1 - jailCage.transform.localScale.y) * .4f, jailCage.transform.localScale.z + (1 - jailCage.transform.localScale.z) * .4f);
             frame++;
             yield return null;
@@ -62,10 +68,10 @@ public class ActOnJailed : MonoBehaviour
         frame = 0;
         while(frame < 24)
         {
-            jailCage.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y - .3f, jailCage.transform.position.z);
+            jailCage.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y, jailCage.transform.position.z);
             jailCage.transform.localScale = new Vector3(jailCage.transform.localScale.x - .04f, jailCage.transform.localScale.y - .04f, jailCage.transform.localScale.z - .04f);
             hoppingPlayer.transform.localScale = jailCage.transform.localScale;
-            hoppingPlayer.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y - 3, jailCage.transform.position.z);
+            hoppingPlayer.transform.position = new Vector3(jailCage.transform.position.x, jailCage.transform.position.y - jailCage.transform.localScale.x * 2, jailCage.transform.position.z);
             transform.localPosition = Vector3.zero;
             playerGraphics.transform.localPosition = Vector3.zero;
             frame++;
