@@ -14,6 +14,7 @@ public class SprintMechanic : MonoBehaviour
 
     public bool isSprinting = false;
     public bool canSprint = true;
+    public bool cooldownActive = false;
 
     public bool inTutorial = false;
     public int id = 1;
@@ -40,12 +41,16 @@ public class SprintMechanic : MonoBehaviour
                 trail.Clear();
             }
 
-            if(sprintUI.currentStamina >= 1)
+            if(sprintUI.currentStamina >= 1 && !cooldownActive)
             {
+                canSprint = false;
+                cooldownActive = true;
+                Debug.Log("cooldownActive set to true");
+                StartCoroutine(StaminaCooldown());
                 trail.emitting = false;
             }
 
-            if (playerMove.controller.xButton.isPressed && sprintUI.currentStamina < 1)
+            if (playerMove.controller.xButton.isPressed && sprintUI.currentStamina < 1 && canSprint)
             {
                 isSprinting = true;
                 playerMove.playerSpeed = sprintSpeed;
@@ -62,5 +67,14 @@ public class SprintMechanic : MonoBehaviour
                 trail.emitting = false;
             }
         }
+    }
+
+    private IEnumerator StaminaCooldown()
+    {
+        Debug.Log("Stamina cooldown started");
+        yield return new WaitForSeconds(1.0f);
+        sprintUI.currentStamina = 0.99f;
+        canSprint = true;
+        cooldownActive = false;
     }
 }

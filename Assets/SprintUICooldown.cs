@@ -56,8 +56,11 @@ public class SprintUICooldown : MonoBehaviour
                 {
                     return;
                 }
-                currentStamina -= 1 / cooldownStamina * Time.deltaTime;
-                imageCooldown.fillAmount = currentStamina;
+                else if (!sprintMove.cooldownActive)
+                {
+                    currentStamina -= 1 / cooldownStamina * Time.deltaTime;
+                    imageCooldown.fillAmount = currentStamina;
+                }
             }
         }
     }
