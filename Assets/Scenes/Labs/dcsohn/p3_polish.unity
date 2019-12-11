@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4943,11 +4943,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 220487805}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5007,6 +5002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -7472,11 +7472,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1632085661}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7536,6 +7531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -13830,6 +13830,11 @@ PrefabInstance:
       propertyPath: hackingSFX
       value: 
       objectReference: {fileID: 427309982}
+    - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: stealRate
+      value: 12.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: ping
@@ -21403,6 +21408,11 @@ PrefabInstance:
       propertyPath: hackingSFX
       value: 
       objectReference: {fileID: 427309982}
+    - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: stealRate
+      value: 12.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: pingHeight
@@ -21484,16 +21494,6 @@ PrefabInstance:
       propertyPath: offset
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
-    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
     - target: {fileID: 4935175918429478009, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jail
@@ -21523,12 +21523,22 @@ PrefabInstance:
         type: 3}
       propertyPath: sprintUIGO
       value: 
-      objectReference: {fileID: 864375503}
+      objectReference: {fileID: 1919148063}
     - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: originalSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
+    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43aeaf43427d74c719603e4bcc9b2ac4, type: 2}
     - target: {fileID: 1721798015739915434, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23035,11 +23045,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 999918575}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23100,6 +23105,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: parentComputer
@@ -23131,8 +23141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 398922256}
-  cooldownStamina: 6
-  maxStamina: 3
+  cooldownStamina: 10
+  maxStamina: 2.5
   currentStamina: 0
   scalingFactor: 0.025
   originalScaling: {x: 0.35, y: 0.35, z: 0.35}
@@ -23147,11 +23157,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 999918575}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23211,6 +23216,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -32493,14 +32503,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 301791034}
-  cooldownStamina: 6
-  maxStamina: 3
+  cooldownStamina: 10
+  maxStamina: 2.5
   currentStamina: 0
   scalingFactor: 0.025
   originalScaling: {x: 0.35, y: 0.35, z: 0.35}
   maxScaling: {x: 0.45, y: 0.45, z: 0.45}
-  playerMove: {fileID: 564636741}
-  sprintMove: {fileID: 564636742}
+  playerMove: {fileID: 1147724111}
+  sprintMove: {fileID: 1147724117}
   cooldownDelayActive: 0
 --- !u!1001 &865953869
 PrefabInstance:
@@ -33729,11 +33739,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1632085661}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33793,6 +33798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -35889,6 +35899,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4679178999682959188, guid: 2f2dea1a1eb868249bc08258fecf94b4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4679178999682959209, guid: 2f2dea1a1eb868249bc08258fecf94b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35993,11 +36008,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4679178999682959188, guid: 2f2dea1a1eb868249bc08258fecf94b4,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f2dea1a1eb868249bc08258fecf94b4, type: 3}
@@ -37125,6 +37135,11 @@ PrefabInstance:
       propertyPath: hackingSFX
       value: 
       objectReference: {fileID: 427309982}
+    - target: {fileID: 4274618985461673030, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: stealRate
+      value: 12.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3946485616577507724, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: pingHeight
@@ -37206,16 +37221,6 @@ PrefabInstance:
       propertyPath: offset
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
-    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
     - target: {fileID: 4935175918429478009, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: jail
@@ -37245,12 +37250,22 @@ PrefabInstance:
         type: 3}
       propertyPath: sprintUIGO
       value: 
-      objectReference: {fileID: 1919148063}
+      objectReference: {fileID: 864375503}
     - target: {fileID: 2366990595756956360, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: originalSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
+    - target: {fileID: 497416759753021691, guid: 7afe215a8206df54fba38011eb63f476,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b4c88e97b46440589353b34e830b5f2, type: 2}
     - target: {fileID: 1721798015739915434, guid: 7afe215a8206df54fba38011eb63f476,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -38653,11 +38668,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1632085661}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38717,6 +38727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -41402,11 +41417,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 220487805}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41466,6 +41476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 23.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (6)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -42998,11 +43013,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 877488375}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43062,6 +43072,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -43744,11 +43759,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1629738316}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43808,6 +43818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -51971,11 +51986,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 220487805}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52035,6 +52045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -59363,11 +59378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 220487805}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59427,6 +59437,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -59548,11 +59563,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 999918575}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59612,6 +59622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -59930,11 +59945,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 877488375}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59994,6 +60004,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 13.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -61767,11 +61782,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1258641368}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -61831,6 +61841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -61963,14 +61978,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 829899722}
-  cooldownStamina: 6
-  maxStamina: 3
+  cooldownStamina: 10
+  maxStamina: 2.5
   currentStamina: 0
   scalingFactor: 0.025
   originalScaling: {x: 0.35, y: 0.35, z: 0.35}
   maxScaling: {x: 0.45, y: 0.45, z: 0.45}
-  playerMove: {fileID: 1147724111}
-  sprintMove: {fileID: 1147724117}
+  playerMove: {fileID: 564636741}
+  sprintMove: {fileID: 564636742}
   cooldownDelayActive: 0
 --- !u!1001 &1941511272
 PrefabInstance:
@@ -62748,11 +62763,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1629738316}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62812,6 +62822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -63760,11 +63775,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 220487805}
     m_Modifications:
-    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
-        type: 3}
-      propertyPath: m_Name
-      value: Wire (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7746713521411396040, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63824,6 +63834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746713521411396087, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8950695017366481999, guid: 12fd5b46d268e47c1aa70cd285c39ab6,
         type: 3}
@@ -64766,6 +64781,11 @@ PrefabInstance:
       propertyPath: hackingSFX
       value: 
       objectReference: {fileID: 427309982}
+    - target: {fileID: 6532331767698365251, guid: f9b7b05de3d817e43846ee6e8d451bd7,
+        type: 3}
+      propertyPath: stealRate
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 450523557390086115, guid: f9b7b05de3d817e43846ee6e8d451bd7,
         type: 3}
       propertyPath: interactPrompt
