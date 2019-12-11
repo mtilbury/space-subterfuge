@@ -1,0 +1,37 @@
+-- SPACE SUBTERFUGE --
+A game by:
+Scott Bays
+Connor Beard
+David Sohn
+Michael Tilbury
+Blake Webb
+
+Line of sight code from:
+Off-screen indicator code from: http://forum.brackeys.com/thread/offscreen-target-indicator/ by Mouledoux and motbest
+
+Unity Packages:
+Post-Processing Stack, Lightweight render pipeline, Shadergraph, ProBuilder, ProGrids
+
+Fonts:
+Orbitron - https://github.com/theleagueof/orbitron
+ - Distributed under the SIL Open Font License (OFL)
+Virgo 01 - https://www.fontsquirrel.com/fonts/virgo-01
+ - Distributed under the Vic Fieger License v1.00 (The Vic Fieger fonts are freeware, to be downloaded and used by anyone who wants them for free.)
+ 
+Sound Effects:
+positive_beeps.wav - https://freesound.org/people/themusicalnomad/sounds/253887/
+ - Used in menus when a button input is registered
+BEEP.wav - https://freesound.org/people/anthonychartier2020/sounds/341278/
+ - Used when text appears across the screen when lore is being delivered
+alarm_fatal.wav - https://freesound.org/people/sirplus/sounds/25031/
+ - Used when the jail is freed
+Static_Radio.wav - https://freesound.org/people/kMoon/sounds/90792/
+ - Used when lore is being delivered
+Radio Interference/Static - https://freesound.org/people/harveyjnz/sounds/337700/
+ - Used when lore is being delivered
+JailDoorClose.wav - https://freesound.org/people/TurtleLG/sounds/80449/
+ - Used when someone is put in jail
+Bamboo Weapon Swooshes - https://opengameart.org/content/swish-bamboo-stick-weapon-swhoshes
+ - Used when guard swings his baton
+Clic07.flac, steam_hisses_-_Marker_4.wav - https://github.com/KitaenSilva/OSFOP-Asset-Pool/tree/master/SFX
+ - Used when a door button is pressed

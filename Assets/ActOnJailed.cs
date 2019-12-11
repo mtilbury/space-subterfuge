@@ -40,6 +40,8 @@ public class ActOnJailed : MonoBehaviour
         jailing = true;
         gameObject.GetComponent<PlayerMovement>().enabled = false;
 
+        PingManager.Instance.SpawnPing(PingManager.PingTypes.Jailed, transform.position);
+
         if (jailSFX != null && audioSource != null)
         {
             audioSource.PlayOneShot(jailSFX);
