@@ -1071,9 +1071,9 @@ MonoBehaviour:
   text: {fileID: 45475766}
   audio: {fileID: 53960909}
   intro: {fileID: 8300000, guid: 1fde65617191dc649a39787736ad9ba6, type: 3}
-  introVolume: 0.75
+  introVolume: 0.5
   beeping: {fileID: 8300000, guid: fa111d8f4dd63d74db0a5587536c4a3e, type: 3}
-  beepVolume: 0.3
+  beepVolume: 0.4
   fader: {fileID: 1524910944}
   timeToWait: 5
   typingTime: 0.05
@@ -2261,7 +2261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1620321902
 Transform:
   m_ObjectHideFlags: 0
